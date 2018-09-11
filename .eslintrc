@@ -1,9 +1,9 @@
 {
   "extends": "airbnb",
-  "parser": "babel-eslint",
-  "plugins": [
-    "jest"
-  ],
+//  "parser": "babel-eslint",
+//  "plugins": [
+//    "jest"
+//  ],
   "rules": {
     "no-unused-expressions": [0],
     "react/jsx-filename-extension": [
