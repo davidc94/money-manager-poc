@@ -15,7 +15,7 @@ export default class Dashboard extends PureComponent {
   }
 }
 
-const TabNav = createBottomTabNavigator({
+export const TabNav = createBottomTabNavigator({
   BankBalance: { screen: BankBalance },
   SpentSoFar: { screen: SpentSoFar },
   Income: { screen: Income },

@@ -1,6 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import Income from './index';
+
+configure({ adapter: new Adapter() });
 
 describe('income', () => {
   const render = shallow(<Income />);
@@ -8,5 +11,4 @@ describe('income', () => {
   it('renders as expected', () => {
     expect(render).toMatchSnapshot();
   });
-
 });
