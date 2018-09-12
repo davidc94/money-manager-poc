@@ -25,7 +25,7 @@ const StyledText = (props) => (
     size={props.size}
     weight={props.weight}
   >
-    { props.value }
+    { props.children }
   </TextStyling>
 );
 
