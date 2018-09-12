@@ -4891,6 +4891,7 @@ react-devtools-core@^3.2.2:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
+
 react-dom@^16.5.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"
@@ -4901,6 +4902,7 @@ react-dom@^16.5.0:
     schedule "^0.3.0"
 
 react-is@^16.3.1, react-is@^16.4.1, react-is@^16.4.2, react-is@^16.5.0:
+
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.5.0.tgz#2ec7c192709698591efe13722fab3ef56144ba55"
 
