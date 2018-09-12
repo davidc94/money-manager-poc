@@ -30,9 +30,9 @@ const ButtonContainer = styled.TouchableOpacity`
 const StyledButton = (props) => {
   return (
     <ButtonContainer
-      onPress={props.onPress}
       underlayColor={colors.highlight}
       disabled={props.disabled}
+      onPress={(props.disabled) ? null : props.onPress}
     >
       <Label
         disabled={props.disabled}
