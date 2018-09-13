@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { ScrollView, TouchableOpacity, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
@@ -8,9 +8,6 @@ export default class Setup extends PureComponent {
   render() {
     return (
       <ScrollView>
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('ChooseBank')}>
-          <Text>Setup</Text>
-        </TouchableOpacity>
         <StyledView>
           <StyledText size weight>How does this set up work?</StyledText>
           <StyledText weight>Step 1</StyledText>
@@ -30,7 +27,12 @@ export default class Setup extends PureComponent {
             that you use for your day to day spend (if you have more
             than one current account)
           </StyledText>
-          <StyledButton>Continue</StyledButton>
+          <StyledButton 
+            className="button"
+            onPress={() => this.props.navigation.navigate('ChooseBank')}
+          >
+            Continue
+          </StyledButton>
         </StyledView>
       </ScrollView>
     );
