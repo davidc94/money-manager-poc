@@ -1,16 +1,80 @@
 import React, { PureComponent } from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, Switch, ScrollView, View } from 'react-native';
+import StyledButton from '../../atoms/StyledButton';
+import StyledView from '../../atoms/StyledView';
+import StyledText from '../../atoms/StyledText';
+import AccordionView from './AccordionView';
+
+const StyledContainer = StyledView.extend`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`
 
 export default class Consent extends PureComponent {
+
+  state = {
+    nextButtonEnabled: false
+  }
+
+  switchValueChange = () => this.setState((prevState) => ({ nextButtonEnabled: !prevState.nextButtonEnabled }));
+
   render() {
+    const { navigation } = this.props;
     return (
-      <View>
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('ChooseAccount')}>
-          <Text>
-            Consent
-          </Text>
-        </TouchableOpacity>
-      </View>
+      <ScrollView>
+        <View>
+          <StyledText>
+            Don't worry, this is all perfectly safe.
+            All we can do is look at
+          </StyledText>
+        </View>
+        <View>
+          <AccordionView />
+        </View>
+        <View>
+          <StyledText style={{ textAlign: 'center' }}>
+            gameplan can only read your bank data and can't make payments or change your account.
+          </StyledText>
+        </View>
+        <View>
+          <StyledText style={{ textAlign: 'center' }}>
+            We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission
+          </StyledText>
+        </View>
+        <StyledContainer>
+          <StyledView style={{ alignItems: 'center' }} >
+            <Switch
+              onValueChange={this.switchValueChange}
+              value={this.state.nextButtonEnabled}
+            />
+          </StyledView>
+          <StyledText style={{ flex: 2 }}>
+            You agree to our terms & conditions and privacy policy which covers how giffgaff can access and use your data
+          </StyledText>
+        </StyledContainer>
+        <View>
+          <StyledText style={{ textAlign: 'center' }}>
+            We'll now securely take you to your bank/building society
+          </StyledText>
+        </View>
+        <StyledView style={{ flexDirection: 'row', padding: 30 }}>
+          <StyledButton
+            outlined
+            style={{ flex: 1, marginRight: 30 }}
+            onPress={() => navigation.navigate('ChooseBank')}
+          >
+            Disagree
+          </StyledButton>
+          <StyledButton
+            disabled={!this.state.nextButtonEnabled}
+            style={{ flex: 1 }}
+            onPress={() => navigation.navigate('ChooseAccount')}
+          >
+            Agree
+          </StyledButton>
+        </StyledView>
+      </ScrollView>
     );
   }
 }

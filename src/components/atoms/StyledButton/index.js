@@ -9,7 +9,7 @@ const colors = {
 const Label = styled.Text`
   color: ${props => props.disabled
     ? '#000'
-    : colors.contrast};
+    : props.outlined ? colors.accent : colors.contrast};
   font-weight: 700;
   font-size: 20px;  
   align-self: center;
@@ -19,7 +19,7 @@ const Label = styled.Text`
 const ButtonContainer = styled.TouchableOpacity`
   background-color: ${props => props.disabled
     ? colors.disabled
-    : colors.accent};
+    : props.outlined ? '#fff' : colors.accent};
   border-color: ${props => props.disabled
     ? colors.disabled
     : colors.accent};
@@ -34,10 +34,13 @@ const StyledButton = (props) => {
     <ButtonContainer
       underlayColor={colors.highlight}
       disabled={props.disabled}
+      outlined={props.outlined}
       onPress={(props.disabled) ? null : props.onPress}
+      style={props.style}
     >
       <Label
         disabled={props.disabled}
+        outlined={props.outlined}
       >
         {props.children}
       </Label>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 const fontSize = {
-  base: 25,
+  base: 18,
   large: 35,
 };
 
@@ -23,9 +23,10 @@ const TextStyling = styled.Text`
 const StyledText = (props) => (
   <TextStyling
     size={props.size}
+    style={props.style}
     weight={props.weight}
   >
-    { props.children }
+    {props.children}
   </TextStyling>
 );
 
