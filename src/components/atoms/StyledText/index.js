@@ -12,7 +12,7 @@ const fontWeight = {
 };
 
 const TextStyling = styled.Text`
-    padding: 10px;
+    padding: 2px;
     font-size: ${ props => props.size ? fontSize.large : fontSize.base};
     font-family: Verdana;
     font-weight: ${ props => props.weight ? fontWeight.large : fontWeight.base};

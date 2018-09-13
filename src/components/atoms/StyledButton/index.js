@@ -11,7 +11,7 @@ const Label = styled.Text`
     ? '#000'
     : colors.contrast};
   font-weight: 700;
-  font-size: 18px;  
+  font-size: 20px;  
   align-self: center;
   padding: 20px;
 `;
@@ -25,6 +25,8 @@ const ButtonContainer = styled.TouchableOpacity`
     : colors.accent};
   border-width: 2px;
   border-radius: 50;
+  width: 50%;
+  margin: 0 auto;
 `;
 
 const StyledButton = (props) => {
