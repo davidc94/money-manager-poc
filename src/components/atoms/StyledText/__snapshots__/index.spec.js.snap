@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": undefined,
       "size": undefined,
+      "style": undefined,
       "weight": undefined,
     },
     "ref": null,
@@ -33,6 +34,7 @@ ShallowWrapper {
       "props": Object {
         "children": undefined,
         "size": undefined,
+        "style": undefined,
         "weight": undefined,
       },
       "ref": null,
@@ -83,6 +85,7 @@ ShallowWrapper {
     "props": Object {
       "children": undefined,
       "size": undefined,
+      "style": undefined,
       "weight": true,
     },
     "ref": null,
@@ -97,6 +100,7 @@ ShallowWrapper {
       "props": Object {
         "children": undefined,
         "size": undefined,
+        "style": undefined,
         "weight": true,
       },
       "ref": null,
@@ -147,6 +151,7 @@ ShallowWrapper {
     "props": Object {
       "children": undefined,
       "size": true,
+      "style": undefined,
       "weight": undefined,
     },
     "ref": null,
@@ -161,6 +166,7 @@ ShallowWrapper {
       "props": Object {
         "children": undefined,
         "size": true,
+        "style": undefined,
         "weight": undefined,
       },
       "ref": null,
