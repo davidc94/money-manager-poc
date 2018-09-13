@@ -5,6 +5,11 @@ import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import AccordionView from './AccordionView';
 
+const StyledContainer = StyledView.extend`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`
 
 export default class Consent extends PureComponent {
 
@@ -28,45 +33,47 @@ export default class Consent extends PureComponent {
           <AccordionView />
         </View>
         <View>
-          <StyledText>
+          <StyledText style={{ textAlign: 'center' }}>
             gameplan can only read your bank data and can't make payments or change your account.
           </StyledText>
         </View>
         <View>
-          <StyledText>
+          <StyledText style={{ textAlign: 'center' }}>
             We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission
           </StyledText>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row', alignSelf: 'stretch' }}>
-          <Switch
-            onValueChange={this.switchValueChange}
-            style={{ flex: 1, alignSelf: 'stretch' }}
-            value={this.state.nextButtonEnabled}
-          />
-          <StyledText style={{ flex: 2, alignSelf: 'stretch' }}>
+        <StyledContainer>
+          <StyledView style={{ alignItems: 'center' }} >
+            <Switch
+              onValueChange={this.switchValueChange}
+              value={this.state.nextButtonEnabled}
+            />
+          </StyledView>
+          <StyledText style={{ flex: 2 }}>
             You agree to our terms & conditions and privacy policy which covers how giffgaff can access and use your data
           </StyledText>
-        </View>
+        </StyledContainer>
         <View>
-          <StyledText>
+          <StyledText style={{ textAlign: 'center' }}>
             We'll now securely take you to your bank/building society
           </StyledText>
         </View>
-        <View style={{ flex: 1, flexDirection: 'row', alignSelf: 'stretch' }}>
+        <StyledView style={{ flexDirection: 'row', padding: 30 }}>
           <StyledButton
-            style={{ flex: 1, alignSelf: 'stretch' }}
+            outlined
+            style={{ flex: 1, marginRight: 30 }}
             onPress={() => navigation.navigate('ChooseBank')}
           >
             Disagree
           </StyledButton>
           <StyledButton
             disabled={!this.state.nextButtonEnabled}
-            style={{ flex: 1, alignSelf: 'stretch' }}
+            style={{ flex: 1 }}
             onPress={() => navigation.navigate('ChooseAccount')}
           >
             Agree
           </StyledButton>
-        </View>
+        </StyledView>
       </ScrollView>
     );
   }
