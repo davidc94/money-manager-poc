@@ -19,6 +19,7 @@ npm run start
 ```
 
 To start the app on Android or iOS, run the following command with the appropriate platform
+
 Android:
 ```sh
 react-native run-android
@@ -35,3 +36,10 @@ To run tests, run the following command
 ```sh
 npm run test
 ```
+
+To update the tests, run the following command
+```sh
+npm run test -- -u
+```
+
+After running the tests a coverage report is provided.
