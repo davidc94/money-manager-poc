@@ -4,11 +4,15 @@ import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
 
+const styles = {
+  container: { flex: 1, justifyContent: 'center' },
+}
+
 export default class Setup extends PureComponent {
   render() {
     return (
       <ScrollView>
-        <StyledView>
+        <StyledView style={styles.container}>
           <StyledText size weight>How does this set up work?</StyledText>
           <StyledText weight>Step 1</StyledText>
           <StyledText>
