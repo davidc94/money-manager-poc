@@ -11,8 +11,9 @@ const TextInputStyling = styled.TextInput`
 `;
 
 const StyledTextInput = props => (
-  <TextInputStyling 
+  <TextInputStyling
     secureTextEntry={!!props.password}
+    underlineColorAndroid="rgba(0,0,0,0)"
   />
 );
 

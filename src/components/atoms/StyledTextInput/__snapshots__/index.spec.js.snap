@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "secureTextEntry": false,
+      "underlineColorAndroid": "rgba(0,0,0,0)",
     },
     "ref": null,
     "rendered": null,
@@ -30,6 +31,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "secureTextEntry": false,
+        "underlineColorAndroid": "rgba(0,0,0,0)",
       },
       "ref": null,
       "rendered": null,
@@ -78,6 +80,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "secureTextEntry": true,
+      "underlineColorAndroid": "rgba(0,0,0,0)",
     },
     "ref": null,
     "rendered": null,
@@ -90,6 +93,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "secureTextEntry": true,
+        "underlineColorAndroid": "rgba(0,0,0,0)",
       },
       "ref": null,
       "rendered": null,
