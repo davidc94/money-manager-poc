@@ -17,41 +17,213 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <TouchableOpacity
-        activeOpacity={0.2}
-        onPress={[Function]}
-      >
-        <Component>
-          ChooseBank
-        </Component>
-      </TouchableOpacity>,
+
+      "children": Array [
+        <StyledText
+          style={
+            Object {
+              "marginVertical": 30,
+            }
+          }
+        >
+          Select your bank that your day to day spending account is with.
+        </StyledText>,
+        <FlatList
+          data={
+            Array [
+              Object {
+                "bankName": "Barclays",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "LloydsBank",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "HSBC",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                },
+              },
+            ]
+          }
+          disableVirtualization={false}
+          extraData={
+            Object {
+              "data": Array [
+                Object {
+                  "bankName": "Barclays",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "LloydsBank",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "HSBC",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
+                },
+              ],
+              "selectedBank": false,
+            }
+          }
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onEndReachedThreshold={2}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          style={
+            Object {
+              "marginBottom": 50,
+            }
+          }
+          updateCellsBatchingPeriod={50}
+          windowSize={21}
+        />,
+        <Component
+          style={
+            Object {
+              "paddingHorizontal": 80,
+            }
+          }
+        >
+          <StyledButton
+            disabled={true}
+            onPress={[Function]}
+          >
+            Connect to bank
+          </StyledButton>
+        </Component>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "activeOpacity": 0.2,
-        "children": <Component>
-          ChooseBank
-        </Component>,
-        "onPress": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Select your bank that your day to day spending account is with.",
+          "style": Object {
+            "marginVertical": 30,
+          },
+        },
+        "ref": null,
+        "rendered": "Select your bank that your day to day spending account is with.",
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "ChooseBank",
+          "data": Array [
+            Object {
+              "bankName": "Barclays",
+              "logoImage": Object {
+                "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+              },
+            },
+            Object {
+              "bankName": "LloydsBank",
+              "logoImage": Object {
+                "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+              },
+            },
+            Object {
+              "bankName": "HSBC",
+              "logoImage": Object {
+                "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+              },
+            },
+          ],
+          "disableVirtualization": false,
+          "extraData": Object {
+            "data": Array [
+              Object {
+                "bankName": "Barclays",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "LloydsBank",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "HSBC",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                },
+              },
+            ],
+            "selectedBank": false,
+          },
+          "horizontal": false,
+          "initialNumToRender": 10,
+          "keyExtractor": [Function],
+          "maxToRenderPerBatch": 10,
+          "numColumns": 1,
+          "onEndReachedThreshold": 2,
+          "renderItem": [Function],
+          "scrollEventThrottle": 50,
+          "style": Object {
+            "marginBottom": 50,
+          },
+          "updateCellsBatchingPeriod": 50,
+          "windowSize": 21,
         },
         "ref": null,
-        "rendered": "ChooseBank",
+        "rendered": null,
         "type": [Function],
       },
-      "type": [Function],
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <StyledButton
+            disabled={true}
+            onPress={[Function]}
+          >
+            Connect to bank
+          </StyledButton>,
+          "style": Object {
+            "paddingHorizontal": 80,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Connect to bank",
+            "disabled": true,
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": "Connect to bank",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -60,41 +232,212 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <TouchableOpacity
-          activeOpacity={0.2}
-          onPress={[Function]}
-        >
-          <Component>
-            ChooseBank
-          </Component>
-        </TouchableOpacity>,
+        "children": Array [
+          <StyledText
+            style={
+              Object {
+                "marginVertical": 30,
+              }
+            }
+          >
+            Select your bank that your day to day spending account is with.
+          </StyledText>,
+          <FlatList
+            data={
+              Array [
+                Object {
+                  "bankName": "Barclays",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "LloydsBank",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "HSBC",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
+                },
+              ]
+            }
+            disableVirtualization={false}
+            extraData={
+              Object {
+                "data": Array [
+                  Object {
+                    "bankName": "Barclays",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                    },
+                  },
+                  Object {
+                    "bankName": "LloydsBank",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                    },
+                  },
+                  Object {
+                    "bankName": "HSBC",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
+                  },
+                ],
+                "selectedBank": false,
+              }
+            }
+            horizontal={false}
+            initialNumToRender={10}
+            keyExtractor={[Function]}
+            maxToRenderPerBatch={10}
+            numColumns={1}
+            onEndReachedThreshold={2}
+            renderItem={[Function]}
+            scrollEventThrottle={50}
+            style={
+              Object {
+                "marginBottom": 50,
+              }
+            }
+            updateCellsBatchingPeriod={50}
+            windowSize={21}
+          />,
+          <Component
+            style={
+              Object {
+                "paddingHorizontal": 80,
+              }
+            }
+          >
+            <StyledButton
+              disabled={true}
+              onPress={[Function]}
+            >
+              Connect to bank
+            </StyledButton>
+          </Component>,
+        ],
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "activeOpacity": 0.2,
-          "children": <Component>
-            ChooseBank
-          </Component>,
-          "onPress": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Select your bank that your day to day spending account is with.",
+            "style": Object {
+              "marginVertical": 30,
+            },
+          },
+          "ref": null,
+          "rendered": "Select your bank that your day to day spending account is with.",
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": Object {
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "ChooseBank",
+            "data": Array [
+              Object {
+                "bankName": "Barclays",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "LloydsBank",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                },
+              },
+              Object {
+                "bankName": "HSBC",
+                "logoImage": Object {
+                  "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                },
+              },
+            ],
+            "disableVirtualization": false,
+            "extraData": Object {
+              "data": Array [
+                Object {
+                  "bankName": "Barclays",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/barclayslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "LloydsBank",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/lloydslogo.jpg",
+                  },
+                },
+                Object {
+                  "bankName": "HSBC",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
+                },
+              ],
+              "selectedBank": false,
+            },
+            "horizontal": false,
+            "initialNumToRender": 10,
+            "keyExtractor": [Function],
+            "maxToRenderPerBatch": 10,
+            "numColumns": 1,
+            "onEndReachedThreshold": 2,
+            "renderItem": [Function],
+            "scrollEventThrottle": 50,
+            "style": Object {
+              "marginBottom": 50,
+            },
+            "updateCellsBatchingPeriod": 50,
+            "windowSize": 21,
           },
           "ref": null,
-          "rendered": "ChooseBank",
+          "rendered": null,
           "type": [Function],
         },
-        "type": [Function],
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <StyledButton
+              disabled={true}
+              onPress={[Function]}
+            >
+              Connect to bank
+            </StyledButton>,
+            "style": Object {
+              "paddingHorizontal": 80,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Connect to bank",
+              "disabled": true,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": "Connect to bank",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
