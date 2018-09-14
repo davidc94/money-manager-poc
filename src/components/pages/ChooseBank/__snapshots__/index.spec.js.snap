@@ -21,13 +21,9 @@ ShallowWrapper {
         activeOpacity={0.2}
         onPress={[Function]}
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
+        <Component>
           ChooseBank
-        </Text>
+        </Component>
       </TouchableOpacity>,
     },
     "ref": null,
@@ -37,13 +33,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "activeOpacity": 0.2,
-        "children": <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
+        "children": <Component>
           ChooseBank
-        </Text>,
+        </Component>,
         "onPress": [Function],
       },
       "ref": null,
@@ -52,10 +44,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
           "children": "ChooseBank",
-          "ellipsizeMode": "tail",
         },
         "ref": null,
         "rendered": "ChooseBank",
@@ -75,13 +64,9 @@ ShallowWrapper {
           activeOpacity={0.2}
           onPress={[Function]}
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-          >
+          <Component>
             ChooseBank
-          </Text>
+          </Component>
         </TouchableOpacity>,
       },
       "ref": null,
@@ -91,13 +76,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "activeOpacity": 0.2,
-          "children": <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-          >
+          "children": <Component>
             ChooseBank
-          </Text>,
+          </Component>,
           "onPress": [Function],
         },
         "ref": null,
@@ -106,10 +87,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
             "children": "ChooseBank",
-            "ellipsizeMode": "tail",
           },
           "ref": null,
           "rendered": "ChooseBank",
