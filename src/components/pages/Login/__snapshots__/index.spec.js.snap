@@ -48,6 +48,12 @@ ShallowWrapper {
         </Component>,
         <StyledButton
           onPress={[Function]}
+          style={
+            Object {
+              "marginTop": 15,
+              "width": 150,
+            }
+          }
         >
           LOGIN
         </StyledButton>,
@@ -165,6 +171,10 @@ ShallowWrapper {
         "props": Object {
           "children": "LOGIN",
           "onPress": [Function],
+          "style": Object {
+            "marginTop": 15,
+            "width": 150,
+          },
         },
         "ref": null,
         "rendered": "LOGIN",
@@ -210,6 +220,12 @@ ShallowWrapper {
           </Component>,
           <StyledButton
             onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 15,
+                "width": 150,
+              }
+            }
           >
             LOGIN
           </StyledButton>,
@@ -327,6 +343,10 @@ ShallowWrapper {
           "props": Object {
             "children": "LOGIN",
             "onPress": [Function],
+            "style": Object {
+              "marginTop": 15,
+              "width": 150,
+            },
           },
           "ref": null,
           "rendered": "LOGIN",

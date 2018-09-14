@@ -30,10 +30,7 @@ ShallowWrapper {
           hidden={true}
           showHideTransition="fade"
         />
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
+        <Component
           style={
             Object {
               "fontSize": 24,
@@ -42,7 +39,7 @@ ShallowWrapper {
           }
         >
           Doughnut chart
-        </Text>
+        </Component>
         <PieChart
           chart_wh={200}
           coverFill="#FFF"
@@ -85,10 +82,7 @@ ShallowWrapper {
             hidden={true}
             showHideTransition="fade"
           />,
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <Component
             style={
               Object {
                 "fontSize": 24,
@@ -97,7 +91,7 @@ ShallowWrapper {
             }
           >
             Doughnut chart
-          </Text>,
+          </Component>,
           <PieChart
             chart_wh={200}
             coverFill="#FFF"
@@ -149,10 +143,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
             "children": "Doughnut chart",
-            "ellipsizeMode": "tail",
             "style": Object {
               "fontSize": 24,
               "margin": 5,
@@ -215,10 +206,7 @@ ShallowWrapper {
             hidden={true}
             showHideTransition="fade"
           />
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <Component
             style={
               Object {
                 "fontSize": 24,
@@ -227,7 +215,7 @@ ShallowWrapper {
             }
           >
             Doughnut chart
-          </Text>
+          </Component>
           <PieChart
             chart_wh={200}
             coverFill="#FFF"
@@ -270,10 +258,7 @@ ShallowWrapper {
               hidden={true}
               showHideTransition="fade"
             />,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <Component
               style={
                 Object {
                   "fontSize": 24,
@@ -282,7 +267,7 @@ ShallowWrapper {
               }
             >
               Doughnut chart
-            </Text>,
+            </Component>,
             <PieChart
               chart_wh={200}
               coverFill="#FFF"
@@ -334,10 +319,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
               "children": "Doughnut chart",
-              "ellipsizeMode": "tail",
               "style": Object {
                 "fontSize": 24,
                 "margin": 5,
