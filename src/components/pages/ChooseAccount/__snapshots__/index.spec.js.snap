@@ -23,28 +23,6 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-<<<<<<< HEAD
-      "children": <TouchableOpacity
-        activeOpacity={0.2}
-        onPress={[Function]}
-      >
-        <Component>
-          ChooseAccount
-        </Component>
-      </TouchableOpacity>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "activeOpacity": 0.2,
-        "children": <Component>
-          ChooseAccount
-        </Component>,
-        "onPress": [Function],
-=======
       "children": Array [
         <Styled(Component)>
           <StyledText>
@@ -69,7 +47,7 @@ ShallowWrapper {
                 },
                 Object {
                   "accountNumber": "54923767",
-                  "accountType": "\`Corporate\` Account",
+                  "accountType": "Corporate Account",
                   "bankName": "HSBC Bank (UK)",
                   "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                   "sortCode": "20-01-89",
@@ -96,7 +74,7 @@ ShallowWrapper {
                   },
                   Object {
                     "accountNumber": "54923767",
-                    "accountType": "\`Corporate\` Account",
+                    "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
                     "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                     "sortCode": "20-01-89",
@@ -129,8 +107,7 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
-                "fontSize": 12,
-                "width": "100%",
+                "width": "70%",
               }
             }
           >
@@ -169,7 +146,7 @@ ShallowWrapper {
                   },
                   Object {
                     "accountNumber": "54923767",
-                    "accountType": "\`Corporate\` Account",
+                    "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
                     "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                     "sortCode": "20-01-89",
@@ -196,7 +173,7 @@ ShallowWrapper {
                     },
                     Object {
                       "accountNumber": "54923767",
-                      "accountType": "\`Corporate\` Account",
+                      "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
                       "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                       "sortCode": "20-01-89",
@@ -253,7 +230,7 @@ ShallowWrapper {
                 },
                 Object {
                   "accountNumber": "54923767",
-                  "accountType": "\`Corporate\` Account",
+                  "accountType": "Corporate Account",
                   "bankName": "HSBC Bank (UK)",
                   "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                   "sortCode": "20-01-89",
@@ -278,7 +255,7 @@ ShallowWrapper {
                   },
                   Object {
                     "accountNumber": "54923767",
-                    "accountType": "\`Corporate\` Account",
+                    "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
                     "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                     "sortCode": "20-01-89",
@@ -303,23 +280,18 @@ ShallowWrapper {
           },
         ],
         "type": [Function],
->>>>>>> feat(select-bank-account-page): add functionality
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-<<<<<<< HEAD
-          "children": "ChooseAccount",
-=======
           "children": <StyledButton
             disabled={true}
             onPress={[Function]}
             style={
               Object {
-                "fontSize": 12,
-                "width": "100%",
+                "width": "70%",
               }
             }
           >
@@ -328,7 +300,6 @@ ShallowWrapper {
           "style": Object {
             "padding": 10,
           },
->>>>>>> feat(select-bank-account-page): add functionality
         },
         "ref": null,
         "rendered": Object {
@@ -340,8 +311,7 @@ ShallowWrapper {
             "disabled": true,
             "onPress": [Function],
             "style": Object {
-              "fontSize": 12,
-              "width": "100%",
+              "width": "70%",
             },
           },
           "ref": null,
@@ -359,28 +329,6 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-<<<<<<< HEAD
-        "children": <TouchableOpacity
-          activeOpacity={0.2}
-          onPress={[Function]}
-        >
-          <Component>
-            ChooseAccount
-          </Component>
-        </TouchableOpacity>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "activeOpacity": 0.2,
-          "children": <Component>
-            ChooseAccount
-          </Component>,
-          "onPress": [Function],
-=======
         "children": Array [
           <Styled(Component)>
             <StyledText>
@@ -405,7 +353,7 @@ ShallowWrapper {
                   },
                   Object {
                     "accountNumber": "54923767",
-                    "accountType": "\`Corporate\` Account",
+                    "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
                     "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                     "sortCode": "20-01-89",
@@ -432,7 +380,7 @@ ShallowWrapper {
                     },
                     Object {
                       "accountNumber": "54923767",
-                      "accountType": "\`Corporate\` Account",
+                      "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
                       "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                       "sortCode": "20-01-89",
@@ -465,8 +413,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
-                  "fontSize": 12,
-                  "width": "100%",
+                  "width": "70%",
                 }
               }
             >
@@ -505,7 +452,7 @@ ShallowWrapper {
                     },
                     Object {
                       "accountNumber": "54923767",
-                      "accountType": "\`Corporate\` Account",
+                      "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
                       "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                       "sortCode": "20-01-89",
@@ -532,7 +479,7 @@ ShallowWrapper {
                       },
                       Object {
                         "accountNumber": "54923767",
-                        "accountType": "\`Corporate\` Account",
+                        "accountType": "Corporate Account",
                         "bankName": "HSBC Bank (UK)",
                         "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                         "sortCode": "20-01-89",
@@ -589,7 +536,7 @@ ShallowWrapper {
                   },
                   Object {
                     "accountNumber": "54923767",
-                    "accountType": "\`Corporate\` Account",
+                    "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
                     "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                     "sortCode": "20-01-89",
@@ -614,7 +561,7 @@ ShallowWrapper {
                     },
                     Object {
                       "accountNumber": "54923767",
-                      "accountType": "\`Corporate\` Account",
+                      "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
                       "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
                       "sortCode": "20-01-89",
@@ -639,23 +586,18 @@ ShallowWrapper {
             },
           ],
           "type": [Function],
->>>>>>> feat(select-bank-account-page): add functionality
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-<<<<<<< HEAD
-            "children": "ChooseAccount",
-=======
             "children": <StyledButton
               disabled={true}
               onPress={[Function]}
               style={
                 Object {
-                  "fontSize": 12,
-                  "width": "100%",
+                  "width": "70%",
                 }
               }
             >
@@ -664,7 +606,6 @@ ShallowWrapper {
             "style": Object {
               "padding": 10,
             },
->>>>>>> feat(select-bank-account-page): add functionality
           },
           "ref": null,
           "rendered": Object {
@@ -676,8 +617,7 @@ ShallowWrapper {
               "disabled": true,
               "onPress": [Function],
               "style": Object {
-                "fontSize": 12,
-                "width": "100%",
+                "width": "70%",
               },
             },
             "ref": null,
