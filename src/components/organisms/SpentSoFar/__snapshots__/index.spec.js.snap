@@ -18,13 +18,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
+        <Component>
           Spent So Far
-        </Text>,
+        </Component>,
         <test />,
       ],
     },
@@ -35,10 +31,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
           "children": "Spent So Far",
-          "ellipsizeMode": "tail",
         },
         "ref": null,
         "rendered": "Spent So Far",
@@ -63,13 +56,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-          >
+          <Component>
             Spent So Far
-          </Text>,
+          </Component>,
           <test />,
         ],
       },
@@ -80,10 +69,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
             "children": "Spent So Far",
-            "ellipsizeMode": "tail",
           },
           "ref": null,
           "rendered": "Spent So Far",

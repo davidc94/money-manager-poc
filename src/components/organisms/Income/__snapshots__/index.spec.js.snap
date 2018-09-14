@@ -17,13 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      "children": <Component>
         Income
-      </Text>,
+      </Component>,
     },
     "ref": null,
     "rendered": Object {
@@ -31,10 +27,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "accessible": true,
-        "allowFontScaling": true,
         "children": "Income",
-        "ellipsizeMode": "tail",
       },
       "ref": null,
       "rendered": "Income",
@@ -48,13 +41,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-        >
+        "children": <Component>
           Income
-        </Text>,
+        </Component>,
       },
       "ref": null,
       "rendered": Object {
@@ -62,10 +51,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
           "children": "Income",
-          "ellipsizeMode": "tail",
         },
         "ref": null,
         "rendered": "Income",
