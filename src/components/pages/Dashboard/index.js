@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { StatusBar } from 'react-native';
-import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import StyledView from '../../atoms/StyledView';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
@@ -17,7 +17,7 @@ export default class Dashboard extends PureComponent {
         <StatusBar
           barStyle="dark-content"
         />
-        <Nav />
+        <TabNav />
       </StyledView>
     );
   }
@@ -28,20 +28,3 @@ export const TabNav = createBottomTabNavigator({
   SpentSoFar: { screen: SpentSoFar },
   Income: { screen: Income },
 });
-
-export const Nav = createStackNavigator(
-  {
-    TabNav,
-  },
-  {
-    navigationOptions: {
-      title: 'gameplan Money Manager',
-      headerTintColor: '#ffffff',
-      barStyle: 'light-content',
-      headerStyle: {
-        backgroundColor: '#000000',
-        height: 25,
-      },
-    },
-  },
-);
