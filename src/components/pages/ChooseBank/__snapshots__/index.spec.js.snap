@@ -17,6 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+<<<<<<< HEAD
 
       "children": Array [
         <StyledText
@@ -124,12 +125,35 @@ ShallowWrapper {
         "ref": null,
         "rendered": "Select your bank that your day to day spending account is with.",
         "type": [Function],
+=======
+      "children": <TouchableOpacity
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Component>
+          ChooseBank
+        </Component>
+      </TouchableOpacity>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "activeOpacity": 0.2,
+        "children": <Component>
+          ChooseBank
+        </Component>,
+        "onPress": [Function],
+>>>>>>> feat(select-bank-account-page): add functionality
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+<<<<<<< HEAD
           "data": Array [
             Object {
               "bankName": "Barclays",
@@ -187,6 +211,9 @@ ShallowWrapper {
           },
           "updateCellsBatchingPeriod": 50,
           "windowSize": 21,
+=======
+          "children": "ChooseBank",
+>>>>>>> feat(select-bank-account-page): add functionality
         },
         "ref": null,
         "rendered": null,
@@ -232,6 +259,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+<<<<<<< HEAD
         "children": Array [
           <StyledText
             style={
@@ -338,12 +366,35 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Select your bank that your day to day spending account is with.",
           "type": [Function],
+=======
+        "children": <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Component>
+            ChooseBank
+          </Component>
+        </TouchableOpacity>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "activeOpacity": 0.2,
+          "children": <Component>
+            ChooseBank
+          </Component>,
+          "onPress": [Function],
+>>>>>>> feat(select-bank-account-page): add functionality
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+<<<<<<< HEAD
             "data": Array [
               Object {
                 "bankName": "Barclays",
@@ -401,6 +452,9 @@ ShallowWrapper {
             },
             "updateCellsBatchingPeriod": 50,
             "windowSize": 21,
+=======
+            "children": "ChooseBank",
+>>>>>>> feat(select-bank-account-page): add functionality
           },
           "ref": null,
           "rendered": null,
