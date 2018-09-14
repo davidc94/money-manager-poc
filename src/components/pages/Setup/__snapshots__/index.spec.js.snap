@@ -17,7 +17,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Component)>
+      "children": <Styled(Component)
+        style={
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
         <StyledText
           size={true}
           weight={true}
@@ -100,6 +107,10 @@ ShallowWrapper {
             Continue
           </StyledButton>,
         ],
+        "style": Object {
+          "flex": 1,
+          "justifyContent": "center",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -209,7 +220,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Styled(Component)>
+        "children": <Styled(Component)
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
           <StyledText
             size={true}
             weight={true}
@@ -292,6 +310,10 @@ ShallowWrapper {
               Continue
             </StyledButton>,
           ],
+          "style": Object {
+            "flex": 1,
+            "justifyContent": "center",
+          },
         },
         "ref": null,
         "rendered": Array [

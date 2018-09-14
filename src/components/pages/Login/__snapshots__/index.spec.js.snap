@@ -18,16 +18,48 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <TouchableOpacity
-          activeOpacity={0.2}
+        <Component>
+          <StyledText
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+            weight={true}
+          >
+            USERNAME
+          </StyledText>
+          <StyledTextInput />
+        </Component>,
+        <Component>
+          <StyledText
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+            weight={true}
+          >
+            PASSWORD
+          </StyledText>
+          <StyledTextInput
+            password={true}
+          />
+        </Component>,
+        <StyledButton
           onPress={[Function]}
+          style={
+            Object {
+              "marginTop": 20,
+            }
+          }
         >
-          <Component>
-            Login
-          </Component>
-        </TouchableOpacity>,
-        <StyledTextInput />,
+          LOGIN
+        </StyledButton>,
       ],
+      "style": Object {
+        "justifyContent": "center",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -36,33 +68,114 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "activeOpacity": 0.2,
-          "children": <Component>
-            Login
-          </Component>,
-          "onPress": [Function],
+          "children": Array [
+            <StyledText
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+              weight={true}
+            >
+              USERNAME
+            </StyledText>,
+            <StyledTextInput />,
+          ],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "Login",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "USERNAME",
+              "style": Object {
+                "textAlign": "center",
+              },
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "USERNAME",
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": "Login",
-          "type": [Function],
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <StyledText
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+              weight={true}
+            >
+              PASSWORD
+            </StyledText>,
+            <StyledTextInput
+              password={true}
+            />,
+          ],
         },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "PASSWORD",
+              "style": Object {
+                "textAlign": "center",
+              },
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "PASSWORD",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "password": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "children": "LOGIN",
+          "onPress": [Function],
+          "style": Object {
+            "marginTop": 20,
+          },
+        },
         "ref": null,
-        "rendered": null,
+        "rendered": "LOGIN",
         "type": [Function],
       },
     ],
@@ -75,16 +188,48 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <TouchableOpacity
-            activeOpacity={0.2}
+          <Component>
+            <StyledText
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+              weight={true}
+            >
+              USERNAME
+            </StyledText>
+            <StyledTextInput />
+          </Component>,
+          <Component>
+            <StyledText
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+              weight={true}
+            >
+              PASSWORD
+            </StyledText>
+            <StyledTextInput
+              password={true}
+            />
+          </Component>,
+          <StyledButton
             onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 20,
+              }
+            }
           >
-            <Component>
-              Login
-            </Component>
-          </TouchableOpacity>,
-          <StyledTextInput />,
+            LOGIN
+          </StyledButton>,
         ],
+        "style": Object {
+          "justifyContent": "center",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -93,33 +238,114 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "activeOpacity": 0.2,
-            "children": <Component>
-              Login
-            </Component>,
-            "onPress": [Function],
+            "children": Array [
+              <StyledText
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+                weight={true}
+              >
+                USERNAME
+              </StyledText>,
+              <StyledTextInput />,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Login",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "USERNAME",
+                "style": Object {
+                  "textAlign": "center",
+                },
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "USERNAME",
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": "Login",
-            "type": [Function],
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <StyledText
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+                weight={true}
+              >
+                PASSWORD
+              </StyledText>,
+              <StyledTextInput
+                password={true}
+              />,
+            ],
           },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "PASSWORD",
+                "style": Object {
+                  "textAlign": "center",
+                },
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "PASSWORD",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "password": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "children": "LOGIN",
+            "onPress": [Function],
+            "style": Object {
+              "marginTop": 20,
+            },
+          },
           "ref": null,
-          "rendered": null,
+          "rendered": "LOGIN",
           "type": [Function],
         },
       ],
