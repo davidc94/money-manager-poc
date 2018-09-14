@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "prop-types": "^15.6.2",
@@ -38,7 +38,8 @@
     },
     "transformIgnorePatterns": [
       "node_modules/(?!native-base-shoutem-theme|native-base|react-native|react-navigation|react-native-fs|victory-*)"
-    ]
+    ],
+    "collectCoverage": true
   },
   "main": "index.js",
   "repository": {
