@@ -8,18 +8,12 @@ configure({ adapter: new Adapter() });
 
 describe('setup', () => {
   const render = shallow(<Setup />);
-  const styledText = shallow(<StyledText />);
 
   it('renders as expected', () => {
     expect(render).toMatchSnapshot();
   });
 
-  // it('renders three <StyledText> elements', () => {
-  //   expect(styledText).toHaveBeenCalledTimes(9);
-  // });
-
-  // it('renders one button', () => {
-  //   expect(view.find('button').exists());
-  // });
-
+  it('renders one button', () => {
+    expect(render.find('button').exists());
+  });
 });
