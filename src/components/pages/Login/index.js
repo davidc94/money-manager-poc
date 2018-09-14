@@ -8,7 +8,6 @@ import StyledView from '../../atoms/StyledView';
 const styles = {
   container: { justifyContent: 'center' },
   centered: { textAlign: 'center' },
-  button: { marginTop: 20 },
 };
 
 export default class Login extends PureComponent {
@@ -24,7 +23,6 @@ export default class Login extends PureComponent {
           <StyledTextInput password />
         </View>
         <StyledButton
-          style={styles.button}
           onPress={() => this.props.navigation.navigate('Setup')}
         >
           LOGIN

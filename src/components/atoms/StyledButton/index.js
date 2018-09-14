@@ -25,7 +25,6 @@ const ButtonContainer = styled.TouchableOpacity`
     : colors.accent};
   border-width: 2px;
   border-radius: 50;
-  width: 50%;
   margin: 0 auto;
 `;
 
