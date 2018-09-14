@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Text) />,
+      "children": <Styled(Component) />,
       "disabled": undefined,
       "onPress": undefined,
       "outlined": undefined,
@@ -46,7 +46,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Styled(Text) />,
+        "children": <Styled(Component) />,
         "disabled": undefined,
         "onPress": undefined,
         "outlined": undefined,
@@ -112,7 +112,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Text)
+      "children": <Styled(Component)
         disabled={true}
       />,
       "disabled": true,
@@ -143,7 +143,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Styled(Text)
+        "children": <Styled(Component)
           disabled={true}
         />,
         "disabled": true,
