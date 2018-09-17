@@ -17,7 +17,6 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-
       "children": Array [
         <StyledText
           style={
