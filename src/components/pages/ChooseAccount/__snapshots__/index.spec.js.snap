@@ -35,21 +35,27 @@ ShallowWrapper {
                   "accountNumber": "54923765",
                   "accountType": "Advance Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
                 Object {
                   "accountNumber": "54923766",
                   "accountType": "Premier Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
                 Object {
                   "accountNumber": "54923767",
                   "accountType": "Corporate Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
               ]
@@ -62,21 +68,27 @@ ShallowWrapper {
                     "accountNumber": "54923765",
                     "accountType": "Advance Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923766",
                     "accountType": "Premier Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923767",
                     "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                 ],
@@ -98,6 +110,8 @@ ShallowWrapper {
         <Styled(Component)
           style={
             Object {
+              "alignItems": "center",
+              "margin": 20,
               "padding": 10,
             }
           }
@@ -107,7 +121,7 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
-                "width": "70%",
+                "width": "68%",
               }
             }
           >
@@ -134,21 +148,27 @@ ShallowWrapper {
                     "accountNumber": "54923765",
                     "accountType": "Advance Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923766",
                     "accountType": "Premier Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923767",
                     "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                 ]
@@ -161,21 +181,27 @@ ShallowWrapper {
                       "accountNumber": "54923765",
                       "accountType": "Advance Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923766",
                       "accountType": "Premier Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923767",
                       "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                   ],
@@ -218,21 +244,27 @@ ShallowWrapper {
                   "accountNumber": "54923765",
                   "accountType": "Advance Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
                 Object {
                   "accountNumber": "54923766",
                   "accountType": "Premier Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
                 Object {
                   "accountNumber": "54923767",
                   "accountType": "Corporate Account",
                   "bankName": "HSBC Bank (UK)",
-                  "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                  "logoImage": Object {
+                    "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                  },
                   "sortCode": "20-01-89",
                 },
               ],
@@ -243,21 +275,27 @@ ShallowWrapper {
                     "accountNumber": "54923765",
                     "accountType": "Advance Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923766",
                     "accountType": "Premier Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923767",
                     "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                 ],
@@ -291,13 +329,15 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
-                "width": "70%",
+                "width": "68%",
               }
             }
           >
             Select & Continue
           </StyledButton>,
           "style": Object {
+            "alignItems": "center",
+            "margin": 20,
             "padding": 10,
           },
         },
@@ -311,7 +351,7 @@ ShallowWrapper {
             "disabled": true,
             "onPress": [Function],
             "style": Object {
-              "width": "70%",
+              "width": "68%",
             },
           },
           "ref": null,
@@ -341,21 +381,27 @@ ShallowWrapper {
                     "accountNumber": "54923765",
                     "accountType": "Advance Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923766",
                     "accountType": "Premier Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923767",
                     "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                 ]
@@ -368,21 +414,27 @@ ShallowWrapper {
                       "accountNumber": "54923765",
                       "accountType": "Advance Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923766",
                       "accountType": "Premier Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923767",
                       "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                   ],
@@ -404,6 +456,8 @@ ShallowWrapper {
           <Styled(Component)
             style={
               Object {
+                "alignItems": "center",
+                "margin": 20,
                 "padding": 10,
               }
             }
@@ -413,7 +467,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
-                  "width": "70%",
+                  "width": "68%",
                 }
               }
             >
@@ -440,21 +494,27 @@ ShallowWrapper {
                       "accountNumber": "54923765",
                       "accountType": "Advance Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923766",
                       "accountType": "Premier Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923767",
                       "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                   ]
@@ -467,21 +527,27 @@ ShallowWrapper {
                         "accountNumber": "54923765",
                         "accountType": "Advance Account",
                         "bankName": "HSBC Bank (UK)",
-                        "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                        "logoImage": Object {
+                          "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                        },
                         "sortCode": "20-01-89",
                       },
                       Object {
                         "accountNumber": "54923766",
                         "accountType": "Premier Account",
                         "bankName": "HSBC Bank (UK)",
-                        "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                        "logoImage": Object {
+                          "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                        },
                         "sortCode": "20-01-89",
                       },
                       Object {
                         "accountNumber": "54923767",
                         "accountType": "Corporate Account",
                         "bankName": "HSBC Bank (UK)",
-                        "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                        "logoImage": Object {
+                          "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                        },
                         "sortCode": "20-01-89",
                       },
                     ],
@@ -524,21 +590,27 @@ ShallowWrapper {
                     "accountNumber": "54923765",
                     "accountType": "Advance Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923766",
                     "accountType": "Premier Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                   Object {
                     "accountNumber": "54923767",
                     "accountType": "Corporate Account",
                     "bankName": "HSBC Bank (UK)",
-                    "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                    "logoImage": Object {
+                      "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                    },
                     "sortCode": "20-01-89",
                   },
                 ],
@@ -549,21 +621,27 @@ ShallowWrapper {
                       "accountNumber": "54923765",
                       "accountType": "Advance Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923766",
                       "accountType": "Premier Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                     Object {
                       "accountNumber": "54923767",
                       "accountType": "Corporate Account",
                       "bankName": "HSBC Bank (UK)",
-                      "imgUrl": "https://i.imgur.com/K3KJ3w4h.jpg",
+                      "logoImage": Object {
+                        "testUri": "../../../src/assets/images/banklogos/hsbclogo.jpg",
+                      },
                       "sortCode": "20-01-89",
                     },
                   ],
@@ -597,13 +675,15 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
-                  "width": "70%",
+                  "width": "68%",
                 }
               }
             >
               Select & Continue
             </StyledButton>,
             "style": Object {
+              "alignItems": "center",
+              "margin": 20,
               "padding": 10,
             },
           },
@@ -617,7 +697,7 @@ ShallowWrapper {
               "disabled": true,
               "onPress": [Function],
               "style": Object {
-                "width": "70%",
+                "width": "68%",
               },
             },
             "ref": null,
