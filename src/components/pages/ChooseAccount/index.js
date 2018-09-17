@@ -51,7 +51,8 @@ renderItem = ({item}) => {
     ? styles.viewSelectedStyle 
     : styles.viewDefaultStyle;
     return( 
-      <TouchableOpacity onPress={ () => this.selectAccount(item.accountNumber)}>
+      <TouchableOpacity onPress={ () => this.selectAccount(item.accountNumber)}
+      data-test="account-list-item">
         <View style={viewStyle}>
           <Image source={ item.logoImage } style={styles.imageStyle}></Image>
           <View style={styles.childViewStyle}>
@@ -69,11 +70,9 @@ renderItem = ({item}) => {
      </TouchableOpacity>
     )
   }
-
   
   render() {
     const { navigation } = this.props;
-    const thumbnail_image= 'https://i.imgur.com/K3KJ3w4h.jpg';
     return (
       <ScrollView>
         <StyledView>
@@ -90,7 +89,9 @@ renderItem = ({item}) => {
         </StyledView>
         <StyledView style={styles.bottomView}>
               <StyledButton  disabled={!this.state.selectAccount}  style={styles.continueButton}
-                onPress={() => this.props.navigation.navigate('Dashboard')}>
+                onPress={() => this.props.navigation.navigate('Dashboard')}
+                data-test="nextButton"
+                >
                 Select & Continue
               </StyledButton>
         </StyledView>      
