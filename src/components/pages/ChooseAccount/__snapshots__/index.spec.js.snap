@@ -21,9 +21,13 @@ ShallowWrapper {
         activeOpacity={0.2}
         onPress={[Function]}
       >
-        <Component>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
           ChooseAccount
-        </Component>
+        </Text>
       </TouchableOpacity>,
     },
     "ref": null,
@@ -33,9 +37,13 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "activeOpacity": 0.2,
-        "children": <Component>
+        "children": <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
           ChooseAccount
-        </Component>,
+        </Text>,
         "onPress": [Function],
       },
       "ref": null,
@@ -44,7 +52,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
           "children": "ChooseAccount",
+          "ellipsizeMode": "tail",
         },
         "ref": null,
         "rendered": "ChooseAccount",
@@ -64,9 +75,13 @@ ShallowWrapper {
           activeOpacity={0.2}
           onPress={[Function]}
         >
-          <Component>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
             ChooseAccount
-          </Component>
+          </Text>
         </TouchableOpacity>,
       },
       "ref": null,
@@ -76,9 +91,13 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "activeOpacity": 0.2,
-          "children": <Component>
+          "children": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
             ChooseAccount
-          </Component>,
+          </Text>,
           "onPress": [Function],
         },
         "ref": null,
@@ -87,7 +106,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
             "children": "ChooseAccount",
+            "ellipsizeMode": "tail",
           },
           "ref": null,
           "rendered": "ChooseAccount",
