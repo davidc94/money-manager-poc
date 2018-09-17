@@ -8,7 +8,7 @@ import StyledView from '../../atoms/StyledView';
 const styles = {
   container: { justifyContent: 'center' },
   centered: { textAlign: 'center' },
-  button: { width: 150, marginTop: 15 },
+  button: { marginTop: 15 },
 };
 
 export default class Login extends PureComponent {
@@ -23,12 +23,14 @@ export default class Login extends PureComponent {
           <StyledText weight style={styles.centered}>PASSWORD</StyledText>
           <StyledTextInput password />
         </View>
-        <StyledButton
-          style={styles.button}
-          onPress={() => this.props.navigation.navigate('Setup')}
-        >
+        <View style={{ paddingHorizontal: 80 }}>
+          <StyledButton
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('Setup')}
+          >
           LOGIN
-        </StyledButton>
+          </StyledButton>
+        </View>
       </StyledView>
     );
   }
