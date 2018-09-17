@@ -6,8 +6,8 @@ import StyledButton from '../../atoms/StyledButton';
 
 const styles = {
   container: { flex: 1, justifyContent: 'center' },
-  viewDefaultStyle: {flex:1, flexDirection:'row',justifyContent:"center", alignItems:"center", padding: 20, margin:10, backgroundColor: '#fff', borderColor: '#D3D3D3', borderWidth: 1, borderRadious: 5},
-  viewSelectedStyle: {flex:1, flexDirection:'row',justifyContent:"center", alignItems:"center", padding: 20, margin:10, backgroundColor: '#ccebff', borderColor: '#0000FF',borderWidth: 1,borderRadious: 5},
+  viewDefaultStyle: {flex:1, flexDirection:'row',justifyContent:"center", alignItems:"center", padding: 20, margin:10, backgroundColor: '#fff', borderColor: '#D3D3D3', borderWidth: 1, borderRadius: 5},
+  viewSelectedStyle: {flex:1, flexDirection:'row',justifyContent:"center", alignItems:"center", padding: 20, margin:10, backgroundColor: '#ccebff', borderColor: '#0000FF',borderWidth: 1,borderRadius: 5},
   imageStyle: {width: 50, height: 50, flex: 1, marginRight: 30,resizeMode: 'contain'},
   childViewStyle: {flex:3,flexDirection:'column'},
   textStyle: { marginBottom:10 },
@@ -47,7 +47,9 @@ export default class ChooseAccount extends PureComponent {
   
 
 renderItem = ({item}) => {
-  const viewStyle = item.accountNumber === this.state.selectAccount ? styles.viewSelectedStyle: styles.viewDefaultStyle;
+  const viewStyle = item.accountNumber === this.state.selectAccount 
+    ? styles.viewSelectedStyle 
+    : styles.viewDefaultStyle;
     return( 
       <TouchableOpacity onPress={ () => this.selectAccount(item.accountNumber)}>
         <View style={viewStyle}>
