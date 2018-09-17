@@ -100,6 +100,7 @@ ShallowWrapper {
           }
         >
           <StyledButton
+            data-test="nextButton"
             disabled={true}
             onPress={[Function]}
           >
@@ -197,6 +198,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <StyledButton
+            data-test="nextButton"
             disabled={true}
             onPress={[Function]}
           >
@@ -213,6 +215,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Connect to bank",
+            "data-test": "nextButton",
             "disabled": true,
             "onPress": [Function],
           },
@@ -314,6 +317,7 @@ ShallowWrapper {
             }
           >
             <StyledButton
+              data-test="nextButton"
               disabled={true}
               onPress={[Function]}
             >
@@ -411,6 +415,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <StyledButton
+              data-test="nextButton"
               disabled={true}
               onPress={[Function]}
             >
@@ -427,6 +432,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Connect to bank",
+              "data-test": "nextButton",
               "disabled": true,
               "onPress": [Function],
             },
