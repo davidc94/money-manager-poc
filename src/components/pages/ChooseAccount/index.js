@@ -70,7 +70,6 @@ renderItem = ({item}) => {
      </TouchableOpacity>
     )
   }
-
   
   render() {
     const { navigation } = this.props;
