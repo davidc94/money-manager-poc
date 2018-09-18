@@ -6,8 +6,11 @@ import {
   FlatList,
   StyleSheet,
 } from 'react-native';
+import { connect } from 'react-redux';
 import StyledButton from '../../atoms/StyledButton';
 import StyledText from '../../atoms/StyledText';
+import { FETCH_BANK_DATA } from "../../../store/constants";
+import bankImages from '../../../assets/images/banklogos/index';
 
 const styles = StyleSheet.create({
   bankItem: {
@@ -19,28 +22,25 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ChooseBank extends PureComponent {
+class ChooseBank extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      data: [{
-        bankName: 'Barclays',
-        logoImage: require('../../../assets/images/banklogos/barclayslogo.jpg'),
-      }, {
-        bankName: 'LloydsBank',
-        logoImage: require('../../../assets/images/banklogos/lloydslogo.jpg')
-      }, {
-        bankName: 'HSBC',
-        logoImage: require('../../../assets/images/banklogos/hsbclogo.jpg')
-      }],
       selectedBank: false,
     }
+  }
+
+  componentDidMount(){
+    this.props.dispatch({ type: FETCH_BANK_DATA })
   }
 
   selectBank = (selectedBank) => this.setState({ selectedBank });
 
   renderListItem = ({ item }) => {
     const bdColor = item.bankName === this.state.selectedBank ? '#000' : '#ccc';
+
+
+
     return (
       <TouchableOpacity
         onPress={() => this.selectBank(item.bankName)}
@@ -48,7 +48,7 @@ export default class ChooseBank extends PureComponent {
         data-test="bank-list-item"
       >
         <View style={{ width: 50, height: 50, margin: 5, flex: 1 }}>
-          <Image style={{ width: '100%', resizeMode: 'contain' }} source={item.logoImage} />
+          <Image style={{ width: '100%', height: '100%', resizeMode: 'contain' }} source={bankImages[item.bankName]} />
         </View>
         <StyledText style={{ flex: 4 }}>
           {item.bankName}
@@ -64,7 +64,7 @@ export default class ChooseBank extends PureComponent {
         </StyledText>
         <FlatList
           style={{ marginBottom: 50 }}
-          data={this.state.data}
+          data={this.props.bankList}
           extraData={this.state}
           renderItem={this.renderListItem}
           keyExtractor={(item) => item.bankName}
@@ -82,3 +82,9 @@ export default class ChooseBank extends PureComponent {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  bankList: state.bankReducers.bankList
+})
+
+export default connect (mapStateToProps)(ChooseBank);
