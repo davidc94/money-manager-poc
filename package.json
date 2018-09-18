@@ -40,7 +40,8 @@
     "transformIgnorePatterns": [
       "node_modules/(?!native-base-shoutem-theme|native-base|react-native|react-navigation|react-native-fs|victory-*)"
     ],
-    "collectCoverage": true
+    "collectCoverage": true,
+    "coverageReporters": ["json", "html"]
   },
   "main": "index.js",
   "repository": {
