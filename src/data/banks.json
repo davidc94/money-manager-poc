@@ -1,0 +1,10 @@
+[{
+  "bankName": "Barclays",
+  "logoImage": "require('../../../assets/images/banklogos/barclayslogo.jpg')"
+}, {
+  "bankName": "Lloyds",
+  "logoImage": "require('../../../assets/images/banklogos/lloydslogo.jpg')"
+}, {
+  "bankName": "HSBC",
+  "logoImage": "require('../../../assets/images/banklogos/hsbclogo.jpg')"
+}]
