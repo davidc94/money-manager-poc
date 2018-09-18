@@ -1,0 +1,29 @@
+{
+  "username": "",
+  "password": "",
+  "regularSpending": {
+    "item": {
+      "date": "",
+      "title": "",
+      "amount": "",
+      "category": ""
+    },
+    "item": {
+      "date": "",
+      "title": "",
+      "amount": "",
+      "category": ""
+    }
+  },
+  "dayToDaySpending": {
+    "item": {
+      "category": "",
+      "category": ""
+    },
+    "item": {
+      "category": "",
+      "category": ""
+    }
+  }
+
+}
