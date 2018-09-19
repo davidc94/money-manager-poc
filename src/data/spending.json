@@ -1,29 +1,41 @@
 {
-  "username": "",
-  "password": "",
-  "regularSpending": {
-    "item": {
-      "date": "",
-      "title": "",
-      "amount": "",
-      "category": ""
+  "regularSpending": [
+    {
+      "date": "June 1",
+      "title": "Camden Council Tax",
+      "amount": 120
     },
-    "item": {
-      "date": "",
-      "title": "",
-      "amount": "",
-      "category": ""
-    }
-  },
-  "dayToDaySpending": {
-    "item": {
-      "category": "",
-      "category": ""
+    {
+      "date": "June 2",
+      "title": "British Gas",
+      "amount": 110
     },
-    "item": {
-      "category": "",
-      "category": ""
+    {
+      "date": "June 3",
+      "title": "Thames Water",
+      "amount": 200
     }
-  }
-
+  ],
+  "dayToDaySpending": [
+    {
+      "category": "Groceries",
+      "amount": 200
+    },
+    {
+      "category": "Cash",
+      "amount": 250
+    },
+    {
+      "category": "Travel",
+      "amount": 280
+    },
+    {
+      "category": "Eating out",
+      "amount": 231
+    },
+    {
+      "category": "Shopping",
+      "amount": 123
+    }
+  ]
 }
