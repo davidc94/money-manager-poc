@@ -16,7 +16,7 @@ export const switchNav = createSwitchNavigator(
     Dashboard: { screen: Dashboard },
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'Dashboard',
   },
 );
 
