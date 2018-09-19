@@ -1,4 +1,4 @@
-import { FETCH_BANK_DATA_FULFILLED } from '../constants';
+import { FETCH_BANK_DATA_FULFILLED, SELECTED_BANK_DATA } from '../constants';
 import bankReducers from './reducer';
 
 describe('Banks reducer', () => {
@@ -16,6 +16,24 @@ describe('Banks reducer', () => {
       bankList: 'Natwest',
     };
 
+    expect(bankReducers({}, action)).toEqual(expectedState);
+  });
+
+  it('should handle SELECTED_BANK_DATA', () => {
+    const action = {
+      type: SELECTED_BANK_DATA,
+      payload: {
+        bankName: 'Monzo',
+        logoImage: 'mongologo',
+      },
+    };
+
+    const expectedState = {
+      selectedBank: {
+        bankName: 'Monzo',
+        logoImage: 'mongologo',
+      },
+    };
     expect(bankReducers({}, action)).toEqual(expectedState);
   });
 });
