@@ -9,7 +9,7 @@ import {
 import { connect } from 'react-redux';
 import StyledButton from '../../atoms/StyledButton';
 import StyledText from '../../atoms/StyledText';
-import { FETCH_BANK_DATA } from "../../../store/constants";
+import { FETCH_BANK_DATA, SELECTED_BANK_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
 
 const styles = StyleSheet.create({
@@ -34,16 +34,13 @@ class ChooseBank extends PureComponent {
     this.props.dispatch({ type: FETCH_BANK_DATA })
   }
 
-  selectBank = (selectedBank) => this.setState({ selectedBank });
-
   renderListItem = ({ item }) => {
-    const bdColor = item.bankName === this.state.selectedBank ? '#000' : '#ccc';
-
-
+    const bankName = (this.props.selectedBank === undefined ? null : this.props.selectedBank.bankName);
+    const bdColor = item.bankName === bankName ? '#000' : '#ccc';
 
     return (
       <TouchableOpacity
-        onPress={() => this.selectBank(item.bankName)}
+        onPress={() => this.props.dispatch({ type: SELECTED_BANK_DATA, payload: item })}
         style={[styles.bankItem, { borderColor: bdColor }]}
         data-test="bank-list-item"
       >
@@ -71,8 +68,10 @@ class ChooseBank extends PureComponent {
         />
         <View style={{ paddingHorizontal: 80 }}>
           <StyledButton
-            disabled={!this.state.selectedBank}
-            onPress={() => this.props.navigation.navigate('Consent')}
+            disabled={!this.props.selectedBank}
+            onPress={
+              () => this.props.navigation.navigate('Consent')
+            }
             data-test="nextButton"
           >
             Connect to bank
@@ -84,7 +83,8 @@ class ChooseBank extends PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  bankList: state.bankReducers.bankList
+  bankList: state.bankReducers.bankList,
+  selectedBank: state.bankReducers.selectedBank
 })
 
 export default connect (mapStateToProps)(ChooseBank);
