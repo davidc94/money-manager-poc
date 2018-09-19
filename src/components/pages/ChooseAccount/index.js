@@ -1,8 +1,12 @@
 import React, { PureComponent } from 'react';
 import { View, TouchableOpacity, Text, ScrollView, Image, FlatList} from 'react-native';
+import { connect } from 'react-redux';
 import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
+import { FETCH_BANK_ACCOUNT_DATA, SELECTED_BANK_ACCOUNT_DATA } from "../../../store/constants";
+import bankImages from '../../../assets/images/banklogos/index';
+
 
 const styles = {
   container: { flex: 1, justifyContent: 'center' },
@@ -14,50 +18,32 @@ const styles = {
   bottomView: { padding: 10, margin:20, alignItems: 'center'},
   continueButton: { width:"68%"}
 }
-export default class ChooseAccount extends PureComponent {
+class ChooseAccount extends PureComponent {
   state = {
-    selectAccount: false,
-    data:[{
-      logoImage: require('../../../assets/images/banklogos/hsbclogo.jpg'),
-      bankName: 'HSBC Bank (UK)',
-      accountType: 'Advance Account',
-      sortCode: '20-01-89',
-      accountNumber: '54923765'
-    },
-    {
-      logoImage: require('../../../assets/images/banklogos/hsbclogo.jpg'),
-      bankName: 'HSBC Bank (UK)',
-      accountType:'Premier Account',
-      sortCode: '20-01-89',
-      accountNumber: '54923766'
-    },
-    {
-      logoImage: require('../../../assets/images/banklogos/hsbclogo.jpg'),
-      bankName: 'HSBC Bank (UK)',
-      accountType:'Corporate Account',
-      sortCode: '20-01-89',
-      accountNumber: '54923767'
-    }]
-  }
+    selectAccount: false
+  }  
 
-  selectAccount =(account) => 
-    this.setState({
-      selectAccount:account
-    });
-  
+  componentDidMount(){
+    this.props.dispatch({ type: FETCH_BANK_ACCOUNT_DATA })
+    }
 
-renderItem = ({item}) => {
-  const viewStyle = item.accountNumber === this.state.selectAccount 
+renderItem = ({ item }) => {
+  const bankAccount = (this.props.selectedBankAccount === undefined ? null : this.props.selectedBankAccount.accountNumber);
+  console.log("props" + bankAccount);
+  console.log("item" + item.accountNumber);
+  const viewStyle = item.accountNumber === bankAccount 
     ? styles.viewSelectedStyle 
     : styles.viewDefaultStyle;
     return( 
-      <TouchableOpacity onPress={ () => this.selectAccount(item.accountNumber)}
-      data-test="account-list-item">
+      <TouchableOpacity
+        onPress={ () => this.props.dispatch({ type: SELECTED_BANK_ACCOUNT_DATA, payload: item })}
+        data-test="account-list-item"
+      >
         <View style={viewStyle}>
-          <Image source={ item.logoImage } style={styles.imageStyle}></Image>
+          <Image source={ bankImages[this.props.selectedBank.bankName] } style={styles.imageStyle}></Image>
           <View style={styles.childViewStyle}>
             <Text style={styles.textStyle}>
-              {item.bankName} 
+              {this.props.selectedBank.bankName} 
               </Text>
               <Text style={styles.textStyle}>
               {item.accountType}
@@ -82,9 +68,10 @@ renderItem = ({item}) => {
               basis?
             </StyledText>
               <FlatList
-                data= {this.state.data}
-                renderItem = { this.renderItem }
+                data= {this.props.bankAccountList}
                 extraData= {this.state}
+                renderItem = { this.renderItem }
+                keyExtractor = {(item) => item.accountNumber }
               /> 
         </StyledView>
         <StyledView style={styles.bottomView}>
@@ -99,3 +86,11 @@ renderItem = ({item}) => {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  selectedBank: state.bank.selected,
+  bankAccountList: state.bank.accountList,
+  selectedBankAccount: state.bank.selectedAccount
+})
+
+export default connect (mapStateToProps)(ChooseAccount);

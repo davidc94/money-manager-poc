@@ -45,6 +45,8 @@ class ChooseBank extends PureComponent {
       selected = styles.bankItemSelected;
     }
 
+    const bankName = (this.props.selectedBank === undefined ? null : this.props.selectedBank.bankName);
+    const bdColor = item.bankName === bankName ? '#000' : '#ccc';
     return (
       <TouchableOpacity
         onPress={() => this.props.dispatch({ type: SELECTED_BANK_DATA, payload: item })}
