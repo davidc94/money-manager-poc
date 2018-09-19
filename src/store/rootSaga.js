@@ -3,6 +3,7 @@ import fetchDataWatcher from './banks/sagas';
 import fetchBankBalanceWatcher from './dashboard/bankBalance/sagas';
 import fetchIncomeWatcher from './dashboard/income/sagas';
 import fetchBankBalanceWatcher from './dashboard/bankBalance/sagas';
+import fetchIncomeWatcher from './dashboard/income/sagas';
 
 export default function* rootSagas() {
   yield all([
@@ -10,5 +11,6 @@ export default function* rootSagas() {
     fetchBankBalanceWatcher(),
     fetchIncomeWatcher(),
     fetchBankBalanceWatcher(),
+    fetchIncomeWatcher(),
   ]);
 }
