@@ -18,7 +18,7 @@ class BankBalance extends PureComponent {
     }
     const {
       bankBalance: { balance, userName },
-      // selectedBank: { bankName, logoImage }
+      selectedBank: { bankName, logoImage }
     } = this.props;
     return (
       <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
@@ -29,8 +29,8 @@ class BankBalance extends PureComponent {
           flexDirection: 'row',
           justifyContent: 'space-between',
         }}>
-          {/* <Text style={{ fontSize: 24 }}>{bankName}</Text>
-          <Image source={bankImages[bankName]} /> */}
+          <Text style={{ fontSize: 24 }}>{bankName}</Text>
+          <Image source={bankImages[bankName]} />
         </View>
         <View style={{
           flexDirection: 'row',
