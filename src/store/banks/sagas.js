@@ -8,17 +8,17 @@ import {
 import bankData from '../../data/banks.json';
 import bankAccountData from '../../data/bankAccounts.json';
 
-export function* fetchingBankData() {
+export function* fetchingBankData(action, data = bankData) {
   try {
-    yield put({ type: FETCH_BANK_DATA_FULFILLED, payload: bankData });
+    yield put({ type: FETCH_BANK_DATA_FULFILLED, payload: data });
   } catch (error) {
     console.log('fetchingBankData ==> ', error);
   }
 }
 
-export function* fetchingBankAccountData() {
+export function* fetchingBankAccountData(action, data = bankAccountData) {
   try {
-    yield put({ type: FETCH_BANK_ACCOUNT_DATA_FULFILLED, payload: bankAccountData });
+    yield put({ type: FETCH_BANK_ACCOUNT_DATA_FULFILLED, payload: data });
   } catch (error) {
     console.log('fetchingBankAccountData ==> ', error);
   }
