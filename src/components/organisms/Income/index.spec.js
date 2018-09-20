@@ -8,7 +8,7 @@ configure({ adapter: new Adapter() });
 
 describe('income', () => {
   const initialState = {
-    incomeReducers: {
+    incomeList: {
       income: [
         {
           date: 'June 1',
