@@ -13,7 +13,7 @@ describe('Banks reducer', () => {
     };
 
     const expectedState = {
-      bankList: 'Natwest',
+      list: 'Natwest',
     };
 
     expect(bankReducers({}, action)).toEqual(expectedState);
@@ -29,7 +29,7 @@ describe('Banks reducer', () => {
     };
 
     const expectedState = {
-      selectedBank: {
+      selected: {
         bankName: 'Monzo',
         logoImage: 'mongologo',
       },
