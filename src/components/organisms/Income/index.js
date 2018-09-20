@@ -88,7 +88,7 @@ const styles = {
 };
 
 const mapStateToProps = state => ({
-  incomeList: state.incomeReducers.incomeList,
+  incomeList: state.income.incomeList,
 });
 
 export default connect(mapStateToProps)(Income);
