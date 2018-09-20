@@ -12,12 +12,8 @@ const fontWeight = {
 };
 
 const TextStyling = styled.Text`
-    padding: 2px;
     font-size: ${ props => props.size ? fontSize.large : fontSize.base};
-    font-family: Verdana;
     font-weight: ${ props => props.weight ? fontWeight.large : fontWeight.base};
-    width: 95%;
-    margin: 5px auto;
 `;
 
 const StyledText = (props) => (
