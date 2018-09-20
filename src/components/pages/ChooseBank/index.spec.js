@@ -9,13 +9,13 @@ configure({ adapter: new Adapter() });
 
 describe('choose bank', () => {
   const initialState = {
-    bankReducers: {
-      bankList: [
+    bank: {
+      list: [
         { bankName: 'bank1', logoImage: 'bank1logo' },
         { bankName: 'bank2', logoImage: 'bank2logo' },
         { bankName: 'bank3', logoImage: 'bank3logo' },
       ],
-      selectedBank: {
+      selected: {
         bankName: 'bank1',
         logoImage: 'bank1logo',
       },

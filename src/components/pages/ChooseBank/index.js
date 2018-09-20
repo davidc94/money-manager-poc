@@ -15,33 +15,40 @@ import bankImages from '../../../assets/images/banklogos/index';
 const styles = StyleSheet.create({
   bankItem: {
     flexDirection: 'row',
+    justifyContent: "center",
+    alignItems: "center",
     padding: 20,
-    marginTop: 10,
-    marginHorizontal: 10,
+    margin: 10,
+    backgroundColor: '#fff',
+    borderColor: '#D3D3D3',
     borderWidth: 1,
+    borderRadius: 5
   },
+
+  bankItemSelected: {
+    backgroundColor: '#ccebff',
+    borderColor: '#00f'
+  },
+
 });
 
 class ChooseBank extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedBank: false,
-    }
-  }
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.dispatch({ type: FETCH_BANK_DATA })
   }
 
   renderListItem = ({ item }) => {
-    const bankName = (this.props.selectedBank === undefined ? null : this.props.selectedBank.bankName);
-    const bdColor = item.bankName === bankName ? '#000' : '#ccc';
+    let selected = '';
+
+    if (this.props.selectedBank && this.props.selectedBank.bankName === item.bankName) {
+      selected = styles.bankItemSelected;
+    }
 
     return (
       <TouchableOpacity
         onPress={() => this.props.dispatch({ type: SELECTED_BANK_DATA, payload: item })}
-        style={[styles.bankItem, { borderColor: bdColor }]}
+        style={[styles.bankItem, selected]}
         data-test="bank-list-item"
       >
         <View style={{ width: 50, height: 50, margin: 5, flex: 1 }}>
@@ -62,7 +69,6 @@ class ChooseBank extends PureComponent {
         <FlatList
           style={{ marginBottom: 50 }}
           data={this.props.bankList}
-          extraData={this.state}
           renderItem={this.renderListItem}
           keyExtractor={(item) => item.bankName}
         />
@@ -83,8 +89,8 @@ class ChooseBank extends PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  bankList: state.bankReducers.bankList,
-  selectedBank: state.bankReducers.selectedBank
+  bankList: state.bank.list,
+  selectedBank: state.bank.selected
 })
 
-export default connect (mapStateToProps)(ChooseBank);
+export default connect(mapStateToProps)(ChooseBank);
