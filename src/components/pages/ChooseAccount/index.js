@@ -1,12 +1,10 @@
 import React, { PureComponent } from 'react';
 import { View, TouchableOpacity, Text, ScrollView, Image, FlatList} from 'react-native';
 import { connect } from 'react-redux';
-import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
 import { FETCH_BANK_ACCOUNT_DATA, SELECTED_BANK_ACCOUNT_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
-
 
 const styles = {
   container: { flex: 1, justifyContent: 'center' },
@@ -25,64 +23,64 @@ class ChooseAccount extends PureComponent {
 
   componentDidMount(){
     this.props.dispatch({ type: FETCH_BANK_ACCOUNT_DATA })
-    }
-
-renderItem = ({ item }) => {
-  const bankAccount = (this.props.selectedBankAccount === undefined ? null : this.props.selectedBankAccount.accountNumber);
-  console.log("props" + bankAccount);
-  console.log("item" + item.accountNumber);
-  const viewStyle = item.accountNumber === bankAccount 
-    ? styles.viewSelectedStyle 
-    : styles.viewDefaultStyle;
-    return( 
-      <TouchableOpacity
-        onPress={ () => this.props.dispatch({ type: SELECTED_BANK_ACCOUNT_DATA, payload: item })}
-        data-test="account-list-item"
-      >
-        <View style={viewStyle}>
-          <Image source={ bankImages[this.props.selectedBank.bankName] } style={styles.imageStyle}></Image>
-          <View style={styles.childViewStyle}>
-            <Text style={styles.textStyle}>
-              {this.props.selectedBank.bankName} 
-              </Text>
-              <Text style={styles.textStyle}>
-              {item.accountType}
-              </Text>
-              <Text style={styles.textStyle}>
-              {item.sortCode}  {item.accountNumber}
-            </Text>
-          </View>
-        </View>
-     </TouchableOpacity>
-    )
   }
+
+  renderItem = ({ item }) => {
+    const bankAccount = (this.props.selectedBankAccount === undefined ? null : this.props.selectedBankAccount.accountNumber);
+    const viewStyle = item.accountNumber === bankAccount
+      ? styles.viewSelectedStyle
+      : styles.viewDefaultStyle;
+
+      return(
+        <TouchableOpacity
+          onPress={ () => this.props.dispatch({ type: SELECTED_BANK_ACCOUNT_DATA, payload: item })}
+          data-test="account-list-item"
+        >
+          <View style={viewStyle}>
+            <Image source={ bankImages[this.props.selectedBank.bankName] } style={styles.imageStyle}></Image>
+            <View style={styles.childViewStyle}>
+              <Text style={styles.textStyle}>
+                {this.props.selectedBank.bankName}
+                </Text>
+                <Text style={styles.textStyle}>
+                {item.accountType}
+                </Text>
+                <Text style={styles.textStyle}>
+                {item.sortCode}  {item.accountNumber}
+              </Text>
+            </View>
+          </View>
+       </TouchableOpacity>
+      )
+    }
   
   render() {
     const { navigation } = this.props;
     return (
-      <ScrollView>
-        <StyledView>
-            <StyledText>
-              We found three accounts in your name.
-              Which account do you use on a daily 
-              basis?
-            </StyledText>
-              <FlatList
-                data= {this.props.bankAccountList}
-                extraData= {this.state}
-                renderItem = { this.renderItem }
-                keyExtractor = {(item) => item.accountNumber }
-              /> 
-        </StyledView>
-        <StyledView style={styles.bottomView}>
-              <StyledButton  disabled={!this.state.selectAccount}  style={styles.continueButton}
-                onPress={() => this.props.navigation.navigate('Dashboard')}
-                data-test="nextButton"
-                >
-                Select & Continue
-              </StyledButton>
-        </StyledView>      
-       </ScrollView>  
+      <View>
+        <View>
+          <StyledText>
+            We found three accounts in your name.
+            Which account do you use on a daily
+            basis?
+          </StyledText>
+          <FlatList
+            data= {this.props.bankAccountList}
+            extraData= {this.props}
+            renderItem = { this.renderItem }
+            keyExtractor = {(item) => item.accountNumber }
+          />
+        </View>
+        <View style={styles.bottomView}>
+          <StyledButton
+            disabled={!this.props.selectedBankAccount}  style={styles.continueButton}
+            onPress={() => this.props.navigation.navigate('Dashboard')}
+            data-test="nextButton"
+          >
+            Select & Continue
+          </StyledButton>
+        </View>
+       </View>
     );
   }
 }
