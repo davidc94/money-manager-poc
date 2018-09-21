@@ -9,23 +9,25 @@ const styles = {
   container: { justifyContent: 'center' },
   centered: { textAlign: 'center' },
   button: { marginTop: 15 },
+  input: { paddingHorizontal: 30, marginVertical: 10 },
 };
 
 export default class Login extends PureComponent {
   render() {
+    const { container, centered, button, input } = styles;
     return (
-      <StyledView style={styles.container}>
-        <View>
-          <StyledText weight style={styles.centered}>USERNAME</StyledText>
+      <StyledView style={container}>
+        <View style={input}>
+          <StyledText weight style={centered}>USERNAME</StyledText>
           <StyledTextInput />
         </View>
-        <View>
-          <StyledText weight style={styles.centered}>PASSWORD</StyledText>
+        <View style={input}>
+          <StyledText weight style={centered}>PASSWORD</StyledText>
           <StyledTextInput password />
         </View>
         <View style={{ paddingHorizontal: 80 }}>
           <StyledButton
-            style={styles.button}
+            style={button}
             onPress={() => this.props.navigation.navigate('Setup')}
           >
           LOGIN
