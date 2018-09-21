@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import StyledView from '../../atoms/StyledView';
+import StyledText from '../../atoms/StyledText';
 import SpentDetails from './SpentDetails';
 
 const styles = StyleSheet.create({
@@ -74,7 +75,8 @@ export default class SpentSoFar extends PureComponent {
     return (
       <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
         <View style={{ paddingBottom: 20, marginVertical: 20, borderBottomColor: '#ccc', borderBottomWidth: 1 }}>
-          <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Spent so far</Text>
+          <StyledText size weight>Spent so far</StyledText>
+          {/* <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Spent so far</Text> */}
         </View>
         <StyledView style={styles.buttonsView}>
           {this.renderButtons()}

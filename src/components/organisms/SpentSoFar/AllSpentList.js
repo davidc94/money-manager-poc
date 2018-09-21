@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import StyledText from '../../atoms/StyledText';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   label: {
-    fontSize: 20,
+    fontSize: 23,
   },
   value: {
     fontSize: 24,
@@ -19,8 +20,8 @@ const styles = StyleSheet.create({
 
 const AllSpentList = ({ data, sliceColor }) => data.map((item, i) => (
   <View key={i} style={styles.container}>
-    <Text style={styles.label}>{item.title}</Text>
-    <Text style={styles.value}>£{item.amount}</Text>
+    <StyledText style={styles.label}>{item.title}</StyledText>
+    <StyledText style={styles.value}>£{item.amount}</StyledText>
   </View>
 ));
 

@@ -25,8 +25,9 @@ class SpentDetails extends Component {
     }
 
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <View style={{
+          flex: 1,
           justifyContent: 'center',
           alignContent: 'center',
           marginVertical: 50,
@@ -43,9 +44,9 @@ class SpentDetails extends Component {
             style={{ alignSelf: 'center' }}
           />
         </View>
-        <View>
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
           {spendingList}
-        </View>
+        </ScrollView>
       </View>
     )
   };

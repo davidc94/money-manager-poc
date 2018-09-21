@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import StyledText from '../../atoms/StyledText';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   title: {
-    fontSize: 20,
+    fontSize: 23,
   },
   amount: {
     fontSize: 24,
@@ -22,10 +23,10 @@ const DayToDaySpentList = ({ data, sliceColor }) => {
     return (
       <View key={i} style={styles.container}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</Text>
-          <Text style={styles.title}>{item.category}</Text>
+          <StyledText style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</StyledText>
+          <StyledText style={styles.title}>{item.category}</StyledText>
         </View>
-        <Text style={styles.amount}>£{item.amount}</Text>
+        <StyledText style={styles.amount}>£{item.amount}</StyledText>
       </View>
     );
   });

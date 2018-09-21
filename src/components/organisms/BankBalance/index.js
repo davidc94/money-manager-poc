@@ -20,15 +20,16 @@ class BankBalance extends PureComponent {
     return (
       <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
         <View style={{ paddingBottom: 20, marginVertical: 20, borderBottomColor: '#ccc', borderBottomWidth: 1 }}>
-          <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Bank balance</Text>
+          <StyledText size weight>Bank balance</StyledText>
         </View>
         <View style={{
           flexDirection: 'row',
           justifyContent: 'space-between',
+          marginVertical: 20,
         }}>
           <View>
-            <Text style={{ fontSize: 24 }}>{bankName}</Text>
-            <Text style={{ fontSize: 14 }}>{selectedAccount.accountType}</Text>
+            <Text style={{ fontSize: 25 }}>{bankName}</Text>
+            <Text style={{ fontSize: 13 }}>{selectedAccount.accountType}</Text>
           </View>
           <Image source={bankImages[bankName]} />
         </View>
@@ -36,13 +37,13 @@ class BankBalance extends PureComponent {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
-          paddingHorizontal: 20,
+          paddingHorizontal: 15,
           paddingVertical: 30,
           marginVertical: 20,
           backgroundColor: '#ccc',
         }}>
-          <Text style={{ fontSize: 28 }}>Balance</Text>
-          <Text style={{ fontSize: 28, fontWeight: 'bold' }}>£{balance}</Text>
+          <Text style={{ fontSize: 25 }}>Balance</Text>
+          <StyledText size weight>£{balance}</StyledText>
         </View>
       </View>
 
