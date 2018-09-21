@@ -17,27 +17,18 @@ const styles = StyleSheet.create({
 
 export default class test extends Component {
   render() {
-    const chart_wh = 200;
-    const series = [0.5, 1.75, 2, 3.55, 5.67];
+    const chartWh = 200;
     const sliceColor = ['#F44336', '#2196F3', '#FFEB3B', '#4CAF50', '#FF9800'];
-
     return (
-      <ScrollView style={{ flex: 1 }}>
-        <View style={styles.container}>
-          <StatusBar
-            hidden
-          />
-          <Text style={styles.title}>Doughnut chart</Text>
-          <PieChart
-            chart_wh={chart_wh}
-            series={series}
-            sliceColor={sliceColor}
-            doughnut
-            coverRadius={0.45}
-            coverFill="#FFF"
-          />
-        </View>
-      </ScrollView>
+      <PieChart
+        chart_wh={chartWh}
+        series={this.props.data}
+        sliceColor={sliceColor}
+        doughnut
+        coverRadius={0.65}
+        coverFill="#eee"
+        style={{ alignSelf: 'center', }}
+      />
     );
   }
 }

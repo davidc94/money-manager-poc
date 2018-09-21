@@ -8,17 +8,14 @@ import StyledText from '../../atoms/StyledText';
 
 class BankBalance extends PureComponent {
 
-  componentDidMount() {
-    this.props.dispatch({ type: FETCH_BANK_BALANCE });
-  }
-
   render() {
     if (!this.props.bankBalance) {
       return null;
     }
     const {
       bankBalance: { balance, userName },
-      selectedBank: { bankName, logoImage }
+      selectedBank: { bankName, logoImage },
+      selectedAccount
     } = this.props;
     return (
       <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
@@ -29,7 +26,10 @@ class BankBalance extends PureComponent {
           flexDirection: 'row',
           justifyContent: 'space-between',
         }}>
-          <Text style={{ fontSize: 24 }}>{bankName}</Text>
+          <View>
+            <Text style={{ fontSize: 24 }}>{bankName}</Text>
+            <Text style={{ fontSize: 14 }}>{selectedAccount.accountType}</Text>
+          </View>
           <Image source={bankImages[bankName]} />
         </View>
         <View style={{
@@ -54,6 +54,7 @@ const mapsStateToProps = (state) => {
   return {
     bankBalance: state.bankBalance.data,
     selectedBank: state.bank.selected,
+    selectedAccount: state.bank.selectedAccount
   };
 };
 
