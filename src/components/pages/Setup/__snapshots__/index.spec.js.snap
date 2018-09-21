@@ -20,8 +20,8 @@ ShallowWrapper {
       "children": <Styled(Component)
         style={
           Object {
-            "flex": 1,
-            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": 15,
           }
         }
       >
@@ -29,35 +29,87 @@ ShallowWrapper {
           size={true}
           weight={true}
         >
-          How does this set up work?
+          How does this
         </StyledText>
         <StyledText
+          size={true}
+          weight={true}
+        >
+          set up work?
+        </StyledText>
+        <StyledText
+          style={
+            Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            }
+          }
           weight={true}
         >
           Step 1
         </StyledText>
-        <StyledText>
+        <StyledText
+          style={
+            Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            }
+          }
+        >
           Choose your bank -  You select your bank from the list of selected bank we work with!
         </StyledText>
         <StyledText
+          style={
+            Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            }
+          }
           weight={true}
         >
           Step 2
         </StyledText>
-        <StyledText>
+        <StyledText
+          style={
+            Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            }
+          }
+        >
           Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
         </StyledText>
         <StyledText
+          style={
+            Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            }
+          }
           weight={true}
         >
           Step 3
         </StyledText>
-        <StyledText>
+        <StyledText
+          style={
+            Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            }
+          }
+        >
           Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
         </StyledText>
         <StyledButton
           className="button"
           onPress={[Function]}
+          style={
+            Object {
+              "marginTop": 25,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+            }
+          }
         >
           Continue
         </StyledButton>
@@ -74,42 +126,94 @@ ShallowWrapper {
             size={true}
             weight={true}
           >
-            How does this set up work?
+            How does this
           </StyledText>,
           <StyledText
+            size={true}
+            weight={true}
+          >
+            set up work?
+          </StyledText>,
+          <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 1
           </StyledText>,
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Choose your bank -  You select your bank from the list of selected bank we work with!
           </StyledText>,
           <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 2
           </StyledText>,
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
           </StyledText>,
           <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 3
           </StyledText>,
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
           </StyledText>,
           <StyledButton
             className="button"
             onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 25,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+              }
+            }
           >
             Continue
           </StyledButton>,
         ],
         "style": Object {
-          "flex": 1,
-          "justifyContent": "center",
+          "alignItems": "center",
+          "marginTop": 15,
         },
       },
       "ref": null,
@@ -119,12 +223,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "How does this set up work?",
+            "children": "How does this",
             "size": true,
             "weight": true,
           },
           "ref": null,
-          "rendered": "How does this set up work?",
+          "rendered": "How does this",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "set up work?",
+            "size": true,
+            "weight": true,
+          },
+          "ref": null,
+          "rendered": "set up work?",
           "type": [Function],
         },
         Object {
@@ -133,6 +250,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Step 1",
+            "style": Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            },
             "weight": true,
           },
           "ref": null,
@@ -145,6 +266,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+            "style": Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            },
           },
           "ref": null,
           "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",
@@ -156,6 +281,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Step 2",
+            "style": Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            },
             "weight": true,
           },
           "ref": null,
@@ -168,6 +297,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+            "style": Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            },
           },
           "ref": null,
           "rendered": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
@@ -179,6 +312,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Step 3",
+            "style": Object {
+              "marginBottom": 10,
+              "marginTop": 20,
+            },
             "weight": true,
           },
           "ref": null,
@@ -191,6 +328,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+            "style": Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            },
           },
           "ref": null,
           "rendered": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
@@ -204,6 +345,11 @@ ShallowWrapper {
             "children": "Continue",
             "className": "button",
             "onPress": [Function],
+            "style": Object {
+              "marginTop": 25,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+            },
           },
           "ref": null,
           "rendered": "Continue",
@@ -223,8 +369,8 @@ ShallowWrapper {
         "children": <Styled(Component)
           style={
             Object {
-              "flex": 1,
-              "justifyContent": "center",
+              "alignItems": "center",
+              "marginTop": 15,
             }
           }
         >
@@ -232,35 +378,87 @@ ShallowWrapper {
             size={true}
             weight={true}
           >
-            How does this set up work?
+            How does this
           </StyledText>
           <StyledText
+            size={true}
+            weight={true}
+          >
+            set up work?
+          </StyledText>
+          <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 1
           </StyledText>
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Choose your bank -  You select your bank from the list of selected bank we work with!
           </StyledText>
           <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 2
           </StyledText>
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
           </StyledText>
           <StyledText
+            style={
+              Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              }
+            }
             weight={true}
           >
             Step 3
           </StyledText>
-          <StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
             Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
           </StyledText>
           <StyledButton
             className="button"
             onPress={[Function]}
+            style={
+              Object {
+                "marginTop": 25,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+              }
+            }
           >
             Continue
           </StyledButton>
@@ -277,42 +475,94 @@ ShallowWrapper {
               size={true}
               weight={true}
             >
-              How does this set up work?
+              How does this
             </StyledText>,
             <StyledText
+              size={true}
+              weight={true}
+            >
+              set up work?
+            </StyledText>,
+            <StyledText
+              style={
+                Object {
+                  "marginBottom": 10,
+                  "marginTop": 20,
+                }
+              }
               weight={true}
             >
               Step 1
             </StyledText>,
-            <StyledText>
+            <StyledText
+              style={
+                Object {
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                }
+              }
+            >
               Choose your bank -  You select your bank from the list of selected bank we work with!
             </StyledText>,
             <StyledText
+              style={
+                Object {
+                  "marginBottom": 10,
+                  "marginTop": 20,
+                }
+              }
               weight={true}
             >
               Step 2
             </StyledText>,
-            <StyledText>
+            <StyledText
+              style={
+                Object {
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                }
+              }
+            >
               Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
             </StyledText>,
             <StyledText
+              style={
+                Object {
+                  "marginBottom": 10,
+                  "marginTop": 20,
+                }
+              }
               weight={true}
             >
               Step 3
             </StyledText>,
-            <StyledText>
+            <StyledText
+              style={
+                Object {
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                }
+              }
+            >
               Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
             </StyledText>,
             <StyledButton
               className="button"
               onPress={[Function]}
+              style={
+                Object {
+                  "marginTop": 25,
+                  "paddingLeft": 15,
+                  "paddingRight": 15,
+                }
+              }
             >
               Continue
             </StyledButton>,
           ],
           "style": Object {
-            "flex": 1,
-            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": 15,
           },
         },
         "ref": null,
@@ -322,12 +572,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "How does this set up work?",
+              "children": "How does this",
               "size": true,
               "weight": true,
             },
             "ref": null,
-            "rendered": "How does this set up work?",
+            "rendered": "How does this",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "set up work?",
+              "size": true,
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "set up work?",
             "type": [Function],
           },
           Object {
@@ -336,6 +599,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Step 1",
+              "style": Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              },
               "weight": true,
             },
             "ref": null,
@@ -348,6 +615,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+              "style": Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              },
             },
             "ref": null,
             "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",
@@ -359,6 +630,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Step 2",
+              "style": Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              },
               "weight": true,
             },
             "ref": null,
@@ -371,6 +646,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+              "style": Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              },
             },
             "ref": null,
             "rendered": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
@@ -382,6 +661,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Step 3",
+              "style": Object {
+                "marginBottom": 10,
+                "marginTop": 20,
+              },
               "weight": true,
             },
             "ref": null,
@@ -394,6 +677,10 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+              "style": Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              },
             },
             "ref": null,
             "rendered": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
@@ -407,6 +694,11 @@ ShallowWrapper {
               "children": "Continue",
               "className": "button",
               "onPress": [Function],
+              "style": Object {
+                "marginTop": 25,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+              },
             },
             "ref": null,
             "rendered": "Continue",

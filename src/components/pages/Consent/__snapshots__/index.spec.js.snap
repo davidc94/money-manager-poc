@@ -24,19 +24,43 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Component>
-          <StyledText>
-            Don't worry, this is all perfectly safe. All we can do is look at
+        <Component
+          style={
+            Object {
+              "alignSelf": "center",
+              "flex": 1,
+              "marginBottom": 15,
+              "marginTop": 15,
+            }
+          }
+        >
+          <StyledText
+            weight={true}
+          >
+            Don't worry, this is all perfectly safe.
+          </StyledText>
+          <StyledText
+            weight={true}
+          >
+            All we can do is look at...
           </StyledText>
         </Component>,
-        <Component>
+        <Component
+          style={
+            Object {
+              "paddingHorizontal": 10,
+            }
+          }
+        >
           <AccordionView />
         </Component>,
         <Component>
           <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
@@ -47,7 +71,9 @@ ShallowWrapper {
           <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
@@ -72,6 +98,10 @@ ShallowWrapper {
             style={
               Object {
                 "flex": 2,
+                "fontSize": 15,
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
@@ -82,11 +112,13 @@ ShallowWrapper {
           <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
-            We'll now securely take you to your bank/building society
+            We will now securely take you to your bank/building society
           </StyledText>
         </Component>,
         <Styled(Component)
@@ -114,6 +146,7 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
+                "color": "red",
                 "flex": 1,
               }
             }
@@ -130,22 +163,52 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <StyledText>
-            Don't worry, this is all perfectly safe. All we can do is look at
-          </StyledText>,
+          "children": Array [
+            <StyledText
+              weight={true}
+            >
+              Don't worry, this is all perfectly safe.
+            </StyledText>,
+            <StyledText
+              weight={true}
+            >
+              All we can do is look at...
+            </StyledText>,
+          ],
+          "style": Object {
+            "alignSelf": "center",
+            "flex": 1,
+            "marginBottom": 15,
+            "marginTop": 15,
+          },
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "Don't worry, this is all perfectly safe. All we can do is look at",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Don't worry, this is all perfectly safe.",
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "Don't worry, this is all perfectly safe.",
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": "Don't worry, this is all perfectly safe. All we can do is look at",
-          "type": [Function],
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "All we can do is look at...",
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "All we can do is look at...",
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -154,6 +217,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <AccordionView />,
+          "style": Object {
+            "paddingHorizontal": 10,
+          },
         },
         "ref": null,
         "rendered": Object {
@@ -175,7 +241,9 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
@@ -190,7 +258,9 @@ ShallowWrapper {
           "props": Object {
             "children": "gameplan can only read your bank data and can't make payments or change your account.",
             "style": Object {
-              "textAlign": "center",
+              "marginBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           },
           "ref": null,
@@ -207,7 +277,9 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
@@ -222,7 +294,9 @@ ShallowWrapper {
           "props": Object {
             "children": "We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission",
             "style": Object {
-              "textAlign": "center",
+              "marginBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           },
           "ref": null,
@@ -254,6 +328,10 @@ ShallowWrapper {
               style={
                 Object {
                   "flex": 2,
+                  "fontSize": 15,
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -301,6 +379,10 @@ ShallowWrapper {
               "children": "You agree to our terms & conditions and privacy policy which covers how giffgaff can access and use your data",
               "style": Object {
                 "flex": 2,
+                "fontSize": 15,
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               },
             },
             "ref": null,
@@ -318,11 +400,13 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
-            We'll now securely take you to your bank/building society
+            We will now securely take you to your bank/building society
           </StyledText>,
         },
         "ref": null,
@@ -331,13 +415,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "We'll now securely take you to your bank/building society",
+            "children": "We will now securely take you to your bank/building society",
             "style": Object {
-              "textAlign": "center",
+              "marginBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             },
           },
           "ref": null,
-          "rendered": "We'll now securely take you to your bank/building society",
+          "rendered": "We will now securely take you to your bank/building society",
           "type": [Function],
         },
         "type": [Function],
@@ -365,6 +451,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
+                  "color": "red",
                   "flex": 1,
                 }
               }
@@ -405,6 +492,7 @@ ShallowWrapper {
               "disabled": true,
               "onPress": [Function],
               "style": Object {
+                "color": "red",
                 "flex": 1,
               },
             },
@@ -425,19 +513,43 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Component>
-            <StyledText>
-              Don't worry, this is all perfectly safe. All we can do is look at
+          <Component
+            style={
+              Object {
+                "alignSelf": "center",
+                "flex": 1,
+                "marginBottom": 15,
+                "marginTop": 15,
+              }
+            }
+          >
+            <StyledText
+              weight={true}
+            >
+              Don't worry, this is all perfectly safe.
+            </StyledText>
+            <StyledText
+              weight={true}
+            >
+              All we can do is look at...
             </StyledText>
           </Component>,
-          <Component>
+          <Component
+            style={
+              Object {
+                "paddingHorizontal": 10,
+              }
+            }
+          >
             <AccordionView />
           </Component>,
           <Component>
             <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -448,7 +560,9 @@ ShallowWrapper {
             <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -473,6 +587,10 @@ ShallowWrapper {
               style={
                 Object {
                   "flex": 2,
+                  "fontSize": 15,
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -483,11 +601,13 @@ ShallowWrapper {
             <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
-              We'll now securely take you to your bank/building society
+              We will now securely take you to your bank/building society
             </StyledText>
           </Component>,
           <Styled(Component)
@@ -515,6 +635,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
+                  "color": "red",
                   "flex": 1,
                 }
               }
@@ -531,22 +652,52 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <StyledText>
-              Don't worry, this is all perfectly safe. All we can do is look at
-            </StyledText>,
+            "children": Array [
+              <StyledText
+                weight={true}
+              >
+                Don't worry, this is all perfectly safe.
+              </StyledText>,
+              <StyledText
+                weight={true}
+              >
+                All we can do is look at...
+              </StyledText>,
+            ],
+            "style": Object {
+              "alignSelf": "center",
+              "flex": 1,
+              "marginBottom": 15,
+              "marginTop": 15,
+            },
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "Don't worry, this is all perfectly safe. All we can do is look at",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Don't worry, this is all perfectly safe.",
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "Don't worry, this is all perfectly safe.",
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": "Don't worry, this is all perfectly safe. All we can do is look at",
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "All we can do is look at...",
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "All we can do is look at...",
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -555,6 +706,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <AccordionView />,
+            "style": Object {
+              "paddingHorizontal": 10,
+            },
           },
           "ref": null,
           "rendered": Object {
@@ -576,7 +730,9 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -591,7 +747,9 @@ ShallowWrapper {
             "props": Object {
               "children": "gameplan can only read your bank data and can't make payments or change your account.",
               "style": Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               },
             },
             "ref": null,
@@ -608,7 +766,9 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
@@ -623,7 +783,9 @@ ShallowWrapper {
             "props": Object {
               "children": "We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission",
               "style": Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               },
             },
             "ref": null,
@@ -655,6 +817,10 @@ ShallowWrapper {
                 style={
                   Object {
                     "flex": 2,
+                    "fontSize": 15,
+                    "marginBottom": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
                   }
                 }
               >
@@ -702,6 +868,10 @@ ShallowWrapper {
                 "children": "You agree to our terms & conditions and privacy policy which covers how giffgaff can access and use your data",
                 "style": Object {
                   "flex": 2,
+                  "fontSize": 15,
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 },
               },
               "ref": null,
@@ -719,11 +889,13 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "textAlign": "center",
+                  "marginBottom": 10,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
                 }
               }
             >
-              We'll now securely take you to your bank/building society
+              We will now securely take you to your bank/building society
             </StyledText>,
           },
           "ref": null,
@@ -732,13 +904,15 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "We'll now securely take you to your bank/building society",
+              "children": "We will now securely take you to your bank/building society",
               "style": Object {
-                "textAlign": "center",
+                "marginBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
               },
             },
             "ref": null,
-            "rendered": "We'll now securely take you to your bank/building society",
+            "rendered": "We will now securely take you to your bank/building society",
             "type": [Function],
           },
           "type": [Function],
@@ -766,6 +940,7 @@ ShallowWrapper {
                 onPress={[Function]}
                 style={
                   Object {
+                    "color": "red",
                     "flex": 1,
                   }
                 }
@@ -806,6 +981,7 @@ ShallowWrapper {
                 "disabled": true,
                 "onPress": [Function],
                 "style": Object {
+                  "color": "red",
                   "flex": 1,
                 },
               },
