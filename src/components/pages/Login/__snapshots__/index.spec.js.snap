@@ -18,7 +18,14 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Component>
+        <Component
+          style={
+            Object {
+              "marginVertical": 10,
+              "paddingHorizontal": 30,
+            }
+          }
+        >
           <StyledText
             style={
               Object {
@@ -31,7 +38,14 @@ ShallowWrapper {
           </StyledText>
           <StyledTextInput />
         </Component>,
-        <Component>
+        <Component
+          style={
+            Object {
+              "marginVertical": 10,
+              "paddingHorizontal": 30,
+            }
+          }
+        >
           <StyledText
             style={
               Object {
@@ -89,6 +103,10 @@ ShallowWrapper {
             </StyledText>,
             <StyledTextInput />,
           ],
+          "style": Object {
+            "marginVertical": 10,
+            "paddingHorizontal": 30,
+          },
         },
         "ref": null,
         "rendered": Array [
@@ -139,6 +157,10 @@ ShallowWrapper {
               password={true}
             />,
           ],
+          "style": Object {
+            "marginVertical": 10,
+            "paddingHorizontal": 30,
+          },
         },
         "ref": null,
         "rendered": Array [
@@ -218,7 +240,14 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Component>
+          <Component
+            style={
+              Object {
+                "marginVertical": 10,
+                "paddingHorizontal": 30,
+              }
+            }
+          >
             <StyledText
               style={
                 Object {
@@ -231,7 +260,14 @@ ShallowWrapper {
             </StyledText>
             <StyledTextInput />
           </Component>,
-          <Component>
+          <Component
+            style={
+              Object {
+                "marginVertical": 10,
+                "paddingHorizontal": 30,
+              }
+            }
+          >
             <StyledText
               style={
                 Object {
@@ -289,6 +325,10 @@ ShallowWrapper {
               </StyledText>,
               <StyledTextInput />,
             ],
+            "style": Object {
+              "marginVertical": 10,
+              "paddingHorizontal": 30,
+            },
           },
           "ref": null,
           "rendered": Array [
@@ -339,6 +379,10 @@ ShallowWrapper {
                 password={true}
               />,
             ],
+            "style": Object {
+              "marginVertical": 10,
+              "paddingHorizontal": 30,
+            },
           },
           "ref": null,
           "rendered": Array [
