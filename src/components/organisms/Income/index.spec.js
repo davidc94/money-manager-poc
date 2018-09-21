@@ -9,20 +9,18 @@ configure({ adapter: new Adapter() });
 describe('income', () => {
   const initialState = {
     income: {
-      incomeList: {
-        income: [
-          {
-            date: 'June 1',
-            title: 'Capital Resourcing',
-            amount: 1200,
-          },
-          {
-            date: 'June 2',
-            title: 'PayPal',
-            amount: 110,
-          },
-        ],
-      },
+      list: [
+        {
+          date: 'June 1',
+          title: 'Capital Resourcing',
+          amount: 1200,
+        },
+        {
+          date: 'June 2',
+          title: 'PayPal',
+          amount: 110,
+        },
+      ],
     },
   };
 
