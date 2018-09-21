@@ -31,7 +31,24 @@ class Dashboard extends PureComponent {
 export default connect()(Dashboard);
 
 export const TabNav = createBottomTabNavigator({
-  BankBalance: { screen: BankBalance },
-  SpentSoFar: { screen: SpentSoFar },
+  Balance: { screen: BankBalance },
+  Spent: { screen: SpentSoFar },
   Income: { screen: Income },
-});
+},
+  {
+    tabBarOptions: {
+      activeTintColor: '#000',
+      inactiveTintColor: '#999',
+      style: {
+        backgroundColor: '#fff',
+        borderTopColor: 'grey',
+        borderTopWidth: 0.5,
+      },
+      labelStyle: {
+        fontSize: 20,
+      },
+      indicatorStyle: {
+        height: 0,
+      },
+    },
+  });
