@@ -16,7 +16,7 @@ class Income extends PureComponent {
       incomeList: { income },
     } = this.props;
 
-    const receivedAmount = this.props.incomeList.income
+    const receivedAmount = this.props.incomeList
       .map(income => income.amount)
       .reduce((acc, currentValue) => acc + currentValue);
 
@@ -37,7 +37,7 @@ class Income extends PureComponent {
           </View>
         </View>
         <FlatList
-          data={this.props.incomeList.income}
+          data={this.props.incomeList}
           renderItem={({ item }) => (
             <View style={itemStyle}>
               <View>
@@ -46,8 +46,8 @@ class Income extends PureComponent {
               </View>
               <Text style={midTextStyle}>
 £
-{item.amount}
-</Text>
+                {item.amount}
+              </Text>
             </View>
           )}
         />
@@ -95,7 +95,7 @@ const styles = {
 };
 
 const mapStateToProps = state => ({
-  incomeList: state.income.incomeList,
+  incomeList: state.income.list,
 });
 
 export default connect(mapStateToProps)(Income);

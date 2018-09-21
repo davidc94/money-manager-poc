@@ -1,5 +1,4 @@
-{
-  "income": [
+[
     {
       "date": "June 1",
       "title": "Capital Resourcing",
@@ -11,4 +10,3 @@
       "amount": 110
     }
   ]
-}
