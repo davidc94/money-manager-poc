@@ -4,6 +4,7 @@ import StyledTextInput from '../../atoms/StyledTextInput';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
 import StyledView from '../../atoms/StyledView';
+import FingerprintPopup from '../../molecules/Fingerprint';
 
 const styles = {
   container: { justifyContent: 'center' },
@@ -30,8 +31,9 @@ export default class Login extends PureComponent {
             style={button}
             onPress={() => this.props.navigation.navigate('Setup')}
           >
-          LOGIN
+            LOGIN
           </StyledButton>
+          <FingerprintPopup />
         </View>
       </StyledView>
     );
