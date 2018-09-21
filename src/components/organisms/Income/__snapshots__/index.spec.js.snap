@@ -29,20 +29,18 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "dispatch": [Function],
-      "incomeList": Object {
-        "income": Array [
-          Object {
-            "amount": 1200,
-            "date": "June 1",
-            "title": "Capital Resourcing",
-          },
-          Object {
-            "amount": 110,
-            "date": "June 2",
-            "title": "PayPal",
-          },
-        ],
-      },
+      "incomeList": Array [
+        Object {
+          "amount": 1200,
+          "date": "June 1",
+          "title": "Capital Resourcing",
+        },
+        Object {
+          "amount": 110,
+          "date": "June 2",
+          "title": "PayPal",
+        },
+      ],
       "store": Object {
         "clearActions": [Function],
         "dispatch": [Function],
@@ -82,20 +80,18 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "dispatch": [Function],
-        "incomeList": Object {
-          "income": Array [
-            Object {
-              "amount": 1200,
-              "date": "June 1",
-              "title": "Capital Resourcing",
-            },
-            Object {
-              "amount": 110,
-              "date": "June 2",
-              "title": "PayPal",
-            },
-          ],
-        },
+        "incomeList": Array [
+          Object {
+            "amount": 1200,
+            "date": "June 1",
+            "title": "Capital Resourcing",
+          },
+          Object {
+            "amount": 110,
+            "date": "June 2",
+            "title": "PayPal",
+          },
+        ],
         "store": Object {
           "clearActions": [Function],
           "dispatch": [Function],
