@@ -33,6 +33,7 @@ ShallowWrapper {
         "userName": "Mr. T.",
       },
       "dispatch": [Function],
+      "selectedAccount": undefined,
       "selectedBank": Object {
         "bankName": "bank1",
         "logoImage": "bank1logo",
@@ -80,6 +81,7 @@ ShallowWrapper {
           "userName": "Mr. T.",
         },
         "dispatch": [Function],
+        "selectedAccount": undefined,
         "selectedBank": Object {
           "bankName": "bank1",
           "logoImage": "bank1logo",

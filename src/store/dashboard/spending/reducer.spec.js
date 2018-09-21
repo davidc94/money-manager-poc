@@ -1,14 +1,14 @@
-import { FETCH_BANK_BALANCE_FULFILLED } from '../../constants';
-import bankReducers from './reducer';
+import { FETCH_SPENDING_FULFILLED } from '../../constants';
+import spending from './reducer';
 
-describe('Banks balance reducer', () => {
+describe('Spending reducer', () => {
   it('should return the initial state', () => {
-    expect(bankReducers(undefined, {})).toEqual([]);
+    expect(spending(undefined, {})).toEqual([]);
   });
 
-  it('should handle FETCH_BANK_BALANCE_FULFILLED', () => {
+  it('should handle FETCH_SPENDING_FULFILLED', () => {
     const action = {
-      type: FETCH_BANK_BALANCE_FULFILLED,
+      type: FETCH_SPENDING_FULFILLED,
       payload: '3000',
     };
 
@@ -16,6 +16,6 @@ describe('Banks balance reducer', () => {
       data: '3000',
     };
 
-    expect(bankReducers({}, action)).toEqual(expectedState);
+    expect(spending({}, action)).toEqual(expectedState);
   });
 });
