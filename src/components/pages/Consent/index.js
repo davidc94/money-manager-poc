@@ -21,41 +21,40 @@ export default class Consent extends PureComponent {
 
   render() {
     const { navigation } = this.props;
+
     return (
       <ScrollView>
-        <View>
-          <StyledText>
-            Don't worry, this is all perfectly safe.
-            All we can do is look at
-          </StyledText>
+        <View style={{ marginTop: 15, marginBottom: 15, flex: 1, alignSelf: 'center' }}>
+          <StyledText weight>Don't worry, this is all perfectly safe.</StyledText>
+          <StyledText weight>All we can do is look at...</StyledText>  
         </View>
-        <View>
+        <View style={{ paddingHorizontal: 10 }}>
           <AccordionView />
         </View>
         <View>
-          <StyledText style={{ textAlign: 'center' }}>
+          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
             gameplan can only read your bank data and can't make payments or change your account.
           </StyledText>
         </View>
         <View>
-          <StyledText style={{ textAlign: 'center' }}>
+          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
             We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission
           </StyledText>
         </View>
         <StyledContainer>
-          <StyledView style={{ alignItems: 'center' }} >
+          <StyledView style={{ alignItems: 'center' }}>
             <Switch
               onValueChange={this.switchValueChange}
               value={this.state.nextButtonEnabled}
             />
           </StyledView>
-          <StyledText style={{ flex: 2 }}>
-            You agree to our terms & conditions and privacy policy which covers how giffgaff can access and use your data
+          <StyledText style={{ fontSize: 15, flex: 2, paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+            You agree to our terms &amp; conditions and privacy policy which covers how giffgaff can access and use your data
           </StyledText>
         </StyledContainer>
         <View>
-          <StyledText style={{ textAlign: 'center' }}>
-            We'll now securely take you to your bank/building society
+          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+            We will now securely take you to your bank/building society
           </StyledText>
         </View>
         <StyledView style={{ flexDirection: 'row', padding: 30 }}>
@@ -68,7 +67,7 @@ export default class Consent extends PureComponent {
           </StyledButton>
           <StyledButton
             disabled={!this.state.nextButtonEnabled}
-            style={{ flex: 1 }}
+            style={{ flex: 1, color: 'red' }}
             onPress={() => navigation.navigate('ChooseAccount')}
           >
             Agree
