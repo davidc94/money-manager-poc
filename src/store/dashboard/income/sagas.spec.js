@@ -8,18 +8,18 @@ describe('Choose income saga ', () => {
     const data = {
       income: [
         {
-          date: 'June 1',
-          title: 'Capital Resourcing',
-          amount: 1200,
+          date: 'Date 1',
+          title: 'Title 1',
+          amount: 101,
         },
         {
-          date: 'June 2',
-          title: 'PayPal',
-          amount: 110,
+          date: 'Date 2',
+          title: 'Title 2',
+          amount: 102,
         },
       ],
     };
-    const generator = cloneableGenerator(fetchingIncomeData)();
+    const generator = cloneableGenerator(fetchingIncomeData)('income', data);
 
     expect(generator.next().value).toEqual(put({
       type: FETCH_INCOME_DATA_FULFILLED, payload: data,

@@ -13,7 +13,7 @@ describe('Income reducer', () => {
     };
 
     const expectedState = {
-      incomeList: 'PayPal',
+      income: 'PayPal',
     };
 
     expect(incomeReducers({}, action)).toEqual(expectedState);

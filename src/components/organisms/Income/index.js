@@ -12,6 +12,10 @@ class Income extends PureComponent {
   render() {
     if (!this.props.incomeList) { return null; }
 
+    const {
+      incomeList: { income },
+    } = this.props;
+
     const receivedAmount = this.props.incomeList.income
       .map(income => income.amount)
       .reduce((acc, currentValue) => acc + currentValue);
@@ -40,7 +44,10 @@ class Income extends PureComponent {
                 <StyledText>{item.date}</StyledText>
                 <StyledText style={midTextStyle}>{item.title}</StyledText>
               </View>
-              <Text style={midTextStyle}>£{item.amount}</Text>
+              <Text style={midTextStyle}>
+£
+{item.amount}
+</Text>
             </View>
           )}
         />
