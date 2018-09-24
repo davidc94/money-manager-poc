@@ -6,7 +6,7 @@ import StyledView from '../../atoms/StyledView';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
 import Income from '../../organisms/Income';
-import { FETCH_BANK_BALANCE, FETCH_SPENDING } from '../../../store/constants';
+import { FETCH_BANK_BALANCE, FETCH_SPENDING, FETCH_INCOME_DATA } from '../../../store/constants';
 
 class Dashboard extends PureComponent {
 
@@ -14,6 +14,7 @@ class Dashboard extends PureComponent {
     StatusBar.setBackgroundColor('#000000');
     this.props.dispatch({ type: FETCH_BANK_BALANCE });
     this.props.dispatch({ type: FETCH_SPENDING });
+    this.props.dispatch({ type: FETCH_INCOME_DATA });
   }
 
   render() {

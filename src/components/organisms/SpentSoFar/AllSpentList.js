@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const AllSpentList = ({ data, sliceColor }) => data.map((item, i) => (
-  <View key={i} style={styles.container}>
+const AllSpentList = ({ data }) => data.map(item => (
+  <View key={item.title} style={styles.container}>
     <StyledText style={styles.label}>{item.title}</StyledText>
-    <StyledText style={styles.value}>£{item.amount}</StyledText>
+    <StyledText style={styles.value}>{`£${item.amount}`}</StyledText>
   </View>
 ));
 

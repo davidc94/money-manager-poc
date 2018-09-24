@@ -1,13 +1,9 @@
 import React, { PureComponent } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import { FETCH_INCOME_DATA } from '../../../store/constants';
 import StyledText from '../../atoms/StyledText';
 
 class Income extends PureComponent {
-  componentDidMount() {
-    this.props.dispatch({ type: FETCH_INCOME_DATA });
-  }
 
   render() {
     if (!this.props.incomeList) { return null; }

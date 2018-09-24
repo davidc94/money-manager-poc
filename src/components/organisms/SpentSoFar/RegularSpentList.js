@@ -25,26 +25,22 @@ const styles = StyleSheet.create({
   }
 });
 
-const RegularSpentList = ({ data, sliceColor }) => {
-  return data.map((item, i) => {
-    return (
-      <View key={i} style={styles.container}>
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ alignSelf: 'center' }}>
-            <Text style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</Text>
-          </View>
-
-          <View style={styles.containerLeft}>
-            <StyledText style={styles.date}>{item.date}</StyledText>
-            <StyledText style={styles.title}>{item.title}</StyledText>
-          </View>
-        </View>
-        <View>
-          <StyledText style={styles.amount}>£{item.amount}</StyledText>
-        </View>
+const RegularSpentList = ({ data, sliceColor }) => data.map((item, i) => (
+  <View key={i} style={styles.container}>
+    <View style={{ flexDirection: 'row' }}>
+      <View style={{ alignSelf: 'center' }}>
+        <Text style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</Text>
       </View>
-    );
-  });
-};
+
+      <View style={styles.containerLeft}>
+        <StyledText style={styles.date}>{item.date}</StyledText>
+        <StyledText style={styles.title}>{item.title}</StyledText>
+      </View>
+    </View>
+    <View>
+      <StyledText style={styles.amount}>{`£${item.amount}`}</StyledText>
+    </View>
+  </View>
+));
 
 export default RegularSpentList;

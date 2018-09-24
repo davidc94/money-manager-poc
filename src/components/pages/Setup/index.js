@@ -34,7 +34,6 @@ export default class Setup extends PureComponent {
           </StyledText>
           <View style={{ paddingHorizontal: 80, marginTop: 30 }}>
             <StyledButton
-              className="button"
               onPress={() => this.props.navigation.navigate('ChooseBank')}
             >
               Continue

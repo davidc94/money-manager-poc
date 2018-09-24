@@ -109,7 +109,6 @@ ShallowWrapper {
           }
         >
           <StyledButton
-            className="button"
             onPress={[Function]}
           >
             Continue
@@ -208,7 +207,6 @@ ShallowWrapper {
             }
           >
             <StyledButton
-              className="button"
               onPress={[Function]}
             >
               Continue
@@ -347,7 +345,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <StyledButton
-              className="button"
               onPress={[Function]}
             >
               Continue
@@ -364,7 +361,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Continue",
-              "className": "button",
               "onPress": [Function],
             },
             "ref": null,
@@ -476,7 +472,6 @@ ShallowWrapper {
             }
           >
             <StyledButton
-              className="button"
               onPress={[Function]}
             >
               Continue
@@ -575,7 +570,6 @@ ShallowWrapper {
               }
             >
               <StyledButton
-                className="button"
                 onPress={[Function]}
               >
                 Continue
@@ -714,7 +708,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <StyledButton
-                className="button"
                 onPress={[Function]}
               >
                 Continue
@@ -731,7 +724,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "children": "Continue",
-                "className": "button",
                 "onPress": [Function],
               },
               "ref": null,

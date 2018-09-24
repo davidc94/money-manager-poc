@@ -2,9 +2,9 @@ import { put, takeLatest } from 'redux-saga/effects';
 import { FETCH_SPENDING, FETCH_SPENDING_FULFILLED } from '../../constants';
 import data from '../../../data/spending.json';
 
-export function* fetchingSpending(action, actionData = data) {
+export function* fetchingSpending(action, spendingData = data) {
   try {
-    yield put({ type: FETCH_SPENDING_FULFILLED, payload: actionData });
+    yield put({ type: FETCH_SPENDING_FULFILLED, payload: spendingData });
   } catch (error) {
     console.log('fetchingSpending ==> ', error);
   }

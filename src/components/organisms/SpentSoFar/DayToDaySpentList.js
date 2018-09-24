@@ -19,17 +19,15 @@ const styles = StyleSheet.create({
 });
 
 const DayToDaySpentList = ({ data, sliceColor }) => {
-  return data.map((item, i) => {
-    return (
-      <View key={i} style={styles.container}>
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <StyledText style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</StyledText>
-          <StyledText style={styles.title}>{item.category}</StyledText>
-        </View>
-        <StyledText style={styles.amount}>£{item.amount}</StyledText>
+  return data.map((item, i) => (
+    <View key={i} style={styles.container}>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <StyledText style={{ color: sliceColor[i], marginRight: 10 }}>&#9679;</StyledText>
+        <StyledText style={styles.title}>{item.category}</StyledText>
       </View>
-    );
-  });
+      <StyledText style={styles.amount}>{`£${item.amount}`}</StyledText>
+    </View>
+  ));
 };
 
 export default DayToDaySpentList;
