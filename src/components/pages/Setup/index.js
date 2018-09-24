@@ -7,15 +7,14 @@ import StyledButton from '../../atoms/StyledButton';
 export default class Setup extends PureComponent {
   render() {
 
-    const { header, step, text, button } = styles;
+    const { step, text, button } = styles;
 
     return (
       <ScrollView>
-        <StyledView style={header}>
-          <StyledText size weight>How does this</StyledText>
-          <StyledText size weight>set up work?</StyledText>
-          <StyledText weight style={step}>Step 1</StyledText>
-          <StyledText style={text}>
+        <StyledView style={styles.container}>
+          <StyledText size='base' weight>How does this set up work?</StyledText>
+          <StyledText weight>Step 1</StyledText>
+          <StyledText>
             Choose your bank -  You select your bank from the list of
             selected bank we work with!
           </StyledText>
@@ -46,9 +45,9 @@ export default class Setup extends PureComponent {
 }
 
 const styles = {
-  header: {
-    alignItems: 'center',
-    marginTop: 15,
+  container: { 
+    flex: 1, 
+    justifyContent: 'center' 
   },
   step: {
     marginTop: 20,

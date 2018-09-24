@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": undefined,
+      "color": undefined,
       "size": undefined,
       "style": undefined,
       "weight": undefined,
@@ -33,6 +34,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": undefined,
+        "color": undefined,
         "size": undefined,
         "style": undefined,
         "weight": undefined,
@@ -84,6 +86,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": undefined,
+      "color": undefined,
       "size": undefined,
       "style": undefined,
       "weight": true,
@@ -99,6 +102,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": undefined,
+        "color": undefined,
         "size": undefined,
         "style": undefined,
         "weight": true,
@@ -150,6 +154,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": undefined,
+      "color": undefined,
       "size": true,
       "style": undefined,
       "weight": undefined,
@@ -165,6 +170,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": undefined,
+        "color": undefined,
         "size": true,
         "style": undefined,
         "weight": undefined,

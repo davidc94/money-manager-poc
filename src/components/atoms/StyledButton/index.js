@@ -5,10 +5,10 @@ const colors = {
   accent: '#2E7AF6',
   disabled: '#C9C9C9',
   contrast: '#FFF',
-}
+};
 const Label = styled.Text`
   color: ${props => props.disabled
-    ? '#000'
+    ? '#808080'
     : props.outlined ? colors.accent : colors.contrast};
   font-weight: 700;
   font-size: 20px;  
