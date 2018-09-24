@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { StatusBar } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import StyledView from '../../atoms/StyledView';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
@@ -18,6 +19,7 @@ class Dashboard extends PureComponent {
   }
 
   render() {
+    console.log(this.props.navigation.navigate.backgroundColor)
     return (
       <StyledView>
         <StatusBar
@@ -37,16 +39,33 @@ export const TabNav = createBottomTabNavigator({
   Income: { screen: Income },
 },
   {
+    navigationOptions: ({ navigation }) => ({
+      tabBarIcon: ({ tintColor }) => {
+        const { routeName } = navigation.state;
+        let iconName;
+        if (routeName === 'Balance') {
+          iconName = 'bank';
+        } else if (routeName === 'Spent') {
+          iconName = 'currency-usd';
+        } else if (routeName === 'Income') {
+          iconName = 'cash-100';
+        }
+
+        return <Icon name={iconName} size={25} color={tintColor} />;
+      },
+    }),
     tabBarOptions: {
       activeTintColor: '#000',
       inactiveTintColor: '#999',
       style: {
-        backgroundColor: '#fff',
+        backgroundColor: '#e9e9ee',
         borderTopColor: 'grey',
         borderTopWidth: 0.5,
+        borderBottomWidth: 0,
+        paddingTop: 10,
       },
       labelStyle: {
-        fontSize: 20,
+        fontSize: 14,
       },
       indicatorStyle: {
         height: 0,
