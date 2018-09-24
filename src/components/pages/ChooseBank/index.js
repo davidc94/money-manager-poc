@@ -63,7 +63,7 @@ class ChooseBank extends PureComponent {
   render() {
     return (
       <View>
-        <StyledText style={{ marginVertical: 30 }}>
+        <StyledText style={{ marginLeft: 15, marginRight: 15, marginTop: 15, marginBottom: 15 }}>
           Select your bank that your day to day spending account is with.
         </StyledText>
         <FlatList

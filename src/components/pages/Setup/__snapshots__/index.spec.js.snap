@@ -26,24 +26,68 @@ ShallowWrapper {
         }
       >
         <StyledText
-          size="base"
+          style={
+            Object {
+              "alignSelf": "flex-start",
+              "fontSize": 35,
+              "marginLeft": 25,
+              "marginTop": 15,
+            }
+          }
           weight={true}
         >
-          How does this set up work?
-        </StyledText>
-        <StyledText
-          weight={true}
-        >
-          Step 1
-        </StyledText>
-        <StyledText>
-          Choose your bank -  You select your bank from the list of selected bank we work with!
+          How does this 
         </StyledText>
         <StyledText
           style={
             Object {
+              "alignSelf": "flex-start",
+              "fontSize": 35,
+              "marginLeft": 25,
+              "marginTop": 15,
+            }
+          }
+          weight={true}
+        >
+          set up work?
+        </StyledText>
+        <StyledText
+          style={
+            Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
               "marginBottom": 10,
               "marginTop": 20,
+              "paddingLeft": 25,
+            }
+          }
+          weight={true}
+        >
+          Step 1
+        </StyledText>
+        <StyledText
+          style={
+            Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            }
+          }
+        >
+          <StyledText
+            weight={true}
+          >
+            Choose your bank 
+          </StyledText>
+          - You select your bank from the list of selected bank we work with!
+        </StyledText>
+        <StyledText
+          style={
+            Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
+              "marginBottom": 10,
+              "marginTop": 20,
+              "paddingLeft": 25,
             }
           }
           weight={true}
@@ -58,13 +102,21 @@ ShallowWrapper {
             }
           }
         >
-          Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
+          <StyledText
+            weight={true}
+          >
+            Your consent 
+          </StyledText>
+          - We need your permission so that we can connect to your selected bank and one of the current account.
         </StyledText>
         <StyledText
           style={
             Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
               "marginBottom": 10,
               "marginTop": 20,
+              "paddingLeft": 25,
             }
           }
           weight={true}
@@ -79,7 +131,12 @@ ShallowWrapper {
             }
           }
         >
-          Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
+          <StyledText
+            weight={true}
+          >
+            Choose bank account 
+          </StyledText>
+          - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
         </StyledText>
         <Component
           style={
@@ -105,24 +162,68 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <StyledText
-            size="base"
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              }
+            }
             weight={true}
           >
-            How does this set up work?
-          </StyledText>,
-          <StyledText
-            weight={true}
-          >
-            Step 1
-          </StyledText>,
-          <StyledText>
-            Choose your bank -  You select your bank from the list of selected bank we work with!
+            How does this 
           </StyledText>,
           <StyledText
             style={
               Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              }
+            }
+            weight={true}
+          >
+            set up work?
+          </StyledText>,
+          <StyledText
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
+              }
+            }
+            weight={true}
+          >
+            Step 1
+          </StyledText>,
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
+            <StyledText
+              weight={true}
+            >
+              Choose your bank 
+            </StyledText>
+            - You select your bank from the list of selected bank we work with!
+          </StyledText>,
+          <StyledText
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
+                "marginBottom": 10,
+                "marginTop": 20,
+                "paddingLeft": 25,
               }
             }
             weight={true}
@@ -137,13 +238,21 @@ ShallowWrapper {
               }
             }
           >
-            Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
+            <StyledText
+              weight={true}
+            >
+              Your consent 
+            </StyledText>
+            - We need your permission so that we can connect to your selected bank and one of the current account.
           </StyledText>,
           <StyledText
             style={
               Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
               }
             }
             weight={true}
@@ -158,7 +267,12 @@ ShallowWrapper {
               }
             }
           >
-            Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
+            <StyledText
+              weight={true}
+            >
+              Choose bank account 
+            </StyledText>
+            - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
           </StyledText>,
           <Component
             style={
@@ -187,12 +301,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "How does this set up work?",
-            "size": "base",
+            "children": "How does this ",
+            "style": Object {
+              "alignSelf": "flex-start",
+              "fontSize": 35,
+              "marginLeft": 25,
+              "marginTop": 15,
+            },
             "weight": true,
           },
           "ref": null,
-          "rendered": "How does this set up work?",
+          "rendered": "How does this ",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "set up work?",
+            "style": Object {
+              "alignSelf": "flex-start",
+              "fontSize": 35,
+              "marginLeft": 25,
+              "marginTop": 15,
+            },
+            "weight": true,
+          },
+          "ref": null,
+          "rendered": "set up work?",
           "type": [Function],
         },
         Object {
@@ -201,6 +338,13 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Step 1",
+            "style": Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
+              "marginBottom": 10,
+              "marginTop": 20,
+              "paddingLeft": 25,
+            },
             "weight": true,
           },
           "ref": null,
@@ -212,10 +356,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+            "children": Array [
+              <StyledText
+                weight={true}
+              >
+                Choose your bank 
+              </StyledText>,
+              "- You select your bank from the list of selected bank we work with!",
+            ],
+            "style": Object {
+              "paddingLeft": 25,
+              "paddingRight": 25,
+            },
           },
           "ref": null,
-          "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Choose your bank ",
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "Choose your bank ",
+              "type": [Function],
+            },
+            "- You select your bank from the list of selected bank we work with!",
+          ],
           "type": [Function],
         },
         Object {
@@ -225,8 +394,11 @@ ShallowWrapper {
           "props": Object {
             "children": "Step 2",
             "style": Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
               "marginBottom": 10,
               "marginTop": 20,
+              "paddingLeft": 25,
             },
             "weight": true,
           },
@@ -239,14 +411,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+            "children": Array [
+              <StyledText
+                weight={true}
+              >
+                Your consent 
+              </StyledText>,
+              "- We need your permission so that we can connect to your selected bank and one of the current account.",
+            ],
             "style": Object {
               "paddingLeft": 25,
               "paddingRight": 25,
             },
           },
           "ref": null,
-          "rendered": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Your consent ",
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "Your consent ",
+              "type": [Function],
+            },
+            "- We need your permission so that we can connect to your selected bank and one of the current account.",
+          ],
           "type": [Function],
         },
         Object {
@@ -256,8 +449,11 @@ ShallowWrapper {
           "props": Object {
             "children": "Step 3",
             "style": Object {
+              "alignSelf": "flex-start",
+              "color": "#2E7AF6",
               "marginBottom": 10,
               "marginTop": 20,
+              "paddingLeft": 25,
             },
             "weight": true,
           },
@@ -270,14 +466,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+            "children": Array [
+              <StyledText
+                weight={true}
+              >
+                Choose bank account 
+              </StyledText>,
+              "- You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+            ],
             "style": Object {
               "paddingLeft": 25,
               "paddingRight": 25,
             },
           },
           "ref": null,
-          "rendered": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Choose bank account ",
+                "weight": true,
+              },
+              "ref": null,
+              "rendered": "Choose bank account ",
+              "type": [Function],
+            },
+            "- You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+          ],
           "type": [Function],
         },
         Object {
@@ -330,24 +547,68 @@ ShallowWrapper {
           }
         >
           <StyledText
-            size="base"
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              }
+            }
             weight={true}
           >
-            How does this set up work?
-          </StyledText>
-          <StyledText
-            weight={true}
-          >
-            Step 1
-          </StyledText>
-          <StyledText>
-            Choose your bank -  You select your bank from the list of selected bank we work with!
+            How does this 
           </StyledText>
           <StyledText
             style={
               Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              }
+            }
+            weight={true}
+          >
+            set up work?
+          </StyledText>
+          <StyledText
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
+              }
+            }
+            weight={true}
+          >
+            Step 1
+          </StyledText>
+          <StyledText
+            style={
+              Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              }
+            }
+          >
+            <StyledText
+              weight={true}
+            >
+              Choose your bank 
+            </StyledText>
+            - You select your bank from the list of selected bank we work with!
+          </StyledText>
+          <StyledText
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
+                "marginBottom": 10,
+                "marginTop": 20,
+                "paddingLeft": 25,
               }
             }
             weight={true}
@@ -362,13 +623,21 @@ ShallowWrapper {
               }
             }
           >
-            Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
+            <StyledText
+              weight={true}
+            >
+              Your consent 
+            </StyledText>
+            - We need your permission so that we can connect to your selected bank and one of the current account.
           </StyledText>
           <StyledText
             style={
               Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
               }
             }
             weight={true}
@@ -383,7 +652,12 @@ ShallowWrapper {
               }
             }
           >
-            Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
+            <StyledText
+              weight={true}
+            >
+              Choose bank account 
+            </StyledText>
+            - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
           </StyledText>
           <Component
             style={
@@ -409,24 +683,68 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <StyledText
-              size="base"
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "fontSize": 35,
+                  "marginLeft": 25,
+                  "marginTop": 15,
+                }
+              }
               weight={true}
             >
-              How does this set up work?
-            </StyledText>,
-            <StyledText
-              weight={true}
-            >
-              Step 1
-            </StyledText>,
-            <StyledText>
-              Choose your bank -  You select your bank from the list of selected bank we work with!
+              How does this 
             </StyledText>,
             <StyledText
               style={
                 Object {
+                  "alignSelf": "flex-start",
+                  "fontSize": 35,
+                  "marginLeft": 25,
+                  "marginTop": 15,
+                }
+              }
+              weight={true}
+            >
+              set up work?
+            </StyledText>,
+            <StyledText
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "color": "#2E7AF6",
                   "marginBottom": 10,
                   "marginTop": 20,
+                  "paddingLeft": 25,
+                }
+              }
+              weight={true}
+            >
+              Step 1
+            </StyledText>,
+            <StyledText
+              style={
+                Object {
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                }
+              }
+            >
+              <StyledText
+                weight={true}
+              >
+                Choose your bank 
+              </StyledText>
+              - You select your bank from the list of selected bank we work with!
+            </StyledText>,
+            <StyledText
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "color": "#2E7AF6",
+                  "marginBottom": 10,
+                  "marginTop": 20,
+                  "paddingLeft": 25,
                 }
               }
               weight={true}
@@ -441,13 +759,21 @@ ShallowWrapper {
                 }
               }
             >
-              Your consent - We need your permission so that we can connect to your selected bank and one of the current account.
+              <StyledText
+                weight={true}
+              >
+                Your consent 
+              </StyledText>
+              - We need your permission so that we can connect to your selected bank and one of the current account.
             </StyledText>,
             <StyledText
               style={
                 Object {
+                  "alignSelf": "flex-start",
+                  "color": "#2E7AF6",
                   "marginBottom": 10,
                   "marginTop": 20,
+                  "paddingLeft": 25,
                 }
               }
               weight={true}
@@ -462,7 +788,12 @@ ShallowWrapper {
                 }
               }
             >
-              Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
+              <StyledText
+                weight={true}
+              >
+                Choose bank account 
+              </StyledText>
+              - You will choose the bank account that you use for your day to day spend (if you have more than one current account)
             </StyledText>,
             <Component
               style={
@@ -491,12 +822,35 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "How does this set up work?",
-              "size": "base",
+              "children": "How does this ",
+              "style": Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              },
               "weight": true,
             },
             "ref": null,
-            "rendered": "How does this set up work?",
+            "rendered": "How does this ",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "set up work?",
+              "style": Object {
+                "alignSelf": "flex-start",
+                "fontSize": 35,
+                "marginLeft": 25,
+                "marginTop": 15,
+              },
+              "weight": true,
+            },
+            "ref": null,
+            "rendered": "set up work?",
             "type": [Function],
           },
           Object {
@@ -505,6 +859,13 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Step 1",
+              "style": Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
+                "marginBottom": 10,
+                "marginTop": 20,
+                "paddingLeft": 25,
+              },
               "weight": true,
             },
             "ref": null,
@@ -516,10 +877,35 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+              "children": Array [
+                <StyledText
+                  weight={true}
+                >
+                  Choose your bank 
+                </StyledText>,
+                "- You select your bank from the list of selected bank we work with!",
+              ],
+              "style": Object {
+                "paddingLeft": 25,
+                "paddingRight": 25,
+              },
             },
             "ref": null,
-            "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Choose your bank ",
+                  "weight": true,
+                },
+                "ref": null,
+                "rendered": "Choose your bank ",
+                "type": [Function],
+              },
+              "- You select your bank from the list of selected bank we work with!",
+            ],
             "type": [Function],
           },
           Object {
@@ -529,8 +915,11 @@ ShallowWrapper {
             "props": Object {
               "children": "Step 2",
               "style": Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
               },
               "weight": true,
             },
@@ -543,14 +932,35 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+              "children": Array [
+                <StyledText
+                  weight={true}
+                >
+                  Your consent 
+                </StyledText>,
+                "- We need your permission so that we can connect to your selected bank and one of the current account.",
+              ],
               "style": Object {
                 "paddingLeft": 25,
                 "paddingRight": 25,
               },
             },
             "ref": null,
-            "rendered": "Your consent - We need your permission so that we can connect to your selected bank and one of the current account.",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Your consent ",
+                  "weight": true,
+                },
+                "ref": null,
+                "rendered": "Your consent ",
+                "type": [Function],
+              },
+              "- We need your permission so that we can connect to your selected bank and one of the current account.",
+            ],
             "type": [Function],
           },
           Object {
@@ -560,8 +970,11 @@ ShallowWrapper {
             "props": Object {
               "children": "Step 3",
               "style": Object {
+                "alignSelf": "flex-start",
+                "color": "#2E7AF6",
                 "marginBottom": 10,
                 "marginTop": 20,
+                "paddingLeft": 25,
               },
               "weight": true,
             },
@@ -574,14 +987,35 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+              "children": Array [
+                <StyledText
+                  weight={true}
+                >
+                  Choose bank account 
+                </StyledText>,
+                "- You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+              ],
               "style": Object {
                 "paddingLeft": 25,
                 "paddingRight": 25,
               },
             },
             "ref": null,
-            "rendered": "Choose bank account - You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Choose bank account ",
+                  "weight": true,
+                },
+                "ref": null,
+                "rendered": "Choose bank account ",
+                "type": [Function],
+              },
+              "- You will choose the bank account that you use for your day to day spend (if you have more than one current account)",
+            ],
             "type": [Function],
           },
           Object {

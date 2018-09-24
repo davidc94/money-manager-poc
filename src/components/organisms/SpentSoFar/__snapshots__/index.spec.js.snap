@@ -29,7 +29,7 @@ ShallowWrapper {
           }
         >
           <StyledText
-            size={true}
+            size="large"
             weight={true}
           >
             Spent so far
@@ -181,7 +181,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <StyledText
-            size={true}
+            size="large"
             weight={true}
           >
             Spent so far
@@ -200,7 +200,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Spent so far",
-            "size": true,
+            "size": "large",
             "weight": true,
           },
           "ref": null,
@@ -570,7 +570,7 @@ ShallowWrapper {
             }
           >
             <StyledText
-              size={true}
+              size="large"
               weight={true}
             >
               Spent so far
@@ -722,7 +722,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <StyledText
-              size={true}
+              size="large"
               weight={true}
             >
               Spent so far
@@ -741,7 +741,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Spent so far",
-              "size": true,
+              "size": "large",
               "weight": true,
             },
             "ref": null,
