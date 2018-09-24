@@ -25,7 +25,7 @@ const styles = {
   childViewStyle: {flex:3,flexDirection:'column'},
   textStyle: { marginBottom:10 },
   bottomView: { padding: 10, margin:20, alignItems: 'center'},
-  continueButton: { width:"68%"}
+  continueButton: { width:"68%"},
 }
 class ChooseAccount extends PureComponent {
 
