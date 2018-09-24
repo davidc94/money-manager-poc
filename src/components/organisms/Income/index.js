@@ -23,13 +23,13 @@ class Income extends PureComponent {
 
     return (
       <View style={outerStyle}>
-        <StyledText size weight>Income</StyledText>
+        <StyledText size='large' weight>Income</StyledText>
         <StyledText style={dateStyle}>This month (1st June '18 - 18th October '18)</StyledText>
         <View style={receivedAmountStyle}>
           <StyledText style={midTextStyle}>Received so far</StyledText>
           <View style={flexEndStyle}>
-            <StyledText size weight>£</StyledText>
-            <StyledText size weight>{receivedAmount}</StyledText>
+            <StyledText size='large' weight>£</StyledText>
+            <StyledText size='large' weight>{receivedAmount}</StyledText>
           </View>
         </View>
         <FlatList

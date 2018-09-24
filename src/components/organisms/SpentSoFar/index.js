@@ -75,7 +75,7 @@ export default class SpentSoFar extends PureComponent {
     return (
       <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
         <View style={{ paddingBottom: 20, marginVertical: 20, borderBottomColor: '#ccc', borderBottomWidth: 1 }}>
-          <StyledText size weight>Spent so far</StyledText>
+          <StyledText size='large' weight>Spent so far</StyledText>
         </View>
         <StyledView style={styles.buttonsView}>
           {this.renderButtons()}

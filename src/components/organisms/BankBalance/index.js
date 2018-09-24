@@ -40,6 +40,9 @@ const styles = StyleSheet.create({
   balanceAmount: {
     fontSize: 28,
     fontWeight: 'bold',
+  },
+  selectedAccount: {
+    fontSize: 14,
   }
 });
 
@@ -51,7 +54,8 @@ class BankBalance extends PureComponent {
     }
     const {
       bankBalance: { balance },
-      selectedBank: { bankName }
+      selectedBank: { bankName },
+      selectedAccount,
     } = this.props;
     return (
       <View style={styles.container}>
@@ -59,7 +63,10 @@ class BankBalance extends PureComponent {
           <Text style={styles.headerText}>Bank balance</Text>
         </View>
         <View style={styles.bankDetailsContainer}>
-          <Text style={styles.bankName}>{bankName}</Text>
+          <View>
+            <Text style={styles.bankName}>{bankName}</Text>
+            <Text style={styles.selectedAccount}>{selectedAccount.accountType}</Text>
+          </View>
           <Image source={bankImages[bankName]} />
         </View>
         <View style={styles.balanceContainer}>
@@ -75,7 +82,7 @@ const mapsStateToProps = (state) => {
   return {
     bankBalance: state.bankBalance.data,
     selectedBank: state.bank.selected,
-    selectedAccount: state.bank.selectedAccount
+    selectedAccount: state.bank.selectedAccount,
   };
 };
 
