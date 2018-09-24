@@ -1,13 +1,9 @@
 import React, { PureComponent } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import { FETCH_INCOME_DATA } from '../../../store/constants';
 import StyledText from '../../atoms/StyledText';
 
 class Income extends PureComponent {
-  componentDidMount() {
-    this.props.dispatch({ type: FETCH_INCOME_DATA });
-  }
 
   render() {
     if (!this.props.incomeList) { return null; }
@@ -45,7 +41,7 @@ class Income extends PureComponent {
                 <StyledText style={midTextStyle}>{item.title}</StyledText>
               </View>
               <Text style={midTextStyle}>
-£
+                £
                 {item.amount}
               </Text>
             </View>
@@ -58,19 +54,17 @@ class Income extends PureComponent {
 
 const styles = {
   outerStyle: {
-    borderWidth: 1,
-    borderColor: '#000',
     margin: 5,
-    padding: 10,
-    borderBottomWidth: 3,
-    borderRightWidth: 3,
+    marginTop: 20,
+    paddingHorizontal: 10,
+    paddigVertical: 20,
   },
   receivedAmountStyle: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: 'lightgray',
     padding: 15,
-    marginTop: 15,
+    marginTop: 40,
     marginBottom: 15,
     alignItems: 'center',
   },

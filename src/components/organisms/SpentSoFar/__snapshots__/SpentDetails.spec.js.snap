@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`bank balance renders as expected 1`] = `
+exports[`spent details renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(BankBalance)
+  Symbol(enzyme.__unrendered__): <Connect(SpentDetails)
+    selected="regularSpending"
     store={
       Object {
         "clearActions": [Function],
@@ -28,15 +29,33 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "bankBalance": Object {
-        "balance": 2000,
-        "userName": "Mr. T.",
-      },
       "dispatch": [Function],
-      "selectedAccount": undefined,
-      "selectedBank": Object {
-        "bankName": "bank1",
-        "logoImage": "bank1logo",
+      "selected": "regularSpending",
+      "spent": Object {
+        "allSpending": Array [
+          Object {
+            "amount": 3000,
+            "title": "All",
+          },
+        ],
+        "dayToDaySpending": Array [
+          Object {
+            "amount": 200,
+            "category": "Groceries",
+          },
+        ],
+        "regularSpending": Array [
+          Object {
+            "amount": 120,
+            "date": "June 1",
+            "title": "Camden Council Tax",
+          },
+          Object {
+            "amount": 110,
+            "date": "June 2",
+            "title": "British Gas",
+          },
+        ],
       },
       "store": Object {
         "clearActions": [Function],
@@ -76,15 +95,33 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "bankBalance": Object {
-          "balance": 2000,
-          "userName": "Mr. T.",
-        },
         "dispatch": [Function],
-        "selectedAccount": undefined,
-        "selectedBank": Object {
-          "bankName": "bank1",
-          "logoImage": "bank1logo",
+        "selected": "regularSpending",
+        "spent": Object {
+          "allSpending": Array [
+            Object {
+              "amount": 3000,
+              "title": "All",
+            },
+          ],
+          "dayToDaySpending": Array [
+            Object {
+              "amount": 200,
+              "category": "Groceries",
+            },
+          ],
+          "regularSpending": Array [
+            Object {
+              "amount": 120,
+              "date": "June 1",
+              "title": "Camden Council Tax",
+            },
+            Object {
+              "amount": 110,
+              "date": "June 2",
+              "title": "British Gas",
+            },
+          ],
         },
         "store": Object {
           "clearActions": [Function],

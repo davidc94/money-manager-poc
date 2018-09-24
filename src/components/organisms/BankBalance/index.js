@@ -45,10 +45,6 @@ const styles = StyleSheet.create({
 
 class BankBalance extends PureComponent {
 
-  componentDidMount() {
-    this.props.dispatch({ type: FETCH_BANK_BALANCE });
-  }
-
   render() {
     if (!this.props.bankBalance) {
       return null;
@@ -79,6 +75,7 @@ const mapsStateToProps = (state) => {
   return {
     bankBalance: state.bankBalance.data,
     selectedBank: state.bank.selected,
+    selectedAccount: state.bank.selectedAccount
   };
 };
 

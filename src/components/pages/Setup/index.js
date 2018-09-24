@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
@@ -18,7 +18,7 @@ export default class Setup extends PureComponent {
             Choose your bank -  You select your bank from the list of
             selected bank we work with!
           </StyledText>
-          
+
           <StyledText weight style={step}>Step 2</StyledText>
           <StyledText style={text}>
             Your consent - We need your permission so
@@ -31,13 +31,13 @@ export default class Setup extends PureComponent {
             that you use for your day to day spend (if you have more
             than one current account)
           </StyledText>
-          <StyledButton 
-            className="button"
-            style={button}
-            onPress={() => this.props.navigation.navigate('ChooseBank')}
-          >
-            Continue
+          <View style={{ paddingHorizontal: 80, marginTop: 30 }}>
+            <StyledButton
+              onPress={() => this.props.navigation.navigate('ChooseBank')}
+            >
+              Continue
           </StyledButton>
+          </View>
         </StyledView>
       </ScrollView>
     );
