@@ -20,42 +20,23 @@ ShallowWrapper {
       "children": <Styled(Component)
         style={
           Object {
-            "alignItems": "center",
-            "marginTop": 15,
+            "flex": 1,
+            "justifyContent": "center",
           }
         }
       >
         <StyledText
-          size={true}
+          size="base"
           weight={true}
         >
-          How does this
+          How does this set up work?
         </StyledText>
         <StyledText
-          size={true}
-          weight={true}
-        >
-          set up work?
-        </StyledText>
-        <StyledText
-          style={
-            Object {
-              "marginBottom": 10,
-              "marginTop": 20,
-            }
-          }
           weight={true}
         >
           Step 1
         </StyledText>
-        <StyledText
-          style={
-            Object {
-              "paddingLeft": 25,
-              "paddingRight": 25,
-            }
-          }
-        >
+        <StyledText>
           Choose your bank -  You select your bank from the list of selected bank we work with!
         </StyledText>
         <StyledText
@@ -123,36 +104,17 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <StyledText
-            size={true}
+            size="base"
             weight={true}
           >
-            How does this
+            How does this set up work?
           </StyledText>,
           <StyledText
-            size={true}
-            weight={true}
-          >
-            set up work?
-          </StyledText>,
-          <StyledText
-            style={
-              Object {
-                "marginBottom": 10,
-                "marginTop": 20,
-              }
-            }
             weight={true}
           >
             Step 1
           </StyledText>,
-          <StyledText
-            style={
-              Object {
-                "paddingLeft": 25,
-                "paddingRight": 25,
-              }
-            }
-          >
+          <StyledText>
             Choose your bank -  You select your bank from the list of selected bank we work with!
           </StyledText>,
           <StyledText
@@ -212,8 +174,8 @@ ShallowWrapper {
           </StyledButton>,
         ],
         "style": Object {
-          "alignItems": "center",
-          "marginTop": 15,
+          "flex": 1,
+          "justifyContent": "center",
         },
       },
       "ref": null,
@@ -223,25 +185,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "How does this",
-            "size": true,
+            "children": "How does this set up work?",
+            "size": "base",
             "weight": true,
           },
           "ref": null,
-          "rendered": "How does this",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "set up work?",
-            "size": true,
-            "weight": true,
-          },
-          "ref": null,
-          "rendered": "set up work?",
+          "rendered": "How does this set up work?",
           "type": [Function],
         },
         Object {
@@ -250,10 +199,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Step 1",
-            "style": Object {
-              "marginBottom": 10,
-              "marginTop": 20,
-            },
             "weight": true,
           },
           "ref": null,
@@ -266,10 +211,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
-            "style": Object {
-              "paddingLeft": 25,
-              "paddingRight": 25,
-            },
           },
           "ref": null,
           "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",
@@ -369,42 +310,23 @@ ShallowWrapper {
         "children": <Styled(Component)
           style={
             Object {
-              "alignItems": "center",
-              "marginTop": 15,
+              "flex": 1,
+              "justifyContent": "center",
             }
           }
         >
           <StyledText
-            size={true}
+            size="base"
             weight={true}
           >
-            How does this
+            How does this set up work?
           </StyledText>
           <StyledText
-            size={true}
-            weight={true}
-          >
-            set up work?
-          </StyledText>
-          <StyledText
-            style={
-              Object {
-                "marginBottom": 10,
-                "marginTop": 20,
-              }
-            }
             weight={true}
           >
             Step 1
           </StyledText>
-          <StyledText
-            style={
-              Object {
-                "paddingLeft": 25,
-                "paddingRight": 25,
-              }
-            }
-          >
+          <StyledText>
             Choose your bank -  You select your bank from the list of selected bank we work with!
           </StyledText>
           <StyledText
@@ -472,36 +394,17 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <StyledText
-              size={true}
+              size="base"
               weight={true}
             >
-              How does this
+              How does this set up work?
             </StyledText>,
             <StyledText
-              size={true}
-              weight={true}
-            >
-              set up work?
-            </StyledText>,
-            <StyledText
-              style={
-                Object {
-                  "marginBottom": 10,
-                  "marginTop": 20,
-                }
-              }
               weight={true}
             >
               Step 1
             </StyledText>,
-            <StyledText
-              style={
-                Object {
-                  "paddingLeft": 25,
-                  "paddingRight": 25,
-                }
-              }
-            >
+            <StyledText>
               Choose your bank -  You select your bank from the list of selected bank we work with!
             </StyledText>,
             <StyledText
@@ -561,8 +464,8 @@ ShallowWrapper {
             </StyledButton>,
           ],
           "style": Object {
-            "alignItems": "center",
-            "marginTop": 15,
+            "flex": 1,
+            "justifyContent": "center",
           },
         },
         "ref": null,
@@ -572,25 +475,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "How does this",
-              "size": true,
+              "children": "How does this set up work?",
+              "size": "base",
               "weight": true,
             },
             "ref": null,
-            "rendered": "How does this",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "set up work?",
-              "size": true,
-              "weight": true,
-            },
-            "ref": null,
-            "rendered": "set up work?",
+            "rendered": "How does this set up work?",
             "type": [Function],
           },
           Object {
@@ -599,10 +489,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Step 1",
-              "style": Object {
-                "marginBottom": 10,
-                "marginTop": 20,
-              },
               "weight": true,
             },
             "ref": null,
@@ -615,10 +501,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": "Choose your bank -  You select your bank from the list of selected bank we work with!",
-              "style": Object {
-                "paddingLeft": 25,
-                "paddingRight": 25,
-              },
             },
             "ref": null,
             "rendered": "Choose your bank -  You select your bank from the list of selected bank we work with!",

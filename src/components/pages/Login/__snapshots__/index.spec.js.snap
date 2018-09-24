@@ -3,7 +3,18 @@
 exports[`login renders as expected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Login />,
+  Symbol(enzyme.__unrendered__): <Connect(Login)
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,220 +28,52 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <Component
-          style={
-            Object {
-              "marginVertical": 10,
-              "paddingHorizontal": 30,
-            }
-          }
-        >
-          <StyledText
-            style={
-              Object {
-                "textAlign": "center",
-              }
-            }
-            weight={true}
-          >
-            USERNAME
-          </StyledText>
-          <StyledTextInput />
-        </Component>,
-        <Component
-          style={
-            Object {
-              "marginVertical": 10,
-              "paddingHorizontal": 30,
-            }
-          }
-        >
-          <StyledText
-            style={
-              Object {
-                "textAlign": "center",
-              }
-            }
-            weight={true}
-          >
-            PASSWORD
-          </StyledText>
-          <StyledTextInput
-            password={true}
-          />
-        </Component>,
-        <Component
-          style={
-            Object {
-              "paddingHorizontal": 80,
-            }
-          }
-        >
-          <StyledButton
-            onPress={[Function]}
-            style={
-              Object {
-                "marginTop": 15,
-              }
-            }
-          >
-            LOGIN
-          </StyledButton>
-        </Component>,
-      ],
-      "style": Object {
-        "justifyContent": "center",
+      "dispatch": [Function],
+      "selected": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
       },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
+      "userList": Array [
+        Object {
+          "emailID": "email1",
+          "password": "password1",
+          "user": "user1",
+          "userName": "username1",
+        },
+        Object {
+          "emailID": "email2",
+          "password": "password2",
+          "user": "user2",
+          "userName": "username2",
+        },
+      ],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <StyledText
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              weight={true}
-            >
-              USERNAME
-            </StyledText>,
-            <StyledTextInput />,
-          ],
-          "style": Object {
-            "marginVertical": 10,
-            "paddingHorizontal": 30,
-          },
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "USERNAME",
-              "style": Object {
-                "textAlign": "center",
-              },
-              "weight": true,
-            },
-            "ref": null,
-            "rendered": "USERNAME",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <StyledText
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              weight={true}
-            >
-              PASSWORD
-            </StyledText>,
-            <StyledTextInput
-              password={true}
-            />,
-          ],
-          "style": Object {
-            "marginVertical": 10,
-            "paddingHorizontal": 30,
-          },
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "PASSWORD",
-              "style": Object {
-                "textAlign": "center",
-              },
-              "weight": true,
-            },
-            "ref": null,
-            "rendered": "PASSWORD",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "password": true,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <StyledButton
-            onPress={[Function]}
-            style={
-              Object {
-                "marginTop": 15,
-              }
-            }
-          >
-            LOGIN
-          </StyledButton>,
-          "style": Object {
-            "paddingHorizontal": 80,
-          },
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "LOGIN",
-            "onPress": [Function],
-            "style": Object {
-              "marginTop": 15,
-            },
-          },
-          "ref": null,
-          "rendered": "LOGIN",
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -239,220 +82,52 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": Array [
-          <Component
-            style={
-              Object {
-                "marginVertical": 10,
-                "paddingHorizontal": 30,
-              }
-            }
-          >
-            <StyledText
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              weight={true}
-            >
-              USERNAME
-            </StyledText>
-            <StyledTextInput />
-          </Component>,
-          <Component
-            style={
-              Object {
-                "marginVertical": 10,
-                "paddingHorizontal": 30,
-              }
-            }
-          >
-            <StyledText
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              weight={true}
-            >
-              PASSWORD
-            </StyledText>
-            <StyledTextInput
-              password={true}
-            />
-          </Component>,
-          <Component
-            style={
-              Object {
-                "paddingHorizontal": 80,
-              }
-            }
-          >
-            <StyledButton
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 15,
-                }
-              }
-            >
-              LOGIN
-            </StyledButton>
-          </Component>,
-        ],
-        "style": Object {
-          "justifyContent": "center",
+        "dispatch": [Function],
+        "selected": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
         },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
+        },
+        "userList": Array [
+          Object {
+            "emailID": "email1",
+            "password": "password1",
+            "user": "user1",
+            "userName": "username1",
+          },
+          Object {
+            "emailID": "email2",
+            "password": "password2",
+            "user": "user2",
+            "userName": "username2",
+          },
+        ],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <StyledText
-                style={
-                  Object {
-                    "textAlign": "center",
-                  }
-                }
-                weight={true}
-              >
-                USERNAME
-              </StyledText>,
-              <StyledTextInput />,
-            ],
-            "style": Object {
-              "marginVertical": 10,
-              "paddingHorizontal": 30,
-            },
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": "USERNAME",
-                "style": Object {
-                  "textAlign": "center",
-                },
-                "weight": true,
-              },
-              "ref": null,
-              "rendered": "USERNAME",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <StyledText
-                style={
-                  Object {
-                    "textAlign": "center",
-                  }
-                }
-                weight={true}
-              >
-                PASSWORD
-              </StyledText>,
-              <StyledTextInput
-                password={true}
-              />,
-            ],
-            "style": Object {
-              "marginVertical": 10,
-              "paddingHorizontal": 30,
-            },
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": "PASSWORD",
-                "style": Object {
-                  "textAlign": "center",
-                },
-                "weight": true,
-              },
-              "ref": null,
-              "rendered": "PASSWORD",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "password": true,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <StyledButton
-              onPress={[Function]}
-              style={
-                Object {
-                  "marginTop": 15,
-                }
-              }
-            >
-              LOGIN
-            </StyledButton>,
-            "style": Object {
-              "paddingHorizontal": 80,
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "LOGIN",
-              "onPress": [Function],
-              "style": Object {
-                "marginTop": 15,
-              },
-            },
-            "ref": null,
-            "rendered": "LOGIN",
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
+      "rendered": null,
       "type": [Function],
     },
   ],
