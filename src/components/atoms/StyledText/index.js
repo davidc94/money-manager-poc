@@ -18,12 +18,8 @@ const customColor = {
 };
 
 const TextStyling = styled.Text`
-    padding: 2px;
     font-size: ${ props => props.size ? fontSize[props.size] : fontSize['base']};
-    font-family: Verdana;
     font-weight: ${ props => props.weight ? fontWeight.large : fontWeight.base};
-    width: 95%;
-    margin: 5px auto;
     color: ${ props => props.color ? customColor.error : customColor.normal};
 `;
 
@@ -32,7 +28,7 @@ const StyledText = (props) => (
     size={props.size}
     style={props.style}
     weight={props.weight}
-    color= {props.color}
+    color={props.color}
   >
     {props.children}
   </TextStyling>
