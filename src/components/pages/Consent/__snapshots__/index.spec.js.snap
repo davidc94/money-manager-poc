@@ -24,13 +24,21 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        <StyledText
+          size="large"
+          style={
+            Object {
+              "marginBottom": 15,
+            }
+          }
+        >
+          Your consent
+        </StyledText>,
         <Component
           style={
             Object {
-              "alignSelf": "center",
               "flex": 1,
               "marginBottom": 15,
-              "marginTop": 15,
             }
           }
         >
@@ -45,22 +53,14 @@ ShallowWrapper {
             All we can do is look at...
           </StyledText>
         </Component>,
-        <Component
-          style={
-            Object {
-              "paddingHorizontal": 10,
-            }
-          }
-        >
+        <Component>
           <AccordionView />
         </Component>,
         <Component>
           <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginVertical": 15,
               }
             }
           >
@@ -71,9 +71,7 @@ ShallowWrapper {
           <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               }
             }
           >
@@ -99,9 +97,7 @@ ShallowWrapper {
               Object {
                 "flex": 2,
                 "fontSize": 15,
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               }
             }
           >
@@ -112,9 +108,7 @@ ShallowWrapper {
           <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               }
             }
           >
@@ -154,9 +148,28 @@ ShallowWrapper {
           </StyledButton>
         </Styled(Component)>,
       ],
+      "style": Object {
+        "marginTop": 20,
+        "paddingHorizontal": 25,
+      },
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Your consent",
+          "size": "large",
+          "style": Object {
+            "marginBottom": 15,
+          },
+        },
+        "ref": null,
+        "rendered": "Your consent",
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -175,10 +188,8 @@ ShallowWrapper {
             </StyledText>,
           ],
           "style": Object {
-            "alignSelf": "center",
             "flex": 1,
             "marginBottom": 15,
-            "marginTop": 15,
           },
         },
         "ref": null,
@@ -216,9 +227,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <AccordionView />,
-          "style": Object {
-            "paddingHorizontal": 10,
-          },
         },
         "ref": null,
         "rendered": Object {
@@ -240,9 +248,7 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginVertical": 15,
               }
             }
           >
@@ -257,9 +263,7 @@ ShallowWrapper {
           "props": Object {
             "children": "gameplan can only read your bank data and can't make payments or change your account.",
             "style": Object {
-              "marginBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginVertical": 15,
             },
           },
           "ref": null,
@@ -276,9 +280,7 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               }
             }
           >
@@ -293,9 +295,7 @@ ShallowWrapper {
           "props": Object {
             "children": "We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission",
             "style": Object {
-              "marginBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginBottom": 15,
             },
           },
           "ref": null,
@@ -328,9 +328,7 @@ ShallowWrapper {
                 Object {
                   "flex": 2,
                   "fontSize": 15,
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -379,9 +377,7 @@ ShallowWrapper {
               "style": Object {
                 "flex": 2,
                 "fontSize": 15,
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               },
             },
             "ref": null,
@@ -399,9 +395,7 @@ ShallowWrapper {
           "children": <StyledText
             style={
               Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               }
             }
           >
@@ -416,9 +410,7 @@ ShallowWrapper {
           "props": Object {
             "children": "We will now securely take you to your bank/building society",
             "style": Object {
-              "marginBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
+              "marginBottom": 15,
             },
           },
           "ref": null,
@@ -510,13 +502,21 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          <StyledText
+            size="large"
+            style={
+              Object {
+                "marginBottom": 15,
+              }
+            }
+          >
+            Your consent
+          </StyledText>,
           <Component
             style={
               Object {
-                "alignSelf": "center",
                 "flex": 1,
                 "marginBottom": 15,
-                "marginTop": 15,
               }
             }
           >
@@ -531,22 +531,14 @@ ShallowWrapper {
               All we can do is look at...
             </StyledText>
           </Component>,
-          <Component
-            style={
-              Object {
-                "paddingHorizontal": 10,
-              }
-            }
-          >
+          <Component>
             <AccordionView />
           </Component>,
           <Component>
             <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginVertical": 15,
                 }
               }
             >
@@ -557,9 +549,7 @@ ShallowWrapper {
             <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -585,9 +575,7 @@ ShallowWrapper {
                 Object {
                   "flex": 2,
                   "fontSize": 15,
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -598,9 +586,7 @@ ShallowWrapper {
             <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -640,9 +626,28 @@ ShallowWrapper {
             </StyledButton>
           </Styled(Component)>,
         ],
+        "style": Object {
+          "marginTop": 20,
+          "paddingHorizontal": 25,
+        },
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Your consent",
+            "size": "large",
+            "style": Object {
+              "marginBottom": 15,
+            },
+          },
+          "ref": null,
+          "rendered": "Your consent",
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -661,10 +666,8 @@ ShallowWrapper {
               </StyledText>,
             ],
             "style": Object {
-              "alignSelf": "center",
               "flex": 1,
               "marginBottom": 15,
-              "marginTop": 15,
             },
           },
           "ref": null,
@@ -702,9 +705,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <AccordionView />,
-            "style": Object {
-              "paddingHorizontal": 10,
-            },
           },
           "ref": null,
           "rendered": Object {
@@ -726,9 +726,7 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginVertical": 15,
                 }
               }
             >
@@ -743,9 +741,7 @@ ShallowWrapper {
             "props": Object {
               "children": "gameplan can only read your bank data and can't make payments or change your account.",
               "style": Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginVertical": 15,
               },
             },
             "ref": null,
@@ -762,9 +758,7 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -779,9 +773,7 @@ ShallowWrapper {
             "props": Object {
               "children": "We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission",
               "style": Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               },
             },
             "ref": null,
@@ -814,9 +806,7 @@ ShallowWrapper {
                   Object {
                     "flex": 2,
                     "fontSize": 15,
-                    "marginBottom": 10,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
+                    "marginBottom": 15,
                   }
                 }
               >
@@ -865,9 +855,7 @@ ShallowWrapper {
                 "style": Object {
                   "flex": 2,
                   "fontSize": 15,
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 },
               },
               "ref": null,
@@ -885,9 +873,7 @@ ShallowWrapper {
             "children": <StyledText
               style={
                 Object {
-                  "marginBottom": 10,
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
+                  "marginBottom": 15,
                 }
               }
             >
@@ -902,9 +888,7 @@ ShallowWrapper {
             "props": Object {
               "children": "We will now securely take you to your bank/building society",
               "style": Object {
-                "marginBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "marginBottom": 15,
               },
             },
             "ref": null,
