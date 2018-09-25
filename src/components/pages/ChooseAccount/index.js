@@ -5,6 +5,7 @@ import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
 import { FETCH_BANK_ACCOUNT_DATA, SELECTED_BANK_ACCOUNT_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
+import PropTypes from 'prop-types';
 
 const styles = {
   container: { flex: 1, justifyContent: 'center' },
@@ -100,3 +101,9 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect (mapStateToProps)(ChooseAccount);
+
+ChooseAccount.propTypes = {
+  selectedBankAccount: PropTypes.object,
+  bankAccountList: PropTypes.array,
+}
+

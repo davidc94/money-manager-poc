@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import StyledText from '../../atoms/StyledText';
+import PropTypes from 'prop-types';
 
 const styles = {
   outerStyle: {
@@ -93,3 +94,7 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(Income);
+
+Income.propTypes = {
+  incomeList: PropTypes.func,
+}
