@@ -4,6 +4,7 @@ import StyledButton from '../../atoms/StyledButton';
 import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import AccordionView from './AccordionView';
+import PropTypes from 'prop-types';
 
 const StyledContainer = StyledView.extend`
   flex-direction: row;
@@ -76,4 +77,8 @@ export default class Consent extends PureComponent {
       </ScrollView>
     );
   }
+}
+
+Consent.propTypes = {
+  navigation: PropTypes.object,
 }

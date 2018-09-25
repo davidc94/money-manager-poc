@@ -11,6 +11,7 @@ import StyledButton from '../../atoms/StyledButton';
 import StyledText from '../../atoms/StyledText';
 import { FETCH_BANK_DATA, SELECTED_BANK_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   bankItem: {
@@ -94,3 +95,9 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps)(ChooseBank);
+
+ChooseBank.propTypes = {
+  navigation: PropTypes.object,
+  selectedBank: PropTypes.object,
+  bankList: PropTypes.array,
+}

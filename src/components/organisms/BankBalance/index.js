@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { FETCH_BANK_BALANCE } from '../../../store/constants';
 import bankImages from '../../../assets/images/banklogos/index';
 import StyledText from '../../atoms/StyledText';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {
@@ -87,3 +88,8 @@ const mapsStateToProps = (state) => {
 };
 
 export default connect(mapsStateToProps)(BankBalance);
+
+BankBalance.propTypes = {
+  selectedBankAccount: PropTypes.func,
+  bankAccountList: PropTypes.func,
+}

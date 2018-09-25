@@ -9,7 +9,6 @@ import Income from '../../organisms/Income';
 import { FETCH_BANK_BALANCE, FETCH_SPENDING, FETCH_INCOME_DATA } from '../../../store/constants';
 
 class Dashboard extends PureComponent {
-
   componentDidMount() {
     StatusBar.setBackgroundColor('#000000');
     this.props.dispatch({ type: FETCH_BANK_BALANCE });
@@ -36,20 +35,20 @@ export const TabNav = createBottomTabNavigator({
   Spent: { screen: SpentSoFar },
   Income: { screen: Income },
 },
-  {
-    tabBarOptions: {
-      activeTintColor: '#000',
-      inactiveTintColor: '#999',
-      style: {
-        backgroundColor: '#fff',
-        borderTopColor: 'grey',
-        borderTopWidth: 0.5,
-      },
-      labelStyle: {
-        fontSize: 20,
-      },
-      indicatorStyle: {
-        height: 0,
-      },
+{
+  tabBarOptions: {
+    activeTintColor: '#000',
+    inactiveTintColor: '#999',
+    style: {
+      backgroundColor: '#fff',
+      borderTopColor: 'grey',
+      borderTopWidth: 0.5,
     },
-  });
+    labelStyle: {
+      fontSize: 20,
+    },
+    indicatorStyle: {
+      height: 0,
+    },
+  },
+});

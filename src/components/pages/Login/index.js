@@ -6,6 +6,7 @@ import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
 import StyledView from '../../atoms/StyledView';
 import { FETCH_USER_DATA } from "../../../store/constants";
+import PropTypes from 'prop-types';
 
 import usernameImg from '../../../assets/images/userlogin/username.png';
 import passwordImg from '../../../assets/images/userlogin/password.png';
@@ -166,6 +167,11 @@ const mapStateToProps = (state) => ({
  userList: state.login.userList,
  selected: state.login.selected
 })
+
+Login.propTypes = {
+  userList: PropTypes.array,
+  navigation: PropTypes.object,
+}
 
 export default connect (mapStateToProps)(Login);
 

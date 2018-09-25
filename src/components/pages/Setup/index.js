@@ -3,6 +3,7 @@ import { ScrollView, View } from 'react-native';
 import StyledView from '../../atoms/StyledView';
 import StyledText from '../../atoms/StyledText';
 import StyledButton from '../../atoms/StyledButton';
+import PropTypes from 'prop-types';
 
 export default class Setup extends PureComponent {
   render() {
@@ -75,3 +76,7 @@ const styles = {
     marginTop: 30,
   },
 };
+
+Setup.propTypes = {
+  navigation: PropTypes.object,
+}
