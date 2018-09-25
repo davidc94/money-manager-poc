@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-const StyledView = styled.View`
+export const StyledView = styled.View`
     flex: 1;
     `;
-
-export default StyledView;

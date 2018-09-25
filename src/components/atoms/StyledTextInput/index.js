@@ -15,17 +15,15 @@ const TextInputStyling = styled.TextInput`
   borderRadius: 20;
 `;
 
-const StyledTextInput = props => (
+export const StyledTextInput = props => (
   <TextInputStyling
-  // !!props.password
+    // !!props.password
     secureTextEntry={props.secureTextEntry}
     underlineColorAndroid="rgba(0,0,0,0)"
     autoCapitalize={props.autoCapitalize}
     autoCorrect={props.autoCorrect}
     placeholder={props.placeholder}
     returnKeyType={props.returnKeyType}
-    onChangeText={ props.onChangeText }
+    onChangeText={props.onChangeText}
   />
 );
-
-export default StyledTextInput;

@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
 import { ScrollView, View } from 'react-native';
-import StyledView from '../../atoms/StyledView';
-import StyledText from '../../atoms/StyledText';
-import StyledButton from '../../atoms/StyledButton';
 import PropTypes from 'prop-types';
+import { StyledView, StyledText, StyledButton } from '../../atoms';
+
 
 export default class Setup extends PureComponent {
   render() {
@@ -17,23 +16,23 @@ export default class Setup extends PureComponent {
           <StyledText weight style={step}>Step 1</StyledText>
           <StyledText style={text}>
             <StyledText weight>Choose your bank </StyledText>
-             - You select your bank from the list of
-            selected bank we work with!
+            - You select your bank from the list of
+           selected bank we work with!
           </StyledText>
 
           <StyledText weight style={step}>Step 2</StyledText>
           <StyledText style={text}>
             <StyledText weight>Your consent </StyledText>
-             - We need your permission so
-            that we can connect to your selected bank
-            and one of the current account.
+            - We need your permission so
+           that we can connect to your selected bank
+           and one of the current account.
           </StyledText>
           <StyledText weight style={step}>Step 3</StyledText>
           <StyledText style={text}>
-            <StyledText weight>Choose bank account </StyledText> 
-             - You will choose the bank account
-            that you use for your day to day spend (if you have more
-            than one current account)
+            <StyledText weight>Choose bank account </StyledText>
+            - You will choose the bank account
+           that you use for your day to day spend (if you have more
+           than one current account)
           </StyledText>
           <View style={buttonWrapper}>
             <StyledButton

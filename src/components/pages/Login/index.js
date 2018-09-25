@@ -1,10 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
-import StyledTextInput from '../../atoms/StyledTextInput';
-import StyledText from '../../atoms/StyledText';
-import StyledButton from '../../atoms/StyledButton';
-import StyledView from '../../atoms/StyledView';
+import { StyledTextInput, StyledText, StyledButton, StyledView } from '../../atoms';
 import { FETCH_USER_DATA } from "../../../store/constants";
 import PropTypes from 'prop-types';
 
@@ -13,159 +10,159 @@ import passwordImg from '../../../assets/images/userlogin/password.png';
 import eyeImg from '../../../assets/images/userlogin/eye_black.png';
 
 const styles = {
-    container: { 
-      flex: 1,
-      justifyContent: 'center',
-    },
-    centered: { 
-      textAlign: 'center' 
-    },
-    small: {
-      fontSize: 12
-    },
-    inputWrapper: {
-     alignItems: 'center',
-     marginBottom: 10,
-    },
-    inlineImg: {
-      position: 'absolute',
-      zIndex: 99,
-      width: 22,
-      height: 22,
-      left: 30,
-      top: 9,
-    },
-    btnEye: {
-      position: 'absolute',
-      top: 10,
-      right: 28,
-    },
-    iconEye: {
-      width: 25,
-      height: 25,
-      tintColor: 'rgba(0,0,0,0.2)',
-    },
-    button: { marginTop: 15 },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  centered: {
+    textAlign: 'center'
+  },
+  small: {
+    fontSize: 12
+  },
+  inputWrapper: {
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  inlineImg: {
+    position: 'absolute',
+    zIndex: 99,
+    width: 22,
+    height: 22,
+    left: 30,
+    top: 9,
+  },
+  btnEye: {
+    position: 'absolute',
+    top: 10,
+    right: 28,
+  },
+  iconEye: {
+    width: 25,
+    height: 25,
+    tintColor: 'rgba(0,0,0,0.2)',
+  },
+  button: { marginTop: 15 },
 };
 
 
 class Login extends PureComponent {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = {
-        userName: '',
-        password: '',
-        loginDisable :true,
-        showPass: true,
-        press: false,
-        isError:false,
-        errorMessage:'User name and/or password is invalid!',
+      userName: '',
+      password: '',
+      loginDisable: true,
+      showPass: true,
+      press: false,
+      isError: false,
+      errorMessage: 'User name and/or password is invalid!',
     };
     this.showPass = this.showPass.bind(this);
-}
+  }
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.dispatch({ type: FETCH_USER_DATA })
   }
-  
+
   onChangeText = (key, val) => {
-    this.setState({ 
+    this.setState({
       [key]: val
     })
   }
 
-  loginAuthentication = (e)=> {
-    
-   const result1=this.props.userList;
-    const result2={
-      userName:this.state.userName,
+  loginAuthentication = (e) => {
+
+    const result1 = this.props.userList;
+    const result2 = {
+      userName: this.state.userName,
       password: this.state.password
     };
-    
-    let result = result1.filter (
-      obj => result2.userName === obj.userName 
-      && result2.password === obj.password
+
+    let result = result1.filter(
+      obj => result2.userName === obj.userName
+        && result2.password === obj.password
     );
-   
-   if(result.length > 0) {
-    this.props.navigation.navigate('Setup');
-    this.setState({
-      isError:false
-    });
-   }
-   else {
-    this.setState({
-      isError:true
-    });
-   }
+
+    if (result.length > 0) {
+      this.props.navigation.navigate('Setup');
+      this.setState({
+        isError: false
+      });
+    }
+    else {
+      this.setState({
+        isError: true
+      });
+    }
     e.preventDefault();
-   }
-   showPass() {
+  }
+  showPass() {
     this.state.press === false
-      ? this.setState({showPass: false, press: true})
-      : this.setState({showPass: true, press: false});
+      ? this.setState({ showPass: false, press: true })
+      : this.setState({ showPass: true, press: false });
   }
 
   render() {
     const { userName, password } = this.state;
     const isEnabled =
       (userName.length > 0 &&
-      password.length > 0);
+        password.length > 0);
 
     return (
-      
+
       <StyledView style={styles.container}>
-      <StyledText weight style={styles.centered}>Login </StyledText> 
+        <StyledText weight style={styles.centered}>Login </StyledText>
         <View style={styles.inputWrapper}>
           <Image source={usernameImg} style={styles.inlineImg} />
-          <StyledTextInput 
-          value={this.state.userName}
-          placeholder="Username"
-          autoCapitalize="none"
-          onChangeText={ val => this.onChangeText('userName', val) }
+          <StyledTextInput
+            value={this.state.userName}
+            placeholder="Username"
+            autoCapitalize="none"
+            onChangeText={val => this.onChangeText('userName', val)}
           />
         </View>
         <View style={styles.inputWrapper}>
-         <Image source={passwordImg} style={styles.inlineImg} />
-          <StyledTextInput password 
-          value={this.state.password}
-          placeholder='Password'
-          secureTextEntry={this.state.showPass}
-          returnKeyType={'done'}
-          autoCorrect={false}
-          onChangeText={val => this.onChangeText('password', val)} 
+          <Image source={passwordImg} style={styles.inlineImg} />
+          <StyledTextInput password
+            value={this.state.password}
+            placeholder='Password'
+            secureTextEntry={this.state.showPass}
+            returnKeyType={'done'}
+            autoCorrect={false}
+            onChangeText={val => this.onChangeText('password', val)}
           />
-        
-        <TouchableOpacity
-          activeOpacity={0.7}
-          style={styles.btnEye}
-          onPress={this.showPass}>
-          <Image source={eyeImg} style={styles.iconEye} />
-        </TouchableOpacity>
+
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={styles.btnEye}
+            onPress={this.showPass}>
+            <Image source={eyeImg} style={styles.iconEye} />
+          </TouchableOpacity>
         </View>
         <View>
-          { 
-          this.state.isError ? 
-            <StyledText size='small' color style={styles.centered}>{this.state.errorMessage}</StyledText>
-            :<StyledText/>
+          {
+            this.state.isError ?
+              <StyledText size='small' color style={styles.centered}>{this.state.errorMessage}</StyledText>
+              : <StyledText />
           }
         </View>
         <View style={{ paddingHorizontal: 80 }}>
           <StyledButton
             style={styles.button} disabled={!isEnabled}
-            onPress= { (e) => this.loginAuthentication(e) }
+            onPress={(e) => this.loginAuthentication(e)}
           >
-          LOGIN
+            LOGIN
           </StyledButton>
-        </View>       
+        </View>
       </StyledView>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
- userList: state.login.userList,
- selected: state.login.selected
+  userList: state.login.userList,
+  selected: state.login.selected
 })
 
 Login.propTypes = {
@@ -173,5 +170,5 @@ Login.propTypes = {
   navigation: PropTypes.object,
 }
 
-export default connect (mapStateToProps)(Login);
+export default connect(mapStateToProps)(Login);
 

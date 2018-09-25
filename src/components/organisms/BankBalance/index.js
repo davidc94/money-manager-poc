@@ -1,11 +1,8 @@
 import React, { PureComponent } from 'react';
 import { View, StyleSheet, Text, Image } from 'react-native';
 import { connect } from 'react-redux';
-
-import { FETCH_BANK_BALANCE } from '../../../store/constants';
-import bankImages from '../../../assets/images/banklogos/index';
-import StyledText from '../../atoms/StyledText';
 import PropTypes from 'prop-types';
+import bankImages from '../../../assets/images/banklogos/index';
 
 const styles = StyleSheet.create({
   container: {

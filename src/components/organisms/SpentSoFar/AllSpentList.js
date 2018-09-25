@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import StyledText from '../../atoms/StyledText';
+import { StyledText } from '../../atoms';
 
 const styles = StyleSheet.create({
   container: {

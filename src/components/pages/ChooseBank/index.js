@@ -7,8 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import { connect } from 'react-redux';
-import StyledButton from '../../atoms/StyledButton';
-import StyledText from '../../atoms/StyledText';
+import { StyledText, StyledButton } from '../../atoms';
 import { FETCH_BANK_DATA, SELECTED_BANK_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
 import PropTypes from 'prop-types';

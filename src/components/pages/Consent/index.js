@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react';
 import { StyleSheet, Switch, ScrollView, View } from 'react-native';
-import StyledButton from '../../atoms/StyledButton';
-import StyledView from '../../atoms/StyledView';
-import StyledText from '../../atoms/StyledText';
+import { StyledButton, StyledView, StyledText } from '../../atoms';
 import AccordionView from './AccordionView';
 import PropTypes from 'prop-types';
 

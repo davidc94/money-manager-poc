@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
-import { View, TouchableOpacity, Text, Image, FlatList} from 'react-native';
+import { View, TouchableOpacity, Text, Image, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import StyledText from '../../atoms/StyledText';
-import StyledButton from '../../atoms/StyledButton';
+import { StyledText, StyledButton } from '../../atoms';
 import { FETCH_BANK_ACCOUNT_DATA, SELECTED_BANK_ACCOUNT_DATA } from "../../../store/constants";
 import bankImages from '../../../assets/images/banklogos/index';
 import PropTypes from 'prop-types';
@@ -10,59 +9,59 @@ import PropTypes from 'prop-types';
 const styles = {
   container: { flex: 1, justifyContent: 'center' },
   viewDefaultStyle: {
-    flex:1, 
-    flexDirection:'row',
-    justifyContent:"center", 
-    alignItems:"center", 
-    padding: 20, 
-    margin:10, 
-    backgroundColor: '#fff', 
-    borderColor: '#D3D3D3', 
-    borderWidth: 1, 
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+    margin: 10,
+    backgroundColor: '#fff',
+    borderColor: '#D3D3D3',
+    borderWidth: 1,
     borderRadius: 5
   },
-  accountSelectedStyle: { backgroundColor: '#ccebff', borderColor: '#0000FF'},
-  imageStyle: {width: 50, height: 50, flex: 1, marginRight: 30,resizeMode: 'contain'},
-  childViewStyle: {flex:3,flexDirection:'column'},
-  textStyle: { marginBottom:10 },
-  bottomView: { padding: 10, margin:20, alignItems: 'center'},
-  continueButton: { width:"68%"},
+  accountSelectedStyle: { backgroundColor: '#ccebff', borderColor: '#0000FF' },
+  imageStyle: { width: 50, height: 50, flex: 1, marginRight: 30, resizeMode: 'contain' },
+  childViewStyle: { flex: 3, flexDirection: 'column' },
+  textStyle: { marginBottom: 10 },
+  bottomView: { padding: 10, margin: 20, alignItems: 'center' },
+  continueButton: { width: "68%" },
 }
 class ChooseAccount extends PureComponent {
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.dispatch({ type: FETCH_BANK_ACCOUNT_DATA })
   }
 
   renderItem = ({ item }) => {
     let selected = '';
 
-      if (this.props.selectedBankAccount && this.props.selectedBankAccount.accountNumber === item.accountNumber) {
-        selected  = styles.accountSelectedStyle;
-      }
-      return(
-        <TouchableOpacity
-          onPress={ () => this.props.dispatch({ type: SELECTED_BANK_ACCOUNT_DATA, payload: item })}
-          data-test="account-list-item"
-        >
-          <View style={ [styles.viewDefaultStyle, selected] }>
-            <Image source={ bankImages[this.props.selectedBank.bankName] } style={styles.imageStyle}></Image>
-            <View style={styles.childViewStyle}>
-              <Text style={styles.textStyle}>
-                {this.props.selectedBank.bankName}
-                </Text>
-                <Text style={styles.textStyle}>
-                {item.accountType}
-                </Text>
-                <Text style={styles.textStyle}>
-                {item.sortCode}  {item.accountNumber}
-              </Text>
-            </View>
-          </View>
-       </TouchableOpacity>
-      )
+    if (this.props.selectedBankAccount && this.props.selectedBankAccount.accountNumber === item.accountNumber) {
+      selected = styles.accountSelectedStyle;
     }
-  
+    return (
+      <TouchableOpacity
+        onPress={() => this.props.dispatch({ type: SELECTED_BANK_ACCOUNT_DATA, payload: item })}
+        data-test="account-list-item"
+      >
+        <View style={[styles.viewDefaultStyle, selected]}>
+          <Image source={bankImages[this.props.selectedBank.bankName]} style={styles.imageStyle}></Image>
+          <View style={styles.childViewStyle}>
+            <Text style={styles.textStyle}>
+              {this.props.selectedBank.bankName}
+            </Text>
+            <Text style={styles.textStyle}>
+              {item.accountType}
+            </Text>
+            <Text style={styles.textStyle}>
+              {item.sortCode}  {item.accountNumber}
+            </Text>
+          </View>
+        </View>
+      </TouchableOpacity>
+    )
+  }
+
   render() {
     const { navigation } = this.props;
     return (
@@ -74,22 +73,22 @@ class ChooseAccount extends PureComponent {
             basis?
           </StyledText>
           <FlatList
-            data= {this.props.bankAccountList}
-            extraData= {this.props}
-            renderItem = { this.renderItem }
-            keyExtractor = {(item) => item.accountNumber }
+            data={this.props.bankAccountList}
+            extraData={this.props}
+            renderItem={this.renderItem}
+            keyExtractor={(item) => item.accountNumber}
           />
         </View>
         <View style={styles.bottomView}>
           <StyledButton
-            disabled={!this.props.selectedBankAccount}  style={styles.continueButton}
+            disabled={!this.props.selectedBankAccount} style={styles.continueButton}
             onPress={() => this.props.navigation.navigate('Dashboard')}
             data-test="nextButton"
           >
             Select & Continue
           </StyledButton>
         </View>
-       </View>
+      </View>
     );
   }
 }
@@ -100,7 +99,7 @@ const mapStateToProps = (state) => ({
   selectedBankAccount: state.bank.selectedAccount
 })
 
-export default connect (mapStateToProps)(ChooseAccount);
+export default connect(mapStateToProps)(ChooseAccount);
 
 ChooseAccount.propTypes = {
   selectedBankAccount: PropTypes.object,

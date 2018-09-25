@@ -3,7 +3,7 @@ import { StatusBar, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import StyledView from '../../atoms/StyledView';
+import { StyledView } from '../../atoms';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
 import Income from '../../organisms/Income';
@@ -83,5 +83,4 @@ export const TabNav = createBottomTabNavigator({
         height: 0,
       },
     },
-  },
-});
+  });
