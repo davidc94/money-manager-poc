@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View, Image, TouchableOpacity } from 'react-native';
+import { View, Image, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import { connect } from 'react-redux';
 import { StyledTextInput, StyledText, StyledButton, StyledView } from '../../atoms';
 import { FETCH_USER_DATA } from "../../../store/constants";
@@ -10,39 +10,50 @@ import passwordImg from '../../../assets/images/userlogin/password.png';
 import eyeImg from '../../../assets/images/userlogin/eye_black.png';
 
 const styles = {
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  centered: {
-    textAlign: 'center'
-  },
-  small: {
-    fontSize: 12
-  },
-  inputWrapper: {
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-  inlineImg: {
-    position: 'absolute',
-    zIndex: 99,
-    width: 22,
-    height: 22,
-    left: 30,
-    top: 9,
-  },
-  btnEye: {
-    position: 'absolute',
-    top: 10,
-    right: 28,
-  },
-  iconEye: {
-    width: 25,
-    height: 25,
-    tintColor: 'rgba(0,0,0,0.2)',
-  },
-  button: { marginTop: 15 },
+    container: { 
+      flex: 1,
+      justifyContent: 'center',
+    },
+    firstContainer:{
+      flexDirection :'column',
+      justifyContent: 'center',
+    },
+    centered: { 
+      textAlign: 'center' 
+    },
+    small: {
+      fontSize: 12
+    },
+    inputWrapper: {
+     alignItems: 'center',
+     marginBottom: 10,
+    },
+    inlineImg: {
+      position: 'absolute',
+      zIndex: 99,
+      width: 22,
+      height: 22,
+      left: 30,
+      top: 9,
+      tintColor: 'rgba(0,0,0,0.2)',
+    },
+    btnEye: {
+      position: 'absolute',
+      top: 10,
+      right: 28,
+    },
+    iconEye: {
+      width: 25,
+      height: 25,
+      tintColor: 'rgba(0,0,0,0.2)',
+    },
+    button: { marginTop: 15 },
+    logoImgStyle: {
+      width: '90%',
+      height: '28%',
+      margin:'5%',
+      borderRadius:8,
+    }
 };
 
 
@@ -110,52 +121,52 @@ class Login extends PureComponent {
         password.length > 0);
 
     return (
-
-      <StyledView style={styles.container}>
-        <StyledText weight style={styles.centered}>Login </StyledText>
-        <View style={styles.inputWrapper}>
-          <Image source={usernameImg} style={styles.inlineImg} />
-          <StyledTextInput
+      <KeyboardAvoidingView style={styles.container} behavior="padding"> 
+        <StyledView style={styles.firstContainer}>
+          <View style={styles.inputWrapper}>
+            <Image source={usernameImg} style={styles.inlineImg} />
+            <StyledTextInput 
             value={this.state.userName}
             placeholder="Username"
             autoCapitalize="none"
-            onChangeText={val => this.onChangeText('userName', val)}
-          />
-        </View>
-        <View style={styles.inputWrapper}>
+            onChangeText={ val => this.onChangeText('userName', val) }
+            />
+          </View>
+          <View style={styles.inputWrapper}>
           <Image source={passwordImg} style={styles.inlineImg} />
-          <StyledTextInput password
+            <StyledTextInput password 
             value={this.state.password}
             placeholder='Password'
             secureTextEntry={this.state.showPass}
             returnKeyType={'done'}
             autoCorrect={false}
-            onChangeText={val => this.onChangeText('password', val)}
-          />
-
+            onChangeText={val => this.onChangeText('password', val)} 
+            />
+          
           <TouchableOpacity
             activeOpacity={0.7}
             style={styles.btnEye}
             onPress={this.showPass}>
             <Image source={eyeImg} style={styles.iconEye} />
           </TouchableOpacity>
-        </View>
-        <View>
-          {
-            this.state.isError ?
+          </View>
+          <View>
+            { 
+            this.state.isError ? 
               <StyledText size='small' color style={styles.centered}>{this.state.errorMessage}</StyledText>
-              : <StyledText />
-          }
-        </View>
-        <View style={{ paddingHorizontal: 80 }}>
-          <StyledButton
-            style={styles.button} disabled={!isEnabled}
-            onPress={(e) => this.loginAuthentication(e)}
-          >
+              :<StyledText/>
+            }
+          </View>
+          <View style={{ paddingHorizontal: 80 }}>
+            <StyledButton
+              style={styles.button} disabled={!isEnabled}
+              onPress= { (e) => this.loginAuthentication(e) }
+            >
             LOGIN
-          </StyledButton>
-        </View>
-      </StyledView>
+            </StyledButton>
+          </View>       
+        </StyledView>
+      </KeyboardAvoidingView>
     );
   }
 }
@@ -170,5 +181,4 @@ Login.propTypes = {
   navigation: PropTypes.object,
 }
 
-export default connect(mapStateToProps)(Login);
-
+export default connect (mapStateToProps)(Login);
