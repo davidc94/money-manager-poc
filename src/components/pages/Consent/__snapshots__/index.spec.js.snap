@@ -146,7 +146,6 @@ ShallowWrapper {
             onPress={[Function]}
             style={
               Object {
-                "color": "red",
                 "flex": 1,
               }
             }
@@ -451,7 +450,6 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
-                  "color": "red",
                   "flex": 1,
                 }
               }
@@ -492,7 +490,6 @@ ShallowWrapper {
               "disabled": true,
               "onPress": [Function],
               "style": Object {
-                "color": "red",
                 "flex": 1,
               },
             },
@@ -635,7 +632,6 @@ ShallowWrapper {
               onPress={[Function]}
               style={
                 Object {
-                  "color": "red",
                   "flex": 1,
                 }
               }
@@ -940,7 +936,6 @@ ShallowWrapper {
                 onPress={[Function]}
                 style={
                   Object {
-                    "color": "red",
                     "flex": 1,
                   }
                 }
@@ -981,7 +976,6 @@ ShallowWrapper {
                 "disabled": true,
                 "onPress": [Function],
                 "style": Object {
-                  "color": "red",
                   "flex": 1,
                 },
               },
