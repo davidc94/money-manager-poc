@@ -5,6 +5,21 @@ import StyledText from '../../atoms/StyledText';
 import SpentDetails from './SpentDetails';
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 25,
+    justifyContent: 'flex-start',
+  },
+  headerContainer: {
+    paddingBottom: 20,
+    marginVertical: 20,
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
+  },
+  headerText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   buttonsView: {
     flexDirection: 'row',
     alignContent: 'center',
@@ -15,7 +30,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     borderWidth: 1,
     borderBottomWidth: 4,
-    color: '#000',
     height: 60,
     justifyContent: 'center',
     paddingHorizontal: 30,
@@ -73,9 +87,9 @@ export default class SpentSoFar extends PureComponent {
   render() {
 
     return (
-      <View style={{ flex: 1, padding: 20, justifyContent: 'flex-start' }}>
-        <View style={{ paddingBottom: 20, marginVertical: 20, borderBottomColor: '#ccc', borderBottomWidth: 1 }}>
-          <StyledText size='large' weight>Spent so far</StyledText>
+      <View style={styles.container}>
+        <View style={styles.headerContainer}>
+          <Text style={styles.headerText}>Spent so far</Text>
         </View>
         <StyledView style={styles.buttonsView}>
           {this.renderButtons()}

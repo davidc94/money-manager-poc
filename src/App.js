@@ -10,8 +10,13 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <SafeAreaView style={{ flex: 1, borderBottomWidth: 0, backgroundColor: '#e9e9ee' }}
-          forceInset={{ 'bottom': 'never' }}
+        <SafeAreaView
+          style={{
+            flex: 1,
+            borderBottomWidth: 0,
+            backgroundColor: this.props.backgroundColor || '#e9e9ee',
+          }}
+          forceInset={{ bottom: 'never' }}
         >
           <AppNav />
         </SafeAreaView>
