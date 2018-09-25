@@ -83,5 +83,4 @@ export const TabNav = createBottomTabNavigator({
         height: 0,
       },
     },
-  },
 });
