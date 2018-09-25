@@ -44,7 +44,7 @@ class SpentDetails extends Component {
           />
         </View>
         <ScrollView
-          contentContainerStyle={{ flexGrow: 1, flex: 2 }}
+          contentContainerStyle={{ flexGrow: 1 }}
           style={{ flex: 4 }}
         >
           {spendingList}
