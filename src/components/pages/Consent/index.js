@@ -27,7 +27,7 @@ export default class Consent extends PureComponent {
       <ScrollView>
         <View style={{ marginTop: 15, marginBottom: 15, flex: 1, alignSelf: 'center' }}>
           <StyledText weight>Don't worry, this is all perfectly safe.</StyledText>
-          <StyledText weight>All we can do is look at...</StyledText>  
+          <StyledText weight>All we can do is look at...</StyledText>
         </View>
         <View style={{ paddingHorizontal: 10 }}>
           <AccordionView />
@@ -68,7 +68,7 @@ export default class Consent extends PureComponent {
           </StyledButton>
           <StyledButton
             disabled={!this.state.nextButtonEnabled}
-            style={{ flex: 1, color: 'red' }}
+            style={{ flex: 1 }}
             onPress={() => navigation.navigate('ChooseAccount')}
           >
             Agree

@@ -27,15 +27,14 @@ class SpentDetails extends Component {
     return (
       <View style={{ flex: 1 }}>
         <View style={{
-          flex: 1,
-          justifyContent: 'center',
+          flex: 0.5,
+          justifyContent: 'flex-start',
           alignContent: 'center',
-          marginVertical: 50,
           alignSelf: 'stretch',
           width: '100%',
         }}>
           <PieChart
-            chart_wh="200"
+            chart_wh={150}
             series={amounts}
             sliceColor={sliceColor}
             doughnut
@@ -44,7 +43,10 @@ class SpentDetails extends Component {
             style={{ alignSelf: 'center' }}
           />
         </View>
-        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <ScrollView
+          contentContainerStyle={{ flexGrow: 1, flex: 2 }}
+          style={{ flex: 4 }}
+        >
           {spendingList}
         </ScrollView>
       </View>

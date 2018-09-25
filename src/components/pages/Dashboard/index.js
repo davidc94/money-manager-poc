@@ -1,12 +1,25 @@
 import React, { PureComponent } from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import StyledView from '../../atoms/StyledView';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
 import Income from '../../organisms/Income';
 import { FETCH_BANK_BALANCE, FETCH_SPENDING, FETCH_INCOME_DATA } from '../../../store/constants';
+
+const styles = StyleSheet.create({
+  fixBackground: {
+    backgroundColor: '#fff',
+    position: 'absolute',
+    bottom: -50,
+    right: 0,
+    left: 0,
+    height: 100,
+    zIndex: -1000,
+  },
+});
 
 class Dashboard extends PureComponent {
   componentDidMount() {
@@ -23,6 +36,7 @@ class Dashboard extends PureComponent {
           barStyle="dark-content"
         />
         <TabNav />
+        <View style={styles.fixBackground} />
       </StyledView>
     );
   }
@@ -30,25 +44,44 @@ class Dashboard extends PureComponent {
 
 export default connect()(Dashboard);
 
+
 export const TabNav = createBottomTabNavigator({
   Balance: { screen: BankBalance },
   Spent: { screen: SpentSoFar },
   Income: { screen: Income },
 },
-{
-  tabBarOptions: {
-    activeTintColor: '#000',
-    inactiveTintColor: '#999',
-    style: {
-      backgroundColor: '#fff',
-      borderTopColor: 'grey',
-      borderTopWidth: 0.5,
-    },
-    labelStyle: {
-      fontSize: 20,
-    },
-    indicatorStyle: {
-      height: 0,
+  {
+    navigationOptions: ({ navigation }) => ({
+      tabBarIcon: ({ tintColor }) => {
+        const { routeName } = navigation.state;
+        let iconName;
+        if (routeName === 'Balance') {
+          iconName = 'bank';
+        } else if (routeName === 'Spent') {
+          iconName = 'currency-usd';
+        } else if (routeName === 'Income') {
+          iconName = 'cash-100';
+        }
+
+        return <Icon name={iconName} size={25} color={tintColor} />;
+      },
+    }),
+    tabBarOptions: {
+      activeTintColor: '#000',
+      inactiveTintColor: '#999',
+      style: {
+        backgroundColor: '#fff',
+        borderTopColor: 'grey',
+        borderTopWidth: 0.5,
+        borderBottomWidth: 0,
+        paddingTop: 10,
+      },
+      labelStyle: {
+        fontSize: 14,
+      },
+      indicatorStyle: {
+        height: 0,
+      },
     },
   },
 });

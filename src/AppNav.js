@@ -34,5 +34,6 @@ export default createStackNavigator(
         height: 25,
       },
     },
+    cardStyle: { shadowColor: 'transparent' },
   },
 );

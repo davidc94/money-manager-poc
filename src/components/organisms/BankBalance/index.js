@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    paddingHorizontal: 25,
     justifyContent: 'flex-start',
   },
   headerContainer: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   headerText: {
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 'bold',
   },
   bankDetailsContainer: {
