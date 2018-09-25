@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -9,8 +9,19 @@ import SpentSoFar from '../../organisms/SpentSoFar';
 import Income from '../../organisms/Income';
 import { FETCH_BANK_BALANCE, FETCH_SPENDING, FETCH_INCOME_DATA } from '../../../store/constants';
 
-class Dashboard extends PureComponent {
+const styles = StyleSheet.create({
+  fixBackground: {
+    backgroundColor: '#fff',
+    position: 'absolute',
+    bottom: -50,
+    right: 0,
+    left: 0,
+    height: 100,
+    zIndex: -1000,
+  },
+});
 
+class Dashboard extends PureComponent {
   componentDidMount() {
     StatusBar.setBackgroundColor('#000000');
     this.props.dispatch({ type: FETCH_BANK_BALANCE });
@@ -19,19 +30,20 @@ class Dashboard extends PureComponent {
   }
 
   render() {
-    console.log(this.props.navigation.navigate.backgroundColor)
     return (
       <StyledView>
         <StatusBar
           barStyle="dark-content"
         />
         <TabNav />
+        <View style={styles.fixBackground} />
       </StyledView>
     );
   }
 }
 
 export default connect()(Dashboard);
+
 
 export const TabNav = createBottomTabNavigator({
   Balance: { screen: BankBalance },
@@ -58,7 +70,7 @@ export const TabNav = createBottomTabNavigator({
       activeTintColor: '#000',
       inactiveTintColor: '#999',
       style: {
-        backgroundColor: '#e9e9ee',
+        backgroundColor: '#fff',
         borderTopColor: 'grey',
         borderTopWidth: 0.5,
         borderBottomWidth: 0,
