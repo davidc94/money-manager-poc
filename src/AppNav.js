@@ -29,9 +29,6 @@ export default createStackNavigator(
   },
   {
     navigationOptions: {
-     //console.log(navigation)
-    //   if (navigation.state.routeName !== 'Login'){
-    //     return(
         headerStyle: {
             backgroundColor: '#000000',
             height: 28,
@@ -45,21 +42,7 @@ export default createStackNavigator(
             <Image  style={{width: '45%', height: 45}} source={ headerImg }/>
           </View>
         ),
-    //   )
-    // }   
     },
   
   cardStyle: { shadowColor: 'transparent' },
 });
-
-
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor:'#000', 
-//     justifyContent: 'center',
-//     alignItems:'flex-start',
-//     paddingLeft:5,
-//   },
-// });
