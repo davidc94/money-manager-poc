@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import StyledView from '../../atoms/StyledView';
-import StyledText from '../../atoms/StyledText';
+import { StyledView } from '../../atoms';
 import SpentDetails from './SpentDetails';
 
 const styles = StyleSheet.create({

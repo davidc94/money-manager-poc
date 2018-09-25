@@ -23,7 +23,7 @@ const TextStyling = styled.Text`
     color: ${ props => props.color ? customColor.error : customColor.normal};
 `;
 
-const StyledText = (props) => (
+export const StyledText = (props) => (
   <TextStyling
     size={props.size}
     style={props.style}
@@ -33,5 +33,3 @@ const StyledText = (props) => (
     {props.children}
   </TextStyling>
 );
-
-export default StyledText;

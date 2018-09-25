@@ -27,7 +27,7 @@ const ButtonContainer = styled.TouchableOpacity`
   border-radius: 50;
 `;
 
-const StyledButton = (props) => {
+export const StyledButton = (props) => {
   return (
     <ButtonContainer
       underlayColor={colors.highlight}
@@ -45,5 +45,3 @@ const StyledButton = (props) => {
     </ButtonContainer>
   );
 };
-
-export default StyledButton;
