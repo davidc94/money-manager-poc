@@ -26,30 +26,16 @@ ShallowWrapper {
         }
       >
         <StyledText
+          size="large"
           style={
             Object {
               "alignSelf": "flex-start",
-              "fontSize": 35,
-              "marginLeft": 25,
-              "marginTop": 15,
+              "marginTop": 30,
+              "paddingHorizontal": 25,
             }
           }
-          weight={true}
         >
-          How does this 
-        </StyledText>
-        <StyledText
-          style={
-            Object {
-              "alignSelf": "flex-start",
-              "fontSize": 35,
-              "marginLeft": 25,
-              "marginTop": 15,
-            }
-          }
-          weight={true}
-        >
-          set up work?
+          How does this set up work?
         </StyledText>
         <StyledText
           style={
@@ -162,30 +148,16 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <StyledText
+            size="large"
             style={
               Object {
                 "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
+                "marginTop": 30,
+                "paddingHorizontal": 25,
               }
             }
-            weight={true}
           >
-            How does this 
-          </StyledText>,
-          <StyledText
-            style={
-              Object {
-                "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
-              }
-            }
-            weight={true}
-          >
-            set up work?
+            How does this set up work?
           </StyledText>,
           <StyledText
             style={
@@ -301,35 +273,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "How does this ",
+            "children": "How does this set up work?",
+            "size": "large",
             "style": Object {
               "alignSelf": "flex-start",
-              "fontSize": 35,
-              "marginLeft": 25,
-              "marginTop": 15,
+              "marginTop": 30,
+              "paddingHorizontal": 25,
             },
-            "weight": true,
           },
           "ref": null,
-          "rendered": "How does this ",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": "set up work?",
-            "style": Object {
-              "alignSelf": "flex-start",
-              "fontSize": 35,
-              "marginLeft": 25,
-              "marginTop": 15,
-            },
-            "weight": true,
-          },
-          "ref": null,
-          "rendered": "set up work?",
+          "rendered": "How does this set up work?",
           "type": [Function],
         },
         Object {
@@ -547,30 +500,16 @@ ShallowWrapper {
           }
         >
           <StyledText
+            size="large"
             style={
               Object {
                 "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
+                "marginTop": 30,
+                "paddingHorizontal": 25,
               }
             }
-            weight={true}
           >
-            How does this 
-          </StyledText>
-          <StyledText
-            style={
-              Object {
-                "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
-              }
-            }
-            weight={true}
-          >
-            set up work?
+            How does this set up work?
           </StyledText>
           <StyledText
             style={
@@ -683,30 +622,16 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <StyledText
+              size="large"
               style={
                 Object {
                   "alignSelf": "flex-start",
-                  "fontSize": 35,
-                  "marginLeft": 25,
-                  "marginTop": 15,
+                  "marginTop": 30,
+                  "paddingHorizontal": 25,
                 }
               }
-              weight={true}
             >
-              How does this 
-            </StyledText>,
-            <StyledText
-              style={
-                Object {
-                  "alignSelf": "flex-start",
-                  "fontSize": 35,
-                  "marginLeft": 25,
-                  "marginTop": 15,
-                }
-              }
-              weight={true}
-            >
-              set up work?
+              How does this set up work?
             </StyledText>,
             <StyledText
               style={
@@ -822,35 +747,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "How does this ",
+              "children": "How does this set up work?",
+              "size": "large",
               "style": Object {
                 "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
+                "marginTop": 30,
+                "paddingHorizontal": 25,
               },
-              "weight": true,
             },
             "ref": null,
-            "rendered": "How does this ",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "set up work?",
-              "style": Object {
-                "alignSelf": "flex-start",
-                "fontSize": 35,
-                "marginLeft": 25,
-                "marginTop": 15,
-              },
-              "weight": true,
-            },
-            "ref": null,
-            "rendered": "set up work?",
+            "rendered": "How does this set up work?",
             "type": [Function],
           },
           Object {
