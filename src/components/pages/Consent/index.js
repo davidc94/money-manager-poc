@@ -22,21 +22,24 @@ export default class Consent extends PureComponent {
     const { navigation } = this.props;
 
     return (
-      <ScrollView>
-        <View style={{ marginTop: 15, marginBottom: 15, flex: 1, alignSelf: 'center' }}>
+      <ScrollView style={{ paddingHorizontal: 25, marginTop: 20, }}>
+        <StyledText style={{ marginBottom: 15 }} size='large'>
+          Your consent
+        </StyledText>
+        <View style={{ marginBottom: 15, flex: 1 }}>
           <StyledText weight>Don't worry, this is all perfectly safe.</StyledText>
           <StyledText weight>All we can do is look at...</StyledText>
         </View>
-        <View style={{ paddingHorizontal: 10 }}>
+        <View>
           <AccordionView />
         </View>
         <View>
-          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+          <StyledText style={{ marginVertical: 15 }}>
             gameplan can only read your bank data and can't make payments or change your account.
           </StyledText>
         </View>
         <View>
-          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+          <StyledText style={{ marginBottom: 15 }}>
             We connect securely to your bank through our trusted partner TrueLayer and we'll only be able to view these for three months. Your data will never be shared with third parties without your permission
           </StyledText>
         </View>
@@ -47,12 +50,12 @@ export default class Consent extends PureComponent {
               value={this.state.nextButtonEnabled}
             />
           </StyledView>
-          <StyledText style={{ fontSize: 15, flex: 2, paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+          <StyledText style={{ fontSize: 15, flex: 2, marginBottom: 15 }}>
             You agree to our terms &amp; conditions and privacy policy which covers how giffgaff can access and use your data
           </StyledText>
         </StyledContainer>
         <View>
-          <StyledText style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 10 }}>
+          <StyledText style={{ marginBottom: 15 }}>
             We will now securely take you to your bank/building society
           </StyledText>
         </View>

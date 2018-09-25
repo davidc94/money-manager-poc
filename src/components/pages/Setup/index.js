@@ -3,6 +3,32 @@ import { ScrollView, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { StyledView, StyledText, StyledButton } from '../../atoms';
 
+const styles = {
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  header: {
+    alignSelf: 'flex-start',
+    marginTop: 30,
+    paddingHorizontal: 25,
+  },
+  step: {
+    marginTop: 20,
+    marginBottom: 10,
+    alignSelf: 'flex-start',
+    paddingLeft: 25,
+    color: '#2E7AF6',
+  },
+  text: {
+    paddingLeft: 25,
+    paddingRight: 25,
+  },
+  buttonWrapper: {
+    paddingHorizontal: 80,
+    marginTop: 30,
+  },
+};
 
 export default class Setup extends PureComponent {
   render() {
@@ -11,8 +37,7 @@ export default class Setup extends PureComponent {
     return (
       <ScrollView>
         <StyledView style={container}>
-          <StyledText weight style={header}>How does this </StyledText>
-          <StyledText weight style={header}>set up work?</StyledText>
+          <StyledText size="large" style={header}>How does this set up work?</StyledText>
           <StyledText weight style={step}>Step 1</StyledText>
           <StyledText style={text}>
             <StyledText weight>Choose your bank </StyledText>
@@ -47,34 +72,7 @@ export default class Setup extends PureComponent {
   }
 }
 
-const styles = {
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  header: {
-    alignSelf: 'flex-start',
-    fontSize: 22,
-    marginTop: 15,
-    marginLeft: 25,
-    fontSize: 35,
-  },
-  step: {
-    marginTop: 20,
-    marginBottom: 10,
-    alignSelf: 'flex-start',
-    paddingLeft: 25,
-    color: '#2E7AF6',
-  },
-  text: {
-    paddingLeft: 25,
-    paddingRight: 25,
-  },
-  buttonWrapper: {
-    paddingHorizontal: 80,
-    marginTop: 30,
-  },
-};
+
 
 Setup.propTypes = {
   navigation: PropTypes.object,
