@@ -3,7 +3,7 @@ import { StatusBar, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { StyledView } from '../../atoms';
+import { StyledView, StyledText } from '../../atoms';
 import BankBalance from '../../organisms/BankBalance';
 import SpentSoFar from '../../organisms/SpentSoFar';
 import Income from '../../organisms/Income';
@@ -35,6 +35,9 @@ class Dashboard extends PureComponent {
         <StatusBar
           barStyle="dark-content"
         />
+        <StyledText size="large" style={{ paddingHorizontal: 25, marginVertical: 15 }}>
+          My money hub
+        </StyledText>
         <TabNav />
         <View style={styles.fixBackground} />
       </StyledView>

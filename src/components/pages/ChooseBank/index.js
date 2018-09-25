@@ -13,12 +13,17 @@ import bankImages from '../../../assets/images/banklogos/index';
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 20,
+    paddingHorizontal: 25,
+  },
   bankItem: {
     flexDirection: 'row',
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    margin: 10,
+    marginVertical: 10,
     backgroundColor: '#fff',
     borderColor: '#D3D3D3',
     borderWidth: 1,
@@ -62,8 +67,11 @@ class ChooseBank extends PureComponent {
   }
   render() {
     return (
-      <View>
-        <StyledText style={{ marginLeft: 15, marginRight: 15, marginTop: 15, marginBottom: 15 }}>
+      <View style={styles.container}>
+        <StyledText size='large' style={{ marginVertical: 15 }}>
+          Choose your bank
+        </StyledText>
+        <StyledText style={{ marginVertical: 15 }}>
           Select your bank that your day to day spending account is with.
         </StyledText>
         <FlatList

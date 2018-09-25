@@ -7,14 +7,18 @@ import bankImages from '../../../assets/images/banklogos/index';
 import PropTypes from 'prop-types';
 
 const styles = {
-  container: { flex: 1, justifyContent: 'center' },
+  container: {
+    flex: 1,
+    marginTop: 20,
+    paddingHorizontal: 25,
+  },
   viewDefaultStyle: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    margin: 10,
+    marginVertical: 10,
     backgroundColor: '#fff',
     borderColor: '#D3D3D3',
     borderWidth: 1,
@@ -25,7 +29,6 @@ const styles = {
   childViewStyle: { flex: 3, flexDirection: 'column' },
   textStyle: { marginBottom: 10 },
   bottomView: { padding: 10, margin: 20, alignItems: 'center' },
-  continueButton: { width: "68%" },
 }
 class ChooseAccount extends PureComponent {
 
@@ -65,20 +68,21 @@ class ChooseAccount extends PureComponent {
   render() {
     const { navigation } = this.props;
     return (
-      <View>
-        <View>
-          <StyledText>
-            We found three accounts in your name.
-            Which account do you use on a daily
-            basis?
-          </StyledText>
-          <FlatList
-            data={this.props.bankAccountList}
-            extraData={this.props}
-            renderItem={this.renderItem}
-            keyExtractor={(item) => item.accountNumber}
-          />
-        </View>
+      <View style={styles.container}>
+        <StyledText size='large' style={{ marginVertical: 15 }}>
+          Select your bank account
+        </StyledText>
+        <StyledText style={{ marginBottom: 15 }}>
+          We found three accounts in your name.
+          Which account do you use on a daily
+          basis?
+        </StyledText>
+        <FlatList
+          data={this.props.bankAccountList}
+          extraData={this.props}
+          renderItem={this.renderItem}
+          keyExtractor={(item) => item.accountNumber}
+        />
         <View style={styles.bottomView}>
           <StyledButton
             disabled={!this.props.selectedBankAccount} style={styles.continueButton}

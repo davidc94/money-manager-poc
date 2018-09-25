@@ -96,5 +96,5 @@ const mapStateToProps = state => ({
 export default connect(mapStateToProps)(Income);
 
 Income.propTypes = {
-  incomeList: PropTypes.func,
+  incomeList: PropTypes.array,
 }
