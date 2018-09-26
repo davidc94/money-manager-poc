@@ -23,6 +23,11 @@ describe('income', () => {
       ],
     },
   };
+  const initialState_empty = {
+    income: {
+      list: [],
+    },
+  };
 
   const mockStore = configureStore();
   const store = mockStore(initialState);
@@ -30,5 +35,13 @@ describe('income', () => {
 
   it('renders as expected', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('returns null if there is no list', () => {
+    const mockStore = configureStore();
+    const store = mockStore(initialState);
+    const wrapper = shallow(<Income store={store} />);
+
+    expect(wrapper.find("[data-test='income-wrapper']").length).toBe(0);
   });
 });

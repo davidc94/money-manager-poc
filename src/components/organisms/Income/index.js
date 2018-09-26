@@ -59,7 +59,7 @@ class Income extends PureComponent {
     } = styles;
 
     return (
-      <View style={outerStyle}>
+      <View style={outerStyle} data-test="income-wrapper">
         <StyledText style={{ fontSize: 18 }} weight>Income</StyledText>
         <StyledText style={dateStyle}>This month (1st June '18 - 18th October '18)</StyledText>
         <View style={receivedAmountStyle}>
