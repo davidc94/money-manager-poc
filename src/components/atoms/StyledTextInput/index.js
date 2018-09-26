@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
 const TextInputStyling = styled.TextInput`
-  border-color: gray;
+  border-color: black;
   border-width: 2px;
   width: 95%;
   height: 40

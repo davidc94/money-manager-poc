@@ -14,6 +14,7 @@ const styles = {
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 25,
+    backgroundColor: '#fff',
   },
   firstContainer: {
     flexDirection: 'column',
@@ -36,7 +37,7 @@ const styles = {
     height: 22,
     left: 30,
     top: 9,
-    tintColor: 'rgba(0,0,0,0.2)',
+    tintColor: '#000',
   },
   btnEye: {
     position: 'absolute',
@@ -46,7 +47,7 @@ const styles = {
   iconEye: {
     width: 25,
     height: 25,
-    tintColor: 'rgba(0,0,0,0.2)',
+    tintColor: '#000',
   },
   button: { marginTop: 15 },
   logoImgStyle: {
@@ -79,6 +80,7 @@ class Login extends PureComponent {
 
   onChangeText = (key, val) => {
     this.setState({
+      isError: false,
       [key]: val
     })
   }

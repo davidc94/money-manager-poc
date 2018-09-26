@@ -34,7 +34,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccebff',
     borderColor: '#00f'
   },
-
+ 
+  bottomView: { 
+    padding: 10, 
+    marginBottom: 8, 
+    alignItems: 'center'
+  },
 });
 
 class ChooseBank extends PureComponent {
@@ -80,7 +85,7 @@ class ChooseBank extends PureComponent {
           renderItem={this.renderListItem}
           keyExtractor={(item) => item.bankName}
         />
-        <View style={{ paddingHorizontal: 80 }}>
+        <View style={styles.bottomView}>
           <StyledButton
             disabled={!this.props.selectedBank}
             onPress={
