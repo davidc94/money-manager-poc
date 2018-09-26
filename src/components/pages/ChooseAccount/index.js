@@ -17,8 +17,8 @@ const styles = {
     flexDirection: 'row',
     justifyContent: "center",
     alignItems: "center",
-    padding: 20,
-    marginVertical: 10,
+    padding: 10,
+    marginVertical: 8,
     backgroundColor: '#fff',
     borderColor: '#D3D3D3',
     borderWidth: 1,
@@ -28,7 +28,7 @@ const styles = {
   imageStyle: { width: 50, height: 50, flex: 1, marginRight: 30, resizeMode: 'contain' },
   childViewStyle: { flex: 3, flexDirection: 'column' },
   textStyle: { marginBottom: 10 },
-  bottomView: { padding: 10, margin: 20, alignItems: 'center' },
+  bottomView: { padding: 10, marginBottom: 8, alignItems: 'center' },
 }
 class ChooseAccount extends PureComponent {
 

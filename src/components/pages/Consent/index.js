@@ -22,7 +22,7 @@ export default class Consent extends PureComponent {
     const { navigation } = this.props;
 
     return (
-      <ScrollView style={{ paddingHorizontal: 25, marginTop: 20, }}>
+      <ScrollView style={{ paddingHorizontal: 25, paddingTop: 20, backgroundColor: '#fff'}}>
         <StyledText style={{ marginBottom: 15 }} size='large'>
           Your consent
         </StyledText>
@@ -59,17 +59,17 @@ export default class Consent extends PureComponent {
             We will now securely take you to your bank/building society
           </StyledText>
         </View>
-        <StyledView style={{ flexDirection: 'row', padding: 30 }}>
+        <StyledView style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
           <StyledButton
             outlined
-            style={{ flex: 1, marginRight: 30 }}
+            style={{ flex: 1, maxWidth: '45%' }}
             onPress={() => navigation.navigate('ChooseBank')}
           >
             Disagree
           </StyledButton>
           <StyledButton
             disabled={!this.state.nextButtonEnabled}
-            style={{ flex: 1 }}
+            style={{ flex: 1, maxWidth: '48%' }}
             onPress={() => navigation.navigate('ChooseAccount')}
           >
             Agree
