@@ -41,7 +41,6 @@ describe('income', () => {
     const mockStore = configureStore();
     const store = mockStore(initialState);
     const wrapper = shallow(<Income store={store} />);
-    console.log(store);
 
     expect(wrapper.find("[data-test='income-wrapper']").length).toBe(0);
   });
